@@ -1,0 +1,41 @@
+{
+    "Comment": "Invoke Lambda every 20 seconds",
+    "StartAt": "ConfigureCount",
+    "States": {
+        "ConfigureCount": {
+            "Type": "Pass",
+            "Result": {
+                "index": 0,
+                "count": 3
+            },
+            "ResultPath": "$.iterator",
+            "Next": "Iterator"
+        },
+        "Iterator": {
+            "Type": "Task",
+            "Resource": "arn:aws:lambda:us-east-1:496180498631:function:iterator",
+            "ResultPath": "$.iterator",
+            "Next": "IsCountReached"
+        },
+        "IsCountReached": {
+            "Type": "Choice",
+            "Choices": [
+                {
+                    "Variable": "$.iterator.continue",
+                    "BooleanEquals": true,
+                    "Next": "Wait"
+                }
+            ],
+            "Default": "Done"
+        },
+        "Wait": {
+            "Type": "Wait",
+            "Seconds": 20,
+            "Next": "Iterator"
+        },
+        "Done": {
+            "Type": "Pass",
+            "End": true
+        }
+    }
+}

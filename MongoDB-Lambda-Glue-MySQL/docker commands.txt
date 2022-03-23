@@ -1,0 +1,62 @@
+file:///Users/HomeFolder/mydatasets/datacourse_database-systems/miniprojects/
+docker pull amazon/aws-glue-libs:glue_libs_3.0.0_image_01
+
+docker run -itd -p 8888:8888 -p 4040:4040 -v ~/.aws:/root/.aws:ro -v ~/projetos:/home/projetos --name glue amazon/aws-glue-libs:glue_libs_1.0.0_image_01
+
+
+docker run -itd -p 8888:8888 -p 4040:4040 -v ~/.aws:/root/.aws:ro -v /Users/HomeFolder/mydatasets/datacourse_database-systems/miniprojects:/home/miniproject --name glue amazon/aws-glue-libs:glue_libs_3.0.0_image_01
+spark/bin/spark-submit /home/miniproject/glue_example.py
+
+docker run -itd -p 8888:8888 -p 4040:4040 -v /Users/HomeFolder/mydatasets/datacourse_database-systems/miniprojects/.aws:/root/.aws:ro -v /Users/HomeFolder/mydatasets/datacourse_database-systems/miniprojects:/home/miniproject --name glue amazon/aws-glue-libs:glue_libs_3.0.0_image_01
+
+docker stop glue
+ls -la ~/projetos
+docker start glue
+
+https://medium.com/dataengineerbr/how-to-run-aws-glue-jobs-on-your-own-computer-using-docker-vscode-and-jupyter-notebook-780c9305d804
+https://aprakash.wordpress.com/2020/02/26/aws-glue-querying-nested-json-with-relationalize-transform/
+
+root
+|-- accountAge: long
+|-- activity.action.action_id: long
+|-- activity.action.enabled: boolean
+|-- activity.action.type: string
+|-- activity.hotClickZone: boolean
+|-- age: long
+|-- content.comments: long
+|-- content.company.currentSubscribers: long
+|-- content.company.lastYearSubscribers: long
+|-- content.company.lastYearsRevenue: double
+|-- content.company.name: string
+|-- content.company.yearFounded: string
+|-- content.likes: long
+|-- content.status: string
+|-- content.title: string
+|-- content.views: long
+|-- id_tags.activity_id: long
+|-- id_tags.content_id: long
+|-- member_id: string
+|-- name: string
+|-- subscribedTo: long
+
+{'accountAge': Field(accountAge, LongType({}), {}),
+ 'activity.action.action_id': Field(activity.action.action_id, LongType({}), {}),
+ 'activity.action.enabled': Field(activity.action.enabled, BooleanType({}), {}),
+ 'activity.action.type': Field(activity.action.type, StringType({}), {}),
+ 'activity.hotClickZone': Field(activity.hotClickZone, BooleanType({}), {}),
+ 'age': Field(age, LongType({}), {}),
+ 'content.comments': Field(content.comments, LongType({}), {}),
+ 'content.company.currentSubscribers': Field(content.company.currentSubscribers, LongType({}), {}),
+ 'content.company.lastYearSubscribers': Field(content.company.lastYearSubscribers, LongType({}), {}),
+ 'content.company.lastYearsRevenue': Field(content.company.lastYearsRevenue, DoubleType({}), {}),
+ 'content.company.name': Field(content.company.name, StringType({}), {}),
+ 'content.company.yearFounded': Field(content.company.yearFounded, StringType({}), {}),
+ 'content.likes': Field(content.likes, LongType({}), {}),
+ 'content.status': Field(content.status, StringType({}), {}),
+ 'content.title': Field(content.title, StringType({}), {}),
+ 'content.views': Field(content.views, LongType({}), {}),
+ 'id_tags.activity_id': Field(id_tags.activity_id, LongType({}), {}),
+ 'id_tags.content_id': Field(id_tags.content_id, LongType({}), {}),
+ 'member_id': Field(member_id, StringType({}), {}),
+ 'name': Field(name, StringType({}), {}),
+ 'subscribedTo': Field(subscribedTo, LongType({}), {})}

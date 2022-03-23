@@ -1,0 +1,11 @@
+FROM ubuntu:20.04
+RUN mkdir function
+RUN cd function
+COPY lambda_function0.py function/lambda_function.py
+WORKDIR /function
+RUN apt-get update
+RUN apt-get install python3-pip -y
+RUN apt-get install zip -y
+RUN pip install -t . pymongo[srv]
+RUN pip install -t . sqlalchemy
+RUN zip -r linux-lambda.zip *
