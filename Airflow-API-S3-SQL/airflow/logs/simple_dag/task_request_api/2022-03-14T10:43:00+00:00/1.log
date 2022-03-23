@@ -1,0 +1,23 @@
+[2022-03-14 10:38:57,358] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.task_request_api scheduled__2022-03-14T10:43:00+00:00 [queued]>
+[2022-03-14 10:38:57,364] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.task_request_api scheduled__2022-03-14T10:43:00+00:00 [queued]>
+[2022-03-14 10:38:57,365] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 10:38:57,365] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-14 10:38:57,365] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 10:38:57,376] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): task_request_api> on 2022-03-14 10:43:00+00:00
+[2022-03-14 10:38:57,380] {standard_task_runner.py:52} INFO - Started process 77829 to run task
+[2022-03-14 10:38:57,391] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'simple_dag', 'task_request_api', 'scheduled__2022-03-14T10:43:00+00:00', '--job-id', '48', '--raw', '--subdir', 'DAGS_FOLDER/simple_dag.py', '--cfg-path', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmp4web3tde', '--error-file', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmplr9hth_5']
+[2022-03-14 10:38:57,394] {standard_task_runner.py:77} INFO - Job 48: Subtask task_request_api
+[2022-03-14 10:38:57,463] {logging_mixin.py:109} INFO - Running <TaskInstance: simple_dag.task_request_api scheduled__2022-03-14T10:43:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-03-14 10:38:57,507] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=simple_dag
+AIRFLOW_CTX_TASK_ID=task_request_api
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-14T10:43:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-14T10:43:00+00:00
+[2022-03-14 10:38:57,509] {logging_mixin.py:109} INFO - Work
+[2022-03-14 10:38:57,510] {python.py:175} INFO - Done. Returned value was: None
+[2022-03-14 10:38:57,519] {taskinstance.py:1272} INFO - Marking task as SUCCESS. dag_id=simple_dag, task_id=task_request_api, execution_date=20220314T104300, start_date=20220314T153857, end_date=20220314T153857
+[2022-03-14 10:38:57,568] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-14 10:38:57,588] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

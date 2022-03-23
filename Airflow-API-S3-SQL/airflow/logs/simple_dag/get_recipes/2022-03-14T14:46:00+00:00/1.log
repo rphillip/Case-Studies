@@ -1,0 +1,101 @@
+[2022-03-14 14:44:54,026] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.get_recipes scheduled__2022-03-14T14:46:00+00:00 [queued]>
+[2022-03-14 14:44:54,032] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.get_recipes scheduled__2022-03-14T14:46:00+00:00 [queued]>
+[2022-03-14 14:44:54,032] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 14:44:54,032] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-14 14:44:54,032] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 14:44:54,041] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): get_recipes> on 2022-03-14 14:46:00+00:00
+[2022-03-14 14:44:54,045] {standard_task_runner.py:52} INFO - Started process 88183 to run task
+[2022-03-14 14:44:54,053] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'simple_dag', 'get_recipes', 'scheduled__2022-03-14T14:46:00+00:00', '--job-id', '187', '--raw', '--subdir', 'DAGS_FOLDER/simple_dag.py', '--cfg-path', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpz1gjj9v4', '--error-file', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpdstdwktc']
+[2022-03-14 14:44:54,057] {standard_task_runner.py:77} INFO - Job 187: Subtask get_recipes
+[2022-03-14 14:44:54,080] {process_utils.py:120} INFO - Sending Signals.SIGTERM to group 88183. PIDs of all processes in the group: [88183]
+[2022-03-14 14:44:54,080] {process_utils.py:75} INFO - Sending the signal Signals.SIGTERM to group 88183
+[2022-03-14 14:44:54,085] {process_utils.py:70} INFO - Process psutil.Process(pid=88183, status='terminated', exitcode=<Negsignal.SIGTERM: -15>, started='14:44:54') (88183) terminated with exit code Negsignal.SIGTERM
+[2022-03-14 14:44:57,788] {taskinstance.py:1027} INFO - Dependencies not met for <TaskInstance: simple_dag.get_recipes scheduled__2022-03-14T14:46:00+00:00 [running]>, dependency 'Task Instance State' FAILED: Task is in the 'running' state.
+[2022-03-14 14:44:57,788] {taskinstance.py:1027} INFO - Dependencies not met for <TaskInstance: simple_dag.get_recipes scheduled__2022-03-14T14:46:00+00:00 [running]>, dependency 'Task Instance Not Running' FAILED: Task is in the running state
+[2022-03-14 14:44:57,789] {local_task_job.py:99} INFO - Task is not able to be run
+[2022-03-14 14:47:36,804] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.get_recipes scheduled__2022-03-14T14:46:00+00:00 [queued]>
+[2022-03-14 14:47:36,811] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.get_recipes scheduled__2022-03-14T14:46:00+00:00 [queued]>
+[2022-03-14 14:47:36,811] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 14:47:36,811] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-14 14:47:36,811] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 14:47:36,820] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): get_recipes> on 2022-03-14 14:46:00+00:00
+[2022-03-14 14:47:36,823] {standard_task_runner.py:52} INFO - Started process 88295 to run task
+[2022-03-14 14:47:36,829] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'simple_dag', 'get_recipes', 'scheduled__2022-03-14T14:46:00+00:00', '--job-id', '198', '--raw', '--subdir', 'DAGS_FOLDER/simple_dag.py', '--cfg-path', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpeigi1rvl', '--error-file', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpg5nrs99z']
+[2022-03-14 14:47:36,833] {standard_task_runner.py:77} INFO - Job 198: Subtask get_recipes
+[2022-03-14 14:47:36,892] {logging_mixin.py:109} INFO - Running <TaskInstance: simple_dag.get_recipes scheduled__2022-03-14T14:46:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-03-14 14:47:36,945] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=simple_dag
+AIRFLOW_CTX_TASK_ID=get_recipes
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-14T14:46:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-14T14:46:00+00:00
+[2022-03-14 14:47:36,952] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:47:36,954] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:47:37,659] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:47:37,660] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:47:38,081] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 12:16:16.768057.json')
+[2022-03-14 14:47:38,087] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:47:38,089] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:47:38,419] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 12:16:24.788633.json')
+[2022-03-14 14:47:38,424] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:47:38,426] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:47:38,767] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 12:16:29.962475.json')
+[2022-03-14 14:47:38,773] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:47:38,774] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:47:39,123] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 12:16:44.008253.json')
+[2022-03-14 14:47:39,127] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:47:39,129] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:47:39,825] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 12:16:52.065604.json')
+[2022-03-14 14:47:39,830] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:47:39,831] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:47:40,374] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 13:40:51.952380.json')
+[2022-03-14 14:47:40,379] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:47:40,379] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:47:40,707] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 13:40:54.048138.json')
+[2022-03-14 14:47:40,712] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:47:40,713] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:47:41,026] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 13:40:56.140666.json')
+[2022-03-14 14:47:41,030] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:47:41,031] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:47:41,372] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 13:41:02.424720.json')
+[2022-03-14 14:47:41,376] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:47:41,377] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:47:41,934] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 13:41:04.521027.json')
+[2022-03-14 14:47:41,939] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:47:41,940] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:47:42,396] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 13:41:06.619964.json')
+[2022-03-14 14:47:42,401] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:47:42,402] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:47:42,727] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 13:41:08.717143.json')
+[2022-03-14 14:47:42,731] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:47:42,732] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:47:43,064] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 13:41:10.809943.json')
+[2022-03-14 14:47:43,068] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:47:43,069] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:47:43,609] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 13:41:12.902259.json')
+[2022-03-14 14:47:43,614] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:47:43,616] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:47:43,929] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 13:41:14.996433.json')
+[2022-03-14 14:47:43,934] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:47:43,935] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:47:44,267] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 13:41:19.188289.json')
+[2022-03-14 14:47:44,272] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:47:44,273] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:47:44,815] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 13:41:21.281386.json')
+[2022-03-14 14:47:44,820] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:47:44,821] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:47:45,131] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 13:41:23.377181.json')
+[2022-03-14 14:47:45,136] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:47:45,137] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:47:45,871] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 13:41:25.468979.json')
+[2022-03-14 14:47:45,877] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:47:45,878] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:47:46,228] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 13:41:27.559613.json')
+[2022-03-14 14:47:46,234] {python.py:175} INFO - Done. Returned value was: None
+[2022-03-14 14:47:46,243] {taskinstance.py:1272} INFO - Marking task as SUCCESS. dag_id=simple_dag, task_id=get_recipes, execution_date=20220314T144600, start_date=20220314T194736, end_date=20220314T194746
+[2022-03-14 14:47:46,296] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-14 14:47:46,317] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

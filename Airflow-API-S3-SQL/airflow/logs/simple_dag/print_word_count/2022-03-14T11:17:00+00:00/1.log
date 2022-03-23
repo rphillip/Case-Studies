@@ -1,0 +1,23 @@
+[2022-03-14 11:15:15,595] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.print_word_count scheduled__2022-03-14T11:17:00+00:00 [queued]>
+[2022-03-14 11:15:15,604] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.print_word_count scheduled__2022-03-14T11:17:00+00:00 [queued]>
+[2022-03-14 11:15:15,604] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 11:15:15,604] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-14 11:15:15,604] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 11:15:15,614] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): print_word_count> on 2022-03-14 11:17:00+00:00
+[2022-03-14 11:15:15,618] {standard_task_runner.py:52} INFO - Started process 80040 to run task
+[2022-03-14 11:15:15,623] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'simple_dag', 'print_word_count', 'scheduled__2022-03-14T11:17:00+00:00', '--job-id', '113', '--raw', '--subdir', 'DAGS_FOLDER/simple_dag.py', '--cfg-path', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmph2kqegdq', '--error-file', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpd04wkkew']
+[2022-03-14 11:15:15,627] {standard_task_runner.py:77} INFO - Job 113: Subtask print_word_count
+[2022-03-14 11:15:15,687] {logging_mixin.py:109} INFO - Running <TaskInstance: simple_dag.print_word_count scheduled__2022-03-14T11:17:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-03-14 11:15:15,735] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=simple_dag
+AIRFLOW_CTX_TASK_ID=print_word_count
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-14T11:17:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-14T11:17:00+00:00
+[2022-03-14 11:15:15,846] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['brown rice', 'cauliflower'], 'includeIngredients': ['lime', 'garlic'], 'intolerances': 'egg'}, 'user': {'address': '296 Vargas Field Apt. 104\nCarpenterburgh, AK 45877', 'description': 'Step generation several. Class yes very guy cell. Range region senior action community happen.', 'name': 'Michael Mckee'}}
+[2022-03-14 11:15:15,847] {python.py:175} INFO - Done. Returned value was: None
+[2022-03-14 11:15:15,857] {taskinstance.py:1272} INFO - Marking task as SUCCESS. dag_id=simple_dag, task_id=print_word_count, execution_date=20220314T111700, start_date=20220314T161515, end_date=20220314T161515
+[2022-03-14 11:15:15,934] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-14 11:15:15,967] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,120 @@
+[2022-03-15 15:08:37,024] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.to_sql scheduled__2022-03-15T15:07:07.558658+00:00 [queued]>
+[2022-03-15 15:08:37,032] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.to_sql scheduled__2022-03-15T15:07:07.558658+00:00 [queued]>
+[2022-03-15 15:08:37,032] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-15 15:08:37,032] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-15 15:08:37,032] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-15 15:08:37,042] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): to_sql> on 2022-03-15 15:07:07.558658+00:00
+[2022-03-15 15:08:37,046] {standard_task_runner.py:52} INFO - Started process 27853 to run task
+[2022-03-15 15:08:37,053] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'simple_dag', 'to_sql', 'scheduled__2022-03-15T15:07:07.558658+00:00', '--job-id', '336', '--raw', '--subdir', 'DAGS_FOLDER/simple_dag.py', '--cfg-path', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpgbvhvbsr', '--error-file', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpkre43tt0']
+[2022-03-15 15:08:37,056] {standard_task_runner.py:77} INFO - Job 336: Subtask to_sql
+[2022-03-15 15:08:37,112] {logging_mixin.py:109} INFO - Running <TaskInstance: simple_dag.to_sql scheduled__2022-03-15T15:07:07.558658+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-03-15 15:08:37,181] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=simple_dag
+AIRFLOW_CTX_TASK_ID=to_sql
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-15T15:07:07.558658+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-15T15:07:07.558658+00:00
+[2022-03-15 15:08:38,009] {logging_mixin.py:109} INFO - Empty DataFrame
+Columns: [id, title, servings, summary, diets, equipment, ingredients]
+Index: []
+[2022-03-15 15:08:38,027] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:08:38,028] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:08:38,430] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:08:38,432] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:08:38,998] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:08:38,999] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:08:39,430] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:08:39,431] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:08:39,838] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:08:39,839] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:08:40,232] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:08:40,233] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:08:40,631] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:08:40,632] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:08:41,033] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:08:41,034] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:08:41,563] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:08:41,564] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:08:41,931] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:08:41,932] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:08:42,326] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:08:42,327] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:08:42,718] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:08:42,720] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:08:43,113] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:08:43,114] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:08:43,607] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:08:43,609] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:08:43,983] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:08:43,985] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:08:44,384] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:08:44,385] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:08:44,758] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:08:44,759] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:08:45,131] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:08:45,132] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:08:45,645] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:08:45,646] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:08:46,017] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:08:46,019] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:08:46,436] {taskinstance.py:1718} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 188, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/Users/HomeFolder/airflow/dags/simple_dag.py", line 179, in to_sql
+    print(pd.concat([recipesql,recipelist], ignore_index=True))
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/reshape/concat.py", line 294, in concat
+    op = _Concatenator(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/reshape/concat.py", line 384, in __init__
+    raise TypeError(msg)
+TypeError: cannot concatenate object of type '<class 'list'>'; only Series and DataFrame objs are valid
+[2022-03-15 15:08:46,450] {taskinstance.py:1272} INFO - Marking task as FAILED. dag_id=simple_dag, task_id=to_sql, execution_date=20220315T150707, start_date=20220315T200837, end_date=20220315T200846
+[2022-03-15 15:08:46,461] {standard_task_runner.py:89} ERROR - Failed to execute job 336 for task to_sql
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 180, in _run_raw_task
+    ti._run_raw_task(
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 188, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/Users/HomeFolder/airflow/dags/simple_dag.py", line 179, in to_sql
+    print(pd.concat([recipesql,recipelist], ignore_index=True))
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/reshape/concat.py", line 294, in concat
+    op = _Concatenator(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/reshape/concat.py", line 384, in __init__
+    raise TypeError(msg)
+TypeError: cannot concatenate object of type '<class 'list'>'; only Series and DataFrame objs are valid
+[2022-03-15 15:08:46,500] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-03-15 15:08:46,519] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

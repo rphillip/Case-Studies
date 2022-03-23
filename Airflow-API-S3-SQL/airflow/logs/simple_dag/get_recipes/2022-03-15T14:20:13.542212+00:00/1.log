@@ -1,0 +1,88 @@
+[2022-03-15 14:25:47,526] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.get_recipes scheduled__2022-03-15T14:20:13.542212+00:00 [queued]>
+[2022-03-15 14:25:47,535] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.get_recipes scheduled__2022-03-15T14:20:13.542212+00:00 [queued]>
+[2022-03-15 14:25:47,535] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-15 14:25:47,535] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-15 14:25:47,535] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-15 14:25:47,547] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): get_recipes> on 2022-03-15 14:20:13.542212+00:00
+[2022-03-15 14:25:47,551] {standard_task_runner.py:52} INFO - Started process 26542 to run task
+[2022-03-15 14:25:47,558] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'simple_dag', 'get_recipes', 'scheduled__2022-03-15T14:20:13.542212+00:00', '--job-id', '334', '--raw', '--subdir', 'DAGS_FOLDER/simple_dag.py', '--cfg-path', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmp78vxcavd', '--error-file', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmph5s3g8ia']
+[2022-03-15 14:25:47,561] {standard_task_runner.py:77} INFO - Job 334: Subtask get_recipes
+[2022-03-15 14:25:47,616] {logging_mixin.py:109} INFO - Running <TaskInstance: simple_dag.get_recipes scheduled__2022-03-15T14:20:13.542212+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-03-15 14:25:47,665] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=simple_dag
+AIRFLOW_CTX_TASK_ID=get_recipes
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-15T14:20:13.542212+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-15T14:20:13.542212+00:00
+[2022-03-15 14:25:47,679] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 14:25:47,681] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 14:25:48,059] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 14:25:48,060] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 14:25:50,425] {s3.py:729} INFO - Deleted: ['raw/user-2022-03-14 12:17:13.556070.json']
+[2022-03-15 14:25:50,431] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 14:25:50,432] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 14:25:51,554] {s3.py:729} INFO - Deleted: ['raw/user-2022-03-15 14:01:14.051773.json']
+[2022-03-15 14:25:51,559] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 14:25:51,560] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 14:25:52,683] {s3.py:729} INFO - Deleted: ['raw/user-2022-03-15 14:01:16.139768.json']
+[2022-03-15 14:25:52,688] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 14:25:52,689] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 14:25:55,841] {s3.py:729} INFO - Deleted: ['raw/user-2022-03-15 14:01:18.234607.json']
+[2022-03-15 14:25:55,845] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 14:25:55,846] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 14:25:59,996] {s3.py:729} INFO - Deleted: ['raw/user-2022-03-15 14:01:20.330140.json']
+[2022-03-15 14:26:00,003] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 14:26:00,005] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 14:26:01,120] {s3.py:729} INFO - Deleted: ['raw/user-2022-03-15 14:01:22.423326.json']
+[2022-03-15 14:26:01,125] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 14:26:01,126] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 14:26:06,460] {s3.py:729} INFO - Deleted: ['raw/user-2022-03-15 14:01:24.519682.json']
+[2022-03-15 14:26:06,466] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 14:26:06,467] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 14:26:12,422] {s3.py:729} INFO - Deleted: ['raw/user-2022-03-15 14:01:26.608506.json']
+[2022-03-15 14:26:12,427] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 14:26:12,428] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 14:26:19,690] {s3.py:729} INFO - Deleted: ['raw/user-2022-03-15 14:01:28.704233.json']
+[2022-03-15 14:26:19,695] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 14:26:19,696] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 14:26:27,209] {s3.py:729} INFO - Deleted: ['raw/user-2022-03-15 14:01:30.798118.json']
+[2022-03-15 14:26:27,215] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 14:26:27,216] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 14:26:35,592] {s3.py:729} INFO - Deleted: ['raw/user-2022-03-15 14:01:32.890768.json']
+[2022-03-15 14:26:35,598] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 14:26:35,599] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 14:26:43,862] {s3.py:729} INFO - Deleted: ['raw/user-2022-03-15 14:01:34.984628.json']
+[2022-03-15 14:26:43,866] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 14:26:43,867] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 14:26:53,617] {s3.py:729} INFO - Deleted: ['raw/user-2022-03-15 14:01:37.075361.json']
+[2022-03-15 14:26:53,621] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 14:26:53,622] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 14:26:54,893] {s3.py:729} INFO - Deleted: ['raw/user-2022-03-15 14:01:39.166851.json']
+[2022-03-15 14:26:54,898] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 14:26:54,900] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 14:27:04,997] {s3.py:729} INFO - Deleted: ['raw/user-2022-03-15 14:01:41.257404.json']
+[2022-03-15 14:27:05,002] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 14:27:05,003] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 14:27:08,531] {local_task_job.py:191} WARNING - The recorded hostname 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa does not match this instance's hostname MacBook-Pro.local
+[2022-03-15 14:27:08,552] {process_utils.py:120} INFO - Sending Signals.SIGTERM to group 26542. PIDs of all processes in the group: [26542]
+[2022-03-15 14:27:08,553] {process_utils.py:75} INFO - Sending the signal Signals.SIGTERM to group 26542
+[2022-03-15 14:27:08,553] {taskinstance.py:1413} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-03-15 14:27:08,569] {logging_mixin.py:109} INFO - Task received SIGTERM signal
+[2022-03-15 14:27:16,651] {s3.py:729} INFO - Deleted: ['raw/user-2022-03-15 14:01:43.371615.json']
+[2022-03-15 14:27:16,657] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 14:27:16,658] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 14:27:28,195] {s3.py:729} INFO - Deleted: ['raw/user-2022-03-15 14:01:45.463645.json']
+[2022-03-15 14:27:28,201] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 14:27:28,202] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 14:27:40,342] {s3.py:729} INFO - Deleted: ['raw/user-2022-03-15 14:01:47.556864.json']
+[2022-03-15 14:27:40,355] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 14:27:40,356] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 14:27:52,825] {s3.py:729} INFO - Deleted: ['raw/user-2022-03-15 14:01:51.740467.json']
+[2022-03-15 14:27:52,831] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 14:27:52,832] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 14:27:53,830] {s3.py:729} INFO - Deleted: ['raw/user-2022-03-15 14:01:53.834073.json']
+[2022-03-15 14:27:53,834] {python.py:175} INFO - Done. Returned value was: None
+[2022-03-15 14:27:53,843] {taskinstance.py:1272} INFO - Marking task as SUCCESS. dag_id=simple_dag, task_id=get_recipes, execution_date=20220315T142013, start_date=20220315T192547, end_date=20220315T192753
+[2022-03-15 14:27:53,915] {process_utils.py:70} INFO - Process psutil.Process(pid=26542, status='terminated', exitcode=0, started='14:25:47') (26542) terminated with exit code 0

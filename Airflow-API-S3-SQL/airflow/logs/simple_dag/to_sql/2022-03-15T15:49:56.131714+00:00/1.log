@@ -1,0 +1,87 @@
+[2022-03-15 15:51:12,086] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.to_sql scheduled__2022-03-15T15:49:56.131714+00:00 [queued]>
+[2022-03-15 15:51:12,093] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.to_sql scheduled__2022-03-15T15:49:56.131714+00:00 [queued]>
+[2022-03-15 15:51:12,093] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-15 15:51:12,093] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-15 15:51:12,093] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-15 15:51:12,102] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): to_sql> on 2022-03-15 15:49:56.131714+00:00
+[2022-03-15 15:51:12,106] {standard_task_runner.py:52} INFO - Started process 29213 to run task
+[2022-03-15 15:51:12,112] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'simple_dag', 'to_sql', 'scheduled__2022-03-15T15:49:56.131714+00:00', '--job-id', '352', '--raw', '--subdir', 'DAGS_FOLDER/simple_dag.py', '--cfg-path', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmp9w58gj5q', '--error-file', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmprdhyew6h']
+[2022-03-15 15:51:12,115] {standard_task_runner.py:77} INFO - Job 352: Subtask to_sql
+[2022-03-15 15:51:12,166] {logging_mixin.py:109} INFO - Running <TaskInstance: simple_dag.to_sql scheduled__2022-03-15T15:49:56.131714+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-03-15 15:51:12,264] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=simple_dag
+AIRFLOW_CTX_TASK_ID=to_sql
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-15T15:49:56.131714+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-15T15:49:56.131714+00:00
+[2022-03-15 15:51:13,523] {logging_mixin.py:109} INFO - Empty DataFrame
+Columns: [id, title, servings, summary, diets, equipment, ingredients]
+Index: []
+[2022-03-15 15:51:13,534] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:51:13,535] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:51:14,060] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:51:14,061] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:51:14,606] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:51:14,607] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:51:15,005] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:51:15,006] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:51:15,401] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:51:15,402] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:51:15,815] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:51:15,816] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:51:16,664] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:51:16,665] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:51:17,339] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:51:17,341] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:51:17,883] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:51:17,885] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:51:18,330] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:51:18,331] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:51:18,898] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:51:18,899] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:51:19,325] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:51:19,326] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:51:19,945] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:51:19,946] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:51:20,512] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:51:20,513] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:51:20,914] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:51:20,915] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:51:21,356] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:51:21,357] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:51:21,910] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:51:21,911] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:51:22,333] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:51:22,334] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:51:22,849] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:51:22,850] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:51:23,301] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 15:51:23,302] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 15:51:23,734] {logging_mixin.py:109} INFO -         id                                              title  ...                                          equipment                                        ingredients
+0   635675                                  Boozy Bbq Chicken  ...  [frying pan, paper towels, skewers, bowl, sauc...  [drink, salt and pepper, whole chicken, pepper...
+1   637162  Carrot and Cabbage Salad With Coriander+cumin ...  ...                                                NaN  [cabbage, lime juice, spices, fresh cilantro, ...
+2   641975                          Easy Ginger Beef Broccoli  ...                            [wok, frying pan, bowl]  [broth, soy sauce, ginger, broccoli, beef, sug...
+3   644387                                      Garlicky Kale  ...                                              [pot]                 [vinegar, olive oil, kale, garlic]
+4   648320                         Jade Buddha Salmon Tartare  ...                                                NaN                              [vinegar, lime juice]
+5   659143  Salmon, Watercress, Fennel and Baby Beetroot S...  ...           [whisk, slotted spoon, frying pan, bowl]  [beet, black pepper, fennel, wine, water, wate...
+6   660405     Smoky Black Bean Soup With Sweet Potato & Kale  ...                       [pot, baking sheet, blender]  [broth, onion, salt and pepper, spread, pepper...
+7   663985               Turkey and Rice Stuffed Acorn Squash  ...                                 [oven, frying pan]  [vegeta, red pepper, spinach, salt and pepper,...
+8   715446                              Slow Cooker Beef Stew  ...                                      [slow cooker]  [cream of mushroom soup, salt and pepper, onio...
+9   715543                                 Homemade Guacamole  ...                                                NaN                                                NaN
+10  715594             Homemade Garlic and Basil French Fries  ...                                                NaN                                                NaN
+11  716268                        African Chicken Peanut Stew  ...                                        [pot, bowl]  [salt and pepper, ginger, sweet potato, potato...
+12  716408  Greek-Style Baked Fish: Fresh, Simple, and Del...  ...                                 [oven, baking pan]  [oregano, fresh basil, tomato, salt and pepper...
+13  716426  Cauliflower, Brown Rice, and Vegetable Fried Rice  ...                       [frying pan, food processor]  [cauliflower rice, cauliflower florets, butter...
+14  729366                                     Plantain Salad  ...                                 [bowl, frying pan]  [plantain, shrimp, vegetable, vegetable oil, p...
+15  766453                                 Hummus and Za'atar  ...      [bowl, frying pan, sauce pan, food processor]  [toast, zaatar, vegetable, paprika, salt, seas...
+16  769774  Shredded Roast Beef Stuffed Sweet Potatoes (Wh...  ...                                                NaN                                                NaN
+17  794349                   Broccoli and Chickpea Rice Salad  ...                          [whisk, frying pan, bowl]                 [broccoli, seasoning, cooking oil]
+18  798400  Spicy Black-Eyed Pea Curry with Swiss Chard an...  ...  [frying pan, oven, sauce pan, roasting pan, si...  [chili pepper, lemon juice, shallot, spices, p...
+
+[19 rows x 7 columns]
+[2022-03-15 15:51:23,777] {python.py:175} INFO - Done. Returned value was: None
+[2022-03-15 15:51:23,786] {taskinstance.py:1272} INFO - Marking task as SUCCESS. dag_id=simple_dag, task_id=to_sql, execution_date=20220315T154956, start_date=20220315T205112, end_date=20220315T205123
+[2022-03-15 15:51:23,844] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-15 15:51:23,863] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,234 @@
+[2022-03-15 14:10:02,215] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.to_sql scheduled__2022-03-15T14:05:00+00:00 [queued]>
+[2022-03-15 14:10:02,224] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.to_sql scheduled__2022-03-15T14:05:00+00:00 [queued]>
+[2022-03-15 14:10:02,225] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-15 14:10:02,225] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-15 14:10:02,225] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-15 14:10:02,235] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): to_sql> on 2022-03-15 14:05:00+00:00
+[2022-03-15 14:10:02,239] {standard_task_runner.py:52} INFO - Started process 26076 to run task
+[2022-03-15 14:10:02,246] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'simple_dag', 'to_sql', 'scheduled__2022-03-15T14:05:00+00:00', '--job-id', '325', '--raw', '--subdir', 'DAGS_FOLDER/simple_dag.py', '--cfg-path', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpghcd3_zf', '--error-file', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpn_xzfc3h']
+[2022-03-15 14:10:02,250] {standard_task_runner.py:77} INFO - Job 325: Subtask to_sql
+[2022-03-15 14:10:02,307] {logging_mixin.py:109} INFO - Running <TaskInstance: simple_dag.to_sql scheduled__2022-03-15T14:05:00+00:00 [running]> on host MacBook-Pro.local
+[2022-03-15 14:10:02,355] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=simple_dag
+AIRFLOW_CTX_TASK_ID=to_sql
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-15T14:05:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-15T14:05:00+00:00
+[2022-03-15 14:10:03,198] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 14:10:03,200] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 14:10:04,133] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 14:10:04,135] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 14:10:04,684] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 14:10:04,686] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 14:10:05,081] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 14:10:05,082] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 14:10:05,488] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 14:10:05,489] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 14:10:05,879] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 14:10:05,880] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 14:10:06,284] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 14:10:06,285] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 14:10:06,696] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 14:10:06,697] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 14:10:07,240] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 14:10:07,241] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 14:10:08,081] {local_task_job.py:191} WARNING - The recorded hostname MacBook-Pro.local does not match this instance's hostname 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-03-15 14:10:08,097] {process_utils.py:120} INFO - Sending Signals.SIGTERM to group 26076. PIDs of all processes in the group: [26076]
+[2022-03-15 14:10:08,097] {process_utils.py:75} INFO - Sending the signal Signals.SIGTERM to group 26076
+[2022-03-15 14:10:08,097] {taskinstance.py:1413} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-03-15 14:10:08,099] {taskinstance.py:1718} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/httpsession.py", line 403, in send
+    urllib_response = conn.urlopen(
+  File "/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/opt/anaconda3/lib/python3.9/http/client.py", line 1371, in getresponse
+    response.begin()
+  File "/opt/anaconda3/lib/python3.9/http/client.py", line 319, in begin
+    version, status, reason = self._read_status()
+  File "/opt/anaconda3/lib/python3.9/http/client.py", line 280, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/opt/anaconda3/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/opt/anaconda3/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/opt/anaconda3/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1415, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 188, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/Users/HomeFolder/airflow/dags/simple_dag.py", line 166, in to_sql
+    object = s3_hook.get_key(bucket_name=BUCKET_NAME, key=key).get()['Body'].read().decode('utf-8')
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 62, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 90, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 340, in get_key
+    obj.load()
+  File "/opt/anaconda3/lib/python3.9/site-packages/boto3/resources/factory.py", line 505, in do_action
+    response = action(self, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/boto3/resources/action.py", line 83, in __call__
+    response = getattr(parent.meta.client, operation_name)(*args, **params)
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/client.py", line 391, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/client.py", line 705, in _make_api_call
+    http, parsed_response = self._make_request(
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/client.py", line 725, in _make_request
+    return self._endpoint.make_request(operation_model, request_dict)
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/endpoint.py", line 106, in make_request
+    return self._send_request(request_dict, operation_model)
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/endpoint.py", line 182, in _send_request
+    while self._needs_retry(attempts, operation_model, request_dict,
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/endpoint.py", line 301, in _needs_retry
+    responses = self._event_emitter.emit(
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/hooks.py", line 357, in emit
+    return self._emitter.emit(aliased_event_name, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/hooks.py", line 228, in emit
+    return self._emit(event_name, kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/hooks.py", line 211, in _emit
+    response = handler(**kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/retryhandler.py", line 192, in __call__
+    if self._checker(**checker_kwargs):
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/retryhandler.py", line 265, in __call__
+    should_retry = self._should_retry(attempt_number, response,
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/retryhandler.py", line 284, in _should_retry
+    return self._checker(attempt_number, response, caught_exception)
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/retryhandler.py", line 331, in __call__
+    checker_response = checker(attempt_number, response,
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/retryhandler.py", line 231, in __call__
+    return self._check_caught_exception(
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/retryhandler.py", line 374, in _check_caught_exception
+    raise caught_exception
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/endpoint.py", line 248, in _do_get_response
+    http_response = self._send(request)
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/endpoint.py", line 317, in _send
+    return self.http_session.send(request)
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/httpsession.py", line 448, in send
+    raise HTTPClientError(error=e)
+botocore.exceptions.HTTPClientError: An HTTP Client raised an unhandled exception: Task received SIGTERM signal
+[2022-03-15 14:10:08,268] {taskinstance.py:1272} INFO - Marking task as FAILED. dag_id=simple_dag, task_id=to_sql, execution_date=20220315T140500, start_date=20220315T191002, end_date=20220315T191008
+[2022-03-15 14:10:08,279] {standard_task_runner.py:89} ERROR - Failed to execute job 325 for task to_sql
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/httpsession.py", line 403, in send
+    urllib_response = conn.urlopen(
+  File "/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/opt/anaconda3/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/opt/anaconda3/lib/python3.9/http/client.py", line 1371, in getresponse
+    response.begin()
+  File "/opt/anaconda3/lib/python3.9/http/client.py", line 319, in begin
+    version, status, reason = self._read_status()
+  File "/opt/anaconda3/lib/python3.9/http/client.py", line 280, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/opt/anaconda3/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/opt/anaconda3/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/opt/anaconda3/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1415, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 180, in _run_raw_task
+    ti._run_raw_task(
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 188, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/Users/HomeFolder/airflow/dags/simple_dag.py", line 166, in to_sql
+    object = s3_hook.get_key(bucket_name=BUCKET_NAME, key=key).get()['Body'].read().decode('utf-8')
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 62, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 90, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 340, in get_key
+    obj.load()
+  File "/opt/anaconda3/lib/python3.9/site-packages/boto3/resources/factory.py", line 505, in do_action
+    response = action(self, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/boto3/resources/action.py", line 83, in __call__
+    response = getattr(parent.meta.client, operation_name)(*args, **params)
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/client.py", line 391, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/client.py", line 705, in _make_api_call
+    http, parsed_response = self._make_request(
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/client.py", line 725, in _make_request
+    return self._endpoint.make_request(operation_model, request_dict)
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/endpoint.py", line 106, in make_request
+    return self._send_request(request_dict, operation_model)
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/endpoint.py", line 182, in _send_request
+    while self._needs_retry(attempts, operation_model, request_dict,
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/endpoint.py", line 301, in _needs_retry
+    responses = self._event_emitter.emit(
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/hooks.py", line 357, in emit
+    return self._emitter.emit(aliased_event_name, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/hooks.py", line 228, in emit
+    return self._emit(event_name, kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/hooks.py", line 211, in _emit
+    response = handler(**kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/retryhandler.py", line 192, in __call__
+    if self._checker(**checker_kwargs):
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/retryhandler.py", line 265, in __call__
+    should_retry = self._should_retry(attempt_number, response,
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/retryhandler.py", line 284, in _should_retry
+    return self._checker(attempt_number, response, caught_exception)
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/retryhandler.py", line 331, in __call__
+    checker_response = checker(attempt_number, response,
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/retryhandler.py", line 231, in __call__
+    return self._check_caught_exception(
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/retryhandler.py", line 374, in _check_caught_exception
+    raise caught_exception
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/endpoint.py", line 248, in _do_get_response
+    http_response = self._send(request)
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/endpoint.py", line 317, in _send
+    return self.http_session.send(request)
+  File "/opt/anaconda3/lib/python3.9/site-packages/botocore/httpsession.py", line 448, in send
+    raise HTTPClientError(error=e)
+botocore.exceptions.HTTPClientError: An HTTP Client raised an unhandled exception: Task received SIGTERM signal
+[2022-03-15 14:10:08,327] {process_utils.py:70} INFO - Process psutil.Process(pid=26076, status='terminated', exitcode=1, started='14:10:02') (26076) terminated with exit code 1

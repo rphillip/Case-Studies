@@ -1,0 +1,148 @@
+[2022-03-15 19:37:09,349] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.to_sql scheduled__2022-03-15T19:35:56.810652+00:00 [queued]>
+[2022-03-15 19:37:09,355] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.to_sql scheduled__2022-03-15T19:35:56.810652+00:00 [queued]>
+[2022-03-15 19:37:09,355] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-15 19:37:09,355] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-15 19:37:09,356] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-15 19:37:09,365] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): to_sql> on 2022-03-15 19:35:56.810652+00:00
+[2022-03-15 19:37:09,369] {standard_task_runner.py:52} INFO - Started process 35514 to run task
+[2022-03-15 19:37:09,374] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'simple_dag', 'to_sql', 'scheduled__2022-03-15T19:35:56.810652+00:00', '--job-id', '374', '--raw', '--subdir', 'DAGS_FOLDER/simple_dag.py', '--cfg-path', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpt9em9dmd', '--error-file', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpi4dmiq85']
+[2022-03-15 19:37:09,378] {standard_task_runner.py:77} INFO - Job 374: Subtask to_sql
+[2022-03-15 19:37:09,429] {logging_mixin.py:109} INFO - Running <TaskInstance: simple_dag.to_sql scheduled__2022-03-15T19:35:56.810652+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-03-15 19:37:09,478] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=simple_dag
+AIRFLOW_CTX_TASK_ID=to_sql
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-15T19:35:56.810652+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-15T19:35:56.810652+00:00
+[2022-03-15 19:37:10,280] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:10,282] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:10,767] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:10,768] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:11,328] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:11,329] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:11,774] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:11,775] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:12,204] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:12,206] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:12,623] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:12,627] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:13,033] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:13,034] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:13,445] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:13,446] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:13,999] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:14,000] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:14,534] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:14,535] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:14,929] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:14,930] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:15,309] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:15,311] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:15,733] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:15,734] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:16,252] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:16,253] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:16,640] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:16,641] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:17,059] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:17,060] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:17,484] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:17,485] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:17,902] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:17,903] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:18,428] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:18,429] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:18,812] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:18,813] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:19,248] {logging_mixin.py:109} INFO -         id                                              title  ...                                          equipment                                        ingredients
+0   635675                                  Boozy Bbq Chicken  ...  [frying pan, paper towels, skewers, bowl, sauc...  [drink, salt and pepper, whole chicken, pepper...
+1   637162  Carrot and Cabbage Salad With Coriander+cumin ...  ...                                                NaN  [cabbage, lime juice, spices, fresh cilantro, ...
+2   641975                          Easy Ginger Beef Broccoli  ...                            [wok, frying pan, bowl]  [broth, soy sauce, ginger, broccoli, beef, sug...
+3   644387                                      Garlicky Kale  ...                                              [pot]                 [vinegar, olive oil, kale, garlic]
+4   648320                         Jade Buddha Salmon Tartare  ...                                                NaN                              [vinegar, lime juice]
+5   659143  Salmon, Watercress, Fennel and Baby Beetroot S...  ...           [whisk, slotted spoon, frying pan, bowl]  [beet, black pepper, fennel, wine, water, wate...
+6   660405     Smoky Black Bean Soup With Sweet Potato & Kale  ...                       [pot, baking sheet, blender]  [broth, onion, salt and pepper, spread, pepper...
+7   663985               Turkey and Rice Stuffed Acorn Squash  ...                                 [oven, frying pan]  [vegeta, red pepper, spinach, salt and pepper,...
+8   715446                              Slow Cooker Beef Stew  ...                                      [slow cooker]  [cream of mushroom soup, salt and pepper, onio...
+9   715543                                 Homemade Guacamole  ...                                                NaN                                                NaN
+10  715594             Homemade Garlic and Basil French Fries  ...                                                NaN                                                NaN
+11  716268                        African Chicken Peanut Stew  ...                                        [pot, bowl]  [salt and pepper, ginger, sweet potato, potato...
+12  716408  Greek-Style Baked Fish: Fresh, Simple, and Del...  ...                                 [oven, baking pan]  [oregano, fresh basil, tomato, salt and pepper...
+13  716426  Cauliflower, Brown Rice, and Vegetable Fried Rice  ...                       [frying pan, food processor]  [cauliflower rice, cauliflower florets, butter...
+14  729366                                     Plantain Salad  ...                                 [bowl, frying pan]  [plantain, shrimp, vegetable, vegetable oil, p...
+15  766453                                 Hummus and Za'atar  ...      [bowl, frying pan, sauce pan, food processor]  [toast, zaatar, vegetable, paprika, salt, seas...
+16  769774  Shredded Roast Beef Stuffed Sweet Potatoes (Wh...  ...                                                NaN                                                NaN
+17  794349                   Broccoli and Chickpea Rice Salad  ...                          [whisk, frying pan, bowl]                 [broccoli, seasoning, cooking oil]
+18  798400  Spicy Black-Eyed Pea Curry with Swiss Chard an...  ...  [frying pan, oven, sauce pan, roasting pan, si...  [chili pepper, lemon juice, shallot, spices, p...
+
+[19 rows x 7 columns]
+[2022-03-15 19:37:21,509] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:21,510] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:21,968] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:21,971] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:22,435] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:22,436] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:22,901] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:22,903] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:23,511] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:23,512] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:23,901] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:23,902] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:24,357] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:24,358] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:24,795] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:24,796] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:25,194] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:25,198] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:25,769] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:25,770] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:26,169] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:26,170] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:26,660] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:26,662] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:27,068] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:27,069] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:27,624] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:27,625] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:28,305] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:28,306] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:28,714] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:28,716] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:29,139] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:29,140] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:29,565] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:29,566] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:29,979] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:29,980] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:30,550] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:37:30,551] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:37:30,948] {logging_mixin.py:109} INFO -                                               address                                        description               name                                            recipes
+0               425 Murray Field\nWest Dean, NE 27922  Defense whatever thought.\nPlace none pretty s...         Joe Miller                                   [716426, 644387]
+1   7866 Olivia Forge Suite 990\nVanessaborough, V...  Oil fly charge action will catch for. Far ente...   Kathryn Martinez                   [716426, 644387, 769774, 660405]
+2   3841 Brian Grove Apt. 025\nPort Michelle, IL 0...  Well after important smile cell main other. Sp...     Vickie Hammond   [716426, 644387, 769774, 660405, 794349, 766453]
+3            3400 Ronald Prairie\nSmithland, MN 59978  War walk trial my indicate just.\nHead power c...            Anna Le   [716426, 644387, 769774, 660405, 794349, 766453]
+4           07227 Barbara Vista\nStevenbury, MD 07127  Chair them way agency. A drug cell choice rest...   Kimberly Johnson   [716426, 644387, 769774, 660405, 794349, 766453]
+5              148 Timothy Lakes\nBauerland, IL 49873  Trade red treatment would. Improve fact same t...           Kim Hall  [644387, 769774, 660405, 794349, 766453, 71642...
+6   0253 Elizabeth Forest Suite 006\nCandicefurt, ...  Owner attention week. All art someone law lead...      Tracy Hawkins  [644387, 660405, 794349, 766453, 716426, 71559...
+7       58137 Alan Highway\nSouth Erikaside, CA 25845  Religious some church choice and rate. Bit pur...      Cynthia Young  [644387, 660405, 794349, 715594, 716268, 76977...
+8   603 Diane Club Apt. 427\nSouth Madisonview, CO...  Wait final event where want. Mind ask recogniz...  Raymond Adams PhD  [644387, 660405, 794349, 715594, 716268, 76977...
+9   554 Maldonado Trafficway Suite 274\nEast Alice...  Six read area agency popular responsibility la...        John Romero  [644387, 660405, 794349, 715594, 716268, 76977...
+10        5879 Collins Points\nDavisborough, AK 45910  Play material sense movement man final. Him he...       Karen Taylor  [644387, 660405, 794349, 715594, 716268, 76977...
+11    550 Nichols Isle Suite 592\nCookmouth, DC 28172  Address charge right help exactly beat meet ex...    Jeremy Gallegos  [644387, 660405, 794349, 715594, 716268, 76977...
+12   445 William Lane\nWest Jonathanborough, MI 60894  Point reach prevent. Day very TV.\nBag ground ...        John Sutton  [644387, 660405, 794349, 715594, 769774, 71642...
+13        68729 Brandon Turnpike\nJamesside, CO 18925  Various present any according person view educ...        Tyler Davis  [644387, 660405, 794349, 715594, 769774, 71642...
+14        3436 Sanders Plaza\nTaylorchester, NH 74985  Director challenge all pick popular figure wor...     Jessica Gibson  [644387, 660405, 794349, 715594, 769774, 71642...
+15  746 Washington Meadows Suite 222\nNew Claire, ...  Day PM social. Change woman raise. Happy all s...       Tiffany Cook  [644387, 660405, 794349, 769774, 766453, 71544...
+16                   Unit 1435 Box 1089\nDPO AP 17334  Option later process bit gas. Watch spring lea...  Russell Hernandez  [644387, 660405, 794349, 769774, 766453, 71544...
+17         84183 Betty Vista\nThomasborough, MS 35448  Number themselves partner interview enter stay...        Paula Smith  [644387, 660405, 794349, 769774, 766453, 79840...
+18    771 Joshua Falls Apt. 333\nDanielfurt, MI 06241  Morning system trial. Hard individual pressure...         Lisa Lewis  [644387, 660405, 794349, 769774, 766453, 79840...
+19                306 Lisa Cape\nPhiliptown, KS 66803  Place step number approach light less fire. En...      Oscar Marquez  [644387, 660405, 794349, 769774, 766453, 79840...
+[2022-03-15 19:37:31,624] {logging_mixin.py:109} INFO - Empty DataFrame
+Columns: [name, address, description, recipes]
+Index: []
+[2022-03-15 19:37:33,264] {python.py:175} INFO - Done. Returned value was: None
+[2022-03-15 19:37:33,272] {taskinstance.py:1272} INFO - Marking task as SUCCESS. dag_id=simple_dag, task_id=to_sql, execution_date=20220315T193556, start_date=20220316T003709, end_date=20220316T003733
+[2022-03-15 19:37:33,315] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-15 19:37:33,336] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

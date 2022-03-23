@@ -1,0 +1,98 @@
+[2022-03-15 10:48:13,982] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.get_recipes scheduled__2022-03-15T10:44:00+00:00 [queued]>
+[2022-03-15 10:48:13,990] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.get_recipes scheduled__2022-03-15T10:44:00+00:00 [queued]>
+[2022-03-15 10:48:13,990] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-15 10:48:13,990] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-15 10:48:13,990] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-15 10:48:14,003] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): get_recipes> on 2022-03-15 10:44:00+00:00
+[2022-03-15 10:48:14,007] {standard_task_runner.py:52} INFO - Started process 19593 to run task
+[2022-03-15 10:48:14,014] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'simple_dag', 'get_recipes', 'scheduled__2022-03-15T10:44:00+00:00', '--job-id', '267', '--raw', '--subdir', 'DAGS_FOLDER/simple_dag.py', '--cfg-path', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmp3dorqh2m', '--error-file', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpgm9o57pk']
+[2022-03-15 10:48:14,018] {standard_task_runner.py:77} INFO - Job 267: Subtask get_recipes
+[2022-03-15 10:48:14,079] {logging_mixin.py:109} INFO - Running <TaskInstance: simple_dag.get_recipes scheduled__2022-03-15T10:44:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-03-15 10:48:14,123] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=simple_dag
+AIRFLOW_CTX_TASK_ID=get_recipes
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-15T10:44:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-15T10:44:00+00:00
+[2022-03-15 10:48:14,138] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 10:48:14,139] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 10:48:14,542] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 10:48:14,543] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 10:48:15,574] {logging_mixin.py:109} INFO - got an unexpected keyword argument 'filename'
+[2022-03-15 10:48:15,576] {logging_mixin.py:109} INFO - got an unexpected keyword argument 'filename'
+[2022-03-15 10:48:15,578] {logging_mixin.py:109} INFO - got an unexpected keyword argument 'filename'
+[2022-03-15 10:48:15,580] {logging_mixin.py:109} INFO - got an unexpected keyword argument 'filename'
+[2022-03-15 10:48:15,582] {logging_mixin.py:109} INFO - got an unexpected keyword argument 'filename'
+[2022-03-15 10:48:15,584] {logging_mixin.py:109} INFO - got an unexpected keyword argument 'filename'
+[2022-03-15 10:48:15,586] {logging_mixin.py:109} INFO - got an unexpected keyword argument 'filename'
+[2022-03-15 10:48:15,589] {logging_mixin.py:109} INFO - got an unexpected keyword argument 'filename'
+[2022-03-15 10:48:15,591] {logging_mixin.py:109} INFO - got an unexpected keyword argument 'filename'
+[2022-03-15 10:48:15,593] {logging_mixin.py:109} INFO - got an unexpected keyword argument 'filename'
+[2022-03-15 10:48:15,594] {logging_mixin.py:109} INFO - got an unexpected keyword argument 'filename'
+[2022-03-15 10:48:15,599] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 10:48:15,600] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 10:48:16,453] {taskinstance.py:1718} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 188, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/Users/HomeFolder/airflow/dags/simple_dag.py", line 107, in get_recipes
+    dfrecipe = pd.concat([dfrecipe, getRecipe(response)], ignore_index=True)
+  File "/Users/HomeFolder/airflow/dags/simple_dag.py", line 23, in getRecipe
+    recipeout = recipelist[['title','servings','summary','diets']]
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/frame.py", line 3464, in __getitem__
+    indexer = self.loc._get_listlike_indexer(key, axis=1)[1]
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/indexing.py", line 1314, in _get_listlike_indexer
+    self._validate_read_indexer(keyarr, indexer, axis)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/indexing.py", line 1374, in _validate_read_indexer
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['title', 'servings', 'summary', 'diets'], dtype='object')] are in the [columns]"
+[2022-03-15 10:48:16,556] {taskinstance.py:1272} INFO - Marking task as FAILED. dag_id=simple_dag, task_id=get_recipes, execution_date=20220315T104400, start_date=20220315T154813, end_date=20220315T154816
+[2022-03-15 10:48:16,567] {standard_task_runner.py:89} ERROR - Failed to execute job 267 for task get_recipes
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 180, in _run_raw_task
+    ti._run_raw_task(
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 188, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/Users/HomeFolder/airflow/dags/simple_dag.py", line 107, in get_recipes
+    dfrecipe = pd.concat([dfrecipe, getRecipe(response)], ignore_index=True)
+  File "/Users/HomeFolder/airflow/dags/simple_dag.py", line 23, in getRecipe
+    recipeout = recipelist[['title','servings','summary','diets']]
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/frame.py", line 3464, in __getitem__
+    indexer = self.loc._get_listlike_indexer(key, axis=1)[1]
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/indexing.py", line 1314, in _get_listlike_indexer
+    self._validate_read_indexer(keyarr, indexer, axis)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/indexing.py", line 1374, in _validate_read_indexer
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['title', 'servings', 'summary', 'diets'], dtype='object')] are in the [columns]"
+[2022-03-15 10:48:16,608] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-03-15 10:48:16,628] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

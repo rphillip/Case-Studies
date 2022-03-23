@@ -1,0 +1,24 @@
+[2022-03-15 15:24:28,923] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.to_sql scheduled__2022-03-15T15:23:17.494685+00:00 [queued]>
+[2022-03-15 15:24:28,931] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.to_sql scheduled__2022-03-15T15:23:17.494685+00:00 [queued]>
+[2022-03-15 15:24:28,931] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-15 15:24:28,931] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-15 15:24:28,931] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-15 15:24:28,941] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): to_sql> on 2022-03-15 15:23:17.494685+00:00
+[2022-03-15 15:24:28,945] {standard_task_runner.py:52} INFO - Started process 28323 to run task
+[2022-03-15 15:24:28,951] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'simple_dag', 'to_sql', 'scheduled__2022-03-15T15:23:17.494685+00:00', '--job-id', '347', '--raw', '--subdir', 'DAGS_FOLDER/simple_dag.py', '--cfg-path', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpnqahx1yq', '--error-file', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpva8okrxf']
+[2022-03-15 15:24:28,955] {standard_task_runner.py:77} INFO - Job 347: Subtask to_sql
+[2022-03-15 15:24:29,009] {logging_mixin.py:109} INFO - Running <TaskInstance: simple_dag.to_sql scheduled__2022-03-15T15:23:17.494685+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-03-15 15:24:29,056] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=simple_dag
+AIRFLOW_CTX_TASK_ID=to_sql
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-15T15:23:17.494685+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-15T15:23:17.494685+00:00
+[2022-03-15 15:27:21,696] {process_utils.py:120} INFO - Sending Signals.SIGTERM to group 28323. PIDs of all processes in the group: [28323]
+[2022-03-15 15:27:21,696] {process_utils.py:75} INFO - Sending the signal Signals.SIGTERM to group 28323
+[2022-03-15 15:27:26,455] {taskinstance.py:1027} INFO - Dependencies not met for <TaskInstance: simple_dag.to_sql scheduled__2022-03-15T15:23:17.494685+00:00 [running]>, dependency 'Task Instance Not Running' FAILED: Task is in the running state
+[2022-03-15 15:27:26,458] {taskinstance.py:1027} INFO - Dependencies not met for <TaskInstance: simple_dag.to_sql scheduled__2022-03-15T15:23:17.494685+00:00 [running]>, dependency 'Task Instance State' FAILED: Task is in the 'running' state.
+[2022-03-15 15:27:26,460] {local_task_job.py:99} INFO - Task is not able to be run
+[2022-03-15 15:43:22,276] {taskinstance.py:1413} ERROR - Received SIGTERM. Terminating subprocesses.

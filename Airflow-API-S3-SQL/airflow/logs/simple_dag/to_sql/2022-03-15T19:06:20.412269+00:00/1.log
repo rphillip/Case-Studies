@@ -1,0 +1,253 @@
+[2022-03-15 19:07:28,611] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.to_sql scheduled__2022-03-15T19:06:20.412269+00:00 [queued]>
+[2022-03-15 19:07:28,619] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.to_sql scheduled__2022-03-15T19:06:20.412269+00:00 [queued]>
+[2022-03-15 19:07:28,619] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-15 19:07:28,619] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-15 19:07:28,619] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-15 19:07:28,638] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): to_sql> on 2022-03-15 19:06:20.412269+00:00
+[2022-03-15 19:07:28,642] {standard_task_runner.py:52} INFO - Started process 34656 to run task
+[2022-03-15 19:07:28,653] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'simple_dag', 'to_sql', 'scheduled__2022-03-15T19:06:20.412269+00:00', '--job-id', '368', '--raw', '--subdir', 'DAGS_FOLDER/simple_dag.py', '--cfg-path', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmp0tqe5mpx', '--error-file', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmp700sdtkt']
+[2022-03-15 19:07:28,656] {standard_task_runner.py:77} INFO - Job 368: Subtask to_sql
+[2022-03-15 19:07:28,706] {logging_mixin.py:109} INFO - Running <TaskInstance: simple_dag.to_sql scheduled__2022-03-15T19:06:20.412269+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-03-15 19:07:28,749] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=simple_dag
+AIRFLOW_CTX_TASK_ID=to_sql
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-15T19:06:20.412269+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-15T19:06:20.412269+00:00
+[2022-03-15 19:07:30,062] {logging_mixin.py:109} INFO -     index      id  ...                                          equipment                                        ingredients
+0       0  635675  ...  {"frying pan","paper towels",skewers,bowl,"sau...  {drink,"salt and pepper","whole chicken",peppe...
+1       1  637162  ...                                               None  {cabbage,"lime juice",spices,"fresh cilantro",...
+2       2  641975  ...                            {wok,"frying pan",bowl}  {broth,"soy sauce",ginger,broccoli,beef,sugar,...
+3       3  644387  ...                                              {pot}                  {vinegar,"olive oil",kale,garlic}
+4       4  648320  ...                                               None                             {vinegar,"lime juice"}
+5      10  715594  ...                                               None                                               None
+6       5  659143  ...          {whisk,"slotted spoon","frying pan",bowl}  {beet,"black pepper",fennel,wine,water,watercr...
+7       6  660405  ...                       {pot,"baking sheet",blender}  {broth,onion,"salt and pepper",spread,pepper,"...
+8       7  663985  ...                                {oven,"frying pan"}  {vegeta,"red pepper",spinach,"salt and pepper"...
+9       8  715446  ...                                    {"slow cooker"}  {"cream of mushroom soup","salt and pepper",on...
+10      9  715543  ...                                               None                                               None
+11     11  716268  ...                                         {pot,bowl}  {"salt and pepper",ginger,"sweet potato",potat...
+12     12  716408  ...                                {oven,"baking pan"}  {oregano,"fresh basil",tomato,"salt and pepper...
+13     13  716426  ...                    {"frying pan","food processor"}  {"cauliflower rice","cauliflower florets",butt...
+14     14  729366  ...                                {bowl,"frying pan"}  {plantain,shrimp,vegetable,"vegetable oil",par...
+15     15  766453  ...   {bowl,"frying pan","sauce pan","food processor"}  {toast,zaatar,vegetable,paprika,salt,seasoning...
+16     16  769774  ...                                               None                                               None
+17     17  794349  ...                          {whisk,"frying pan",bowl}                 {broccoli,seasoning,"cooking oil"}
+18     18  798400  ...  {"frying pan",oven,"sauce pan","roasting pan",...  {"chili pepper","lemon juice",shallot,spices,p...
+
+[19 rows x 8 columns]
+[2022-03-15 19:07:30,071] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:07:30,072] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:07:30,787] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:07:30,789] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:07:31,314] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:07:31,315] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:07:31,874] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:07:31,875] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:07:32,318] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:07:32,320] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:07:32,725] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:07:32,726] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:07:33,148] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:07:33,150] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:07:33,556] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:07:33,557] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:07:34,409] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:07:34,410] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:07:34,781] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:07:34,782] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:07:35,165] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:07:35,166] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:07:35,542] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:07:35,543] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:07:36,003] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:07:36,004] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:07:36,538] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:07:36,539] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:07:36,941] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:07:36,942] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:07:37,326] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:07:37,327] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:07:37,730] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:07:37,731] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:07:38,156] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:07:38,157] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:07:38,767] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:07:38,768] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:07:39,191] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 19:07:39,192] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 19:07:39,614] {logging_mixin.py:109} INFO -         id                                              title  ...                                          equipment                                        ingredients
+0   635675                                  Boozy Bbq Chicken  ...  [frying pan, paper towels, skewers, bowl, sauc...  [drink, salt and pepper, whole chicken, pepper...
+1   637162  Carrot and Cabbage Salad With Coriander+cumin ...  ...                                                NaN  [cabbage, lime juice, spices, fresh cilantro, ...
+2   641975                          Easy Ginger Beef Broccoli  ...                            [wok, frying pan, bowl]  [broth, soy sauce, ginger, broccoli, beef, sug...
+3   644387                                      Garlicky Kale  ...                                              [pot]                 [vinegar, olive oil, kale, garlic]
+4   648320                         Jade Buddha Salmon Tartare  ...                                                NaN                              [vinegar, lime juice]
+5   659143  Salmon, Watercress, Fennel and Baby Beetroot S...  ...           [whisk, slotted spoon, frying pan, bowl]  [beet, black pepper, fennel, wine, water, wate...
+6   660405     Smoky Black Bean Soup With Sweet Potato & Kale  ...                       [pot, baking sheet, blender]  [broth, onion, salt and pepper, spread, pepper...
+7   663985               Turkey and Rice Stuffed Acorn Squash  ...                                 [oven, frying pan]  [vegeta, red pepper, spinach, salt and pepper,...
+8   715446                              Slow Cooker Beef Stew  ...                                      [slow cooker]  [cream of mushroom soup, salt and pepper, onio...
+9   715543                                 Homemade Guacamole  ...                                                NaN                                                NaN
+10  715594             Homemade Garlic and Basil French Fries  ...                                                NaN                                                NaN
+11  716268                        African Chicken Peanut Stew  ...                                        [pot, bowl]  [salt and pepper, ginger, sweet potato, potato...
+12  716408  Greek-Style Baked Fish: Fresh, Simple, and Del...  ...                                 [oven, baking pan]  [oregano, fresh basil, tomato, salt and pepper...
+13  716426  Cauliflower, Brown Rice, and Vegetable Fried Rice  ...                       [frying pan, food processor]  [cauliflower rice, cauliflower florets, butter...
+14  729366                                     Plantain Salad  ...                                 [bowl, frying pan]  [plantain, shrimp, vegetable, vegetable oil, p...
+15  766453                                 Hummus and Za'atar  ...      [bowl, frying pan, sauce pan, food processor]  [toast, zaatar, vegetable, paprika, salt, seas...
+16  769774  Shredded Roast Beef Stuffed Sweet Potatoes (Wh...  ...                                                NaN                                                NaN
+17  794349                   Broccoli and Chickpea Rice Salad  ...                          [whisk, frying pan, bowl]                 [broccoli, seasoning, cooking oil]
+18  798400  Spicy Black-Eyed Pea Curry with Swiss Chard an...  ...  [frying pan, oven, sauce pan, roasting pan, si...  [chili pepper, lemon juice, shallot, spices, p...
+
+[19 rows x 7 columns]
+[2022-03-15 19:14:33,428] {taskinstance.py:1718} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1276, in _execute_context
+    self.dialect.do_execute(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 608, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.QueryCanceled: canceling statement due to user request
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 188, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/Users/HomeFolder/airflow/dags/simple_dag.py", line 183, in to_sql
+    out.to_sql('recipe',engine, if_exists='replace')
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/generic.py", line 2872, in to_sql
+    sql.to_sql(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 717, in to_sql
+    pandas_sql.to_sql(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 1751, in to_sql
+    table = self.prep_table(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 1650, in prep_table
+    table.create()
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 860, in create
+    self.pd_sql.drop_table(self.name, self.schema)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 1810, in drop_table
+    self.get_table(table_name, schema).drop()
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/sql/schema.py", line 942, in drop
+    bind._run_visitor(ddl.SchemaDropper, self, checkfirst=checkfirst)
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2095, in _run_visitor
+    conn._run_visitor(visitorcallable, element, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1656, in _run_visitor
+    visitorcallable(self.dialect, self, **kwargs).traverse_single(element)
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/sql/visitors.py", line 145, in traverse_single
+    return meth(obj, **kw)
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/sql/ddl.py", line 1018, in visit_table
+    self.connection.execute(DropTable(table))
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1011, in execute
+    return meth(self, multiparams, params)
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/sql/ddl.py", line 72, in _execute_on_connection
+    return connection._execute_ddl(self, multiparams, params)
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1068, in _execute_ddl
+    ret = self._execute_context(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1316, in _execute_context
+    self._handle_dbapi_exception(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1510, in _handle_dbapi_exception
+    util.raise_(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1276, in _execute_context
+    self.dialect.do_execute(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 608, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (psycopg2.errors.QueryCanceled) canceling statement due to user request
+
+[SQL: 
+DROP TABLE recipe]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+[2022-03-15 19:14:33,637] {taskinstance.py:1272} INFO - Marking task as FAILED. dag_id=simple_dag, task_id=to_sql, execution_date=20220315T190620, start_date=20220316T000728, end_date=20220316T001433
+[2022-03-15 19:14:33,655] {standard_task_runner.py:89} ERROR - Failed to execute job 368 for task to_sql
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1276, in _execute_context
+    self.dialect.do_execute(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 608, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.QueryCanceled: canceling statement due to user request
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 180, in _run_raw_task
+    ti._run_raw_task(
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 188, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/Users/HomeFolder/airflow/dags/simple_dag.py", line 183, in to_sql
+    out.to_sql('recipe',engine, if_exists='replace')
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/generic.py", line 2872, in to_sql
+    sql.to_sql(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 717, in to_sql
+    pandas_sql.to_sql(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 1751, in to_sql
+    table = self.prep_table(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 1650, in prep_table
+    table.create()
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 860, in create
+    self.pd_sql.drop_table(self.name, self.schema)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 1810, in drop_table
+    self.get_table(table_name, schema).drop()
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/sql/schema.py", line 942, in drop
+    bind._run_visitor(ddl.SchemaDropper, self, checkfirst=checkfirst)
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2095, in _run_visitor
+    conn._run_visitor(visitorcallable, element, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1656, in _run_visitor
+    visitorcallable(self.dialect, self, **kwargs).traverse_single(element)
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/sql/visitors.py", line 145, in traverse_single
+    return meth(obj, **kw)
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/sql/ddl.py", line 1018, in visit_table
+    self.connection.execute(DropTable(table))
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1011, in execute
+    return meth(self, multiparams, params)
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/sql/ddl.py", line 72, in _execute_on_connection
+    return connection._execute_ddl(self, multiparams, params)
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1068, in _execute_ddl
+    ret = self._execute_context(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1316, in _execute_context
+    self._handle_dbapi_exception(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1510, in _handle_dbapi_exception
+    util.raise_(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1276, in _execute_context
+    self.dialect.do_execute(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 608, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (psycopg2.errors.QueryCanceled) canceling statement due to user request
+
+[SQL: 
+DROP TABLE recipe]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+[2022-03-15 19:14:33,724] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-03-15 19:14:33,742] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

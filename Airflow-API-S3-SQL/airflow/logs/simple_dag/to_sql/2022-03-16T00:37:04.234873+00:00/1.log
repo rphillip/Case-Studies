@@ -1,0 +1,3 @@
+[2022-03-15 19:37:41,572] {taskinstance.py:1027} INFO - Dependencies not met for <TaskInstance: simple_dag.to_sql manual__2022-03-16T00:37:04.234873+00:00 [queued]>, dependency 'Execution Date' FAILED: The execution date is 2022-03-16T00:37:04.234873+00:00 but this is after the task's end date 2022-03-15T19:42:41.418596+00:00.
+[2022-03-15 19:37:41,573] {taskinstance.py:1027} INFO - Dependencies not met for <TaskInstance: simple_dag.to_sql manual__2022-03-16T00:37:04.234873+00:00 [queued]>, dependency 'Execution Date' FAILED: The execution date is 2022-03-16T00:37:04.234873+00:00 but this is after the task's DAG's end date 2022-03-15T19:42:41.418596+00:00.
+[2022-03-15 19:37:41,573] {local_task_job.py:99} INFO - Task is not able to be run

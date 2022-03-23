@@ -1,0 +1,3 @@
+[2022-03-14 10:51:07,554] {taskinstance.py:1027} INFO - Dependencies not met for <TaskInstance: simple_dag.test manual__2022-03-14T15:50:56.662127+00:00 [queued]>, dependency 'Execution Date' FAILED: The execution date is 2022-03-14T15:50:56.662127+00:00 but this is after the task's end date 2022-03-14T10:56:07.321873+00:00.
+[2022-03-14 10:51:07,555] {taskinstance.py:1027} INFO - Dependencies not met for <TaskInstance: simple_dag.test manual__2022-03-14T15:50:56.662127+00:00 [queued]>, dependency 'Execution Date' FAILED: The execution date is 2022-03-14T15:50:56.662127+00:00 but this is after the task's DAG's end date 2022-03-14T10:56:07.321873+00:00.
+[2022-03-14 10:51:07,559] {local_task_job.py:99} INFO - Task is not able to be run

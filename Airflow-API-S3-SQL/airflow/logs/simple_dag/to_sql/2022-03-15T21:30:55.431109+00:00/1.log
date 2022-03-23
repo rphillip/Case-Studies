@@ -1,0 +1,136 @@
+[2022-03-15 21:34:02,860] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.to_sql scheduled__2022-03-15T21:30:55.431109+00:00 [queued]>
+[2022-03-15 21:34:02,871] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.to_sql scheduled__2022-03-15T21:30:55.431109+00:00 [queued]>
+[2022-03-15 21:34:02,872] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-15 21:34:02,872] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-15 21:34:02,872] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-15 21:34:02,882] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): to_sql> on 2022-03-15 21:30:55.431109+00:00
+[2022-03-15 21:34:02,888] {standard_task_runner.py:52} INFO - Started process 39420 to run task
+[2022-03-15 21:34:02,897] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'simple_dag', 'to_sql', 'scheduled__2022-03-15T21:30:55.431109+00:00', '--job-id', '424', '--raw', '--subdir', 'DAGS_FOLDER/simple_dag.py', '--cfg-path', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmp8y3zgbnm', '--error-file', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpy0ju3oz6']
+[2022-03-15 21:34:02,904] {standard_task_runner.py:77} INFO - Job 424: Subtask to_sql
+[2022-03-15 21:34:02,977] {logging_mixin.py:109} INFO - Running <TaskInstance: simple_dag.to_sql scheduled__2022-03-15T21:30:55.431109+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-03-15 21:34:03,023] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=simple_dag
+AIRFLOW_CTX_TASK_ID=to_sql
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-15T21:30:55.431109+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-15T21:30:55.431109+00:00
+[2022-03-15 21:34:03,985] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 21:34:03,986] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 21:34:04,372] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 21:34:04,374] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 21:34:05,452] {logging_mixin.py:109} INFO -          id                                              title  ...                                          equipment                                        ingredients
+0    715544            Brown Butter Twice Baked Sweet Potatoes  ...  [blender, aluminum foil, oven, baking paper, f...  [bacon, goat cheese, sweet potato, salt and pe...
+1    658701  Roasted Vegetable Tart (Gluten Free, Dairy Fre...  ...  [aluminum foil, whisk, oven, bowl, baking shee...  [water, red onion, zucchini, wrap, vegetable, ...
+2   1046982   How to Make the Perfect Sweet Potato Sloppy Joes  ...                  [oven, aluminum foil, frying pan]  [tomato paste, bell pepper, sweet potato, onio...
+3   1052360  The Secret to the Best Ever Instant Pot Lamb Stew  ...                          [pot, instant pot, whisk]  [leek, vegetable, pepper, meat, cooking oil, s...
+4    637297                          Cauliflower Chickpea Stew  ...                                        [sauce pan]  [ginger, salt and pepper, vegetable, tomato, t...
+..      ...                                                ...  ...                                                ...                                                ...
+92   633921  Balsamic & Honey Glazed Salmon with Lemony Asp...  ...  [blender, whisk, oven, mixing bowl, frying pan...  [vinegar, salt and pepper, marinade, spread, a...
+93   716221                        Split Pea and Mushroom Soup  ...                                                NaN                                                NaN
+94   982371                      Instant Pot Quinoa Grain Bowl  ...                           [pot, instant pot, bowl]  [stock, vegetable, quinoa, seasoning, grains, ...
+95   636602           Butternut Squash Soup (In Half An Hour!)  ...                      [pot, blender, slotted spoon]  [ghee, squash, salt and pepper, kombu, greens,...
+96   639411                              Cilantro Lime Halibut  ...                                [tongs, frying pan]  [chicken stock, lime juice, pepper, olives, fr...
+
+[97 rows x 7 columns]
+[2022-03-15 21:34:06,493] {logging_mixin.py:109} INFO -         id                                              title  ...                                          equipment                                        ingredients
+0   729366                                     Plantain Salad  ...                                {"frying pan",bowl}  {"vegetable oil",shrimp,vegetable,plantain,par...
+1   661074                                  Spicy Cauliflower  ...                                {"frying pan",oven}  {parsley,"curry powder",paprika,shallot,"lemon...
+2   642468                             Ethiopian Lentil Curry  ...                                              {pot}  {"curry powder","minced garlic",water,onion,"p...
+3   664501  Vegan Taco bowls with Cilantro Lime Cauliflowe...  ...  {"food processor",bowl,"aluminum foil",oven,"b...  {lime,meat,nuts,tomato,avocado,"garlic powder"...
+4   641057            Curried Butternut Squash and Apple Soup  ...                                               None  {apple,soup,spices,squash,vegetable,sriracha,t...
+..     ...                                                ...  ...                                                ...                                                ...
+75  652417                  Moroccan chickpea and lentil stew  ...                         {"frying pan","sauce pan"}  {seasoning,water,onion,"lemon juice",couscous,...
+76  769774  Shredded Roast Beef Stuffed Sweet Potatoes (Wh...  ...                                               None                                               None
+77  661925                      Strawberry-Mango Quinoa Salad  ...            {whisk,"sauce pan","baking sheet",bowl}  {mint,pepper,"cooked quinoa",quinoa,spread,cuc...
+78  716195                          Spicy Indian-Style Hummus  ...                     {"food processor","sauce pan"}  {"lemon juice",beans,chickpeas,"olive oil",yog...
+79  658509             Roasted Broccoli with Lemon and Garlic  ...                         {oven,"baking sheet",bowl}  {pepper,garlic,"lemon juice",broccoli,"olive o...
+
+[80 rows x 7 columns]
+[2022-03-15 21:34:12,324] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 21:34:12,326] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 21:34:12,837] {logging_mixin.py:109} INFO -                   name                                            address                                        description  recipes
+0     Kathryn Martinez  7866 Olivia Forge Suite 990\nVanessaborough, V...  Oil fly charge action will catch for. Far ente...   633837
+1         Aaron Thomas  15075 Jamie Overpass Apt. 289\nNorth Kelsey, N...  Anyone other others fact learn report trade. S...   637923
+2        Nicole Wilson  078 Ramos Haven Apt. 418\nNew Meganchester, NC...  Site result must party. Word thus matter game ...   636231
+3          Keith Young              2910 Vega Fields\nLake John, AK 48324  Bad sense though trouble agent. Service his in...   646651
+4          Jose Garcia     17002 Terry Station\nEast Danielberg, KY 69099  Major it design major study different eye alon...   646651
+5         David Miller  438 Kimberly Wall Suite 014\nJacquelineland, F...  Chance measure fill black team. Everyone crime...   663559
+6            James Lee  468 Wesley Place Suite 502\nPort Kenneth, WI 1...  Authority art them consider month animal glass...   665378
+7             Kim Hall             148 Timothy Lakes\nBauerland, IL 49873  Trade red treatment would. Improve fact same t...   642605
+8          Joseph Hood  1762 Theresa Centers Suite 532\nBlakeside, CT ...  Owner treatment happen. Show check door hard w...   647634
+9          Paula Smith         84183 Betty Vista\nThomasborough, MS 35448  Number themselves partner interview enter stay...   646651
+10       Brandon Price         3974 Grant Hill\nNorth Katherine, DE 72803  None management again else at. Note job anythi...   642605
+11      Michael Meyers     4173 Hernandez Corners\nFischerburgh, ID 05685  Paper low particular approach shoulder return....   652886
+12      Dorothy Turner  3922 Bailey Skyway Suite 312\nNorth Tiffany, K...  Soldier fly foot letter one. These represent s...   642085
+13       Robert Gibson         1238 Tiffany Ramp\nPort Jonathan, MI 14089  Focus central other western ten develop clear....   640941
+14  Pamela Watkins DDS  38923 Aguirre Tunnel Suite 893\nMichaelstad, O...  Good whole every eight benefit song play. Play...   640941
+15       Cynthia Young      58137 Alan Highway\nSouth Erikaside, CA 25845  Religious some church choice and rate. Bit pur...   716195
+16   Katherine Elliott  26131 Julie Village Apt. 634\nNorth Tim, ID 49995  Gun technology scientist. Could everyone indic...   645657
+17        Warren Morse  4686 Jennifer Ferry Suite 818\nSavagefurt, MI ...  Generation free some.\nSupport year anyone few...   645657
+18           Sara Dunn  34661 Martin Mall Suite 677\nWest Matthew, NV ...  Several message determine. Decide remember sin...   642154
+19        Roy Mcdowell  575 Brian Squares Apt. 052\nAndrewborough, CA ...  However successful my choice choose when throu...   639411
+[2022-03-15 21:34:13,612] {logging_mixin.py:109} INFO -                     name                                            address                                        description  recipes
+0       Darlene Harrison             3916 Barker Points\nRyanstad, SD 23542  Production usually others think our stand many...   640062
+1         Michael Meyers     4173 Hernandez Corners\nFischerburgh, ID 05685  Paper low particular approach shoulder return....   652886
+2       Kimberly Johnson          07227 Barbara Vista\nStevenbury, MD 07127  Chair them way agency. A drug cell choice rest...   652886
+3       Melissa Jones MD        189 Goodwin Place\nEast Scottview, CA 29718  Her decade return measure wish effort. Son imp...   639616
+4           Jeremy Baker     21763 Yang Fords Apt. 561\nVegamouth, NE 89546  Whose involve identify commercial while others...   639616
+5          Tracy Hawkins  0253 Elizabeth Forest Suite 006\nCandicefurt, ...  Owner attention week. All art someone law lead...  1096229
+6            Jose Garcia     17002 Terry Station\nEast Danielberg, KY 69099  Major it design major study different eye alon...  1096229
+7      Raymond Adams PhD  603 Diane Club Apt. 427\nSouth Madisonview, CO...  Wait final event where want. Mind ask recogniz...   792072
+8          Michael Mckee  296 Vargas Field Apt. 104\nCarpenterburgh, AK ...  Step generation several. Class yes very guy ce...   660736
+9         Rebecca Jensen            870 Zachary Estate\nKelleyton, OH 66764  Along want area maintain goal. During us almos...   642605
+10     Jennifer Cummings  941 Dawn Junctions Apt. 244\nNorth Taylor, NV ...  Worry out now father sell most. Clear importan...   642605
+11      Kathryn Martinez  7866 Olivia Forge Suite 990\nVanessaborough, V...  Oil fly charge action will catch for. Far ente...   633837
+12         Brandon Price         3974 Grant Hill\nNorth Katherine, DE 72803  None management again else at. Note job anythi...   642605
+13          Nancy Harper  40437 Carmen Junction Apt. 208\nNorth Terry, H...  Single citizen film show animal remember order...   716195
+14             James Lee  468 Wesley Place Suite 502\nPort Kenneth, WI 1...  Authority art them consider month animal glass...   665378
+15          Tiffany Cook  746 Washington Meadows Suite 222\nNew Claire, ...  Day PM social. Change woman raise. Happy all s...   716408
+16  Elizabeth Richardson                   PSC 5044, Box 6368\nAPO AA 80559  Between trouble leg. Key person goal cost memb...   642605
+17            Alexa Yang       6844 Hernandez Mountain\nHoweshire, MI 48820  Tree you but. Issue carry year. Oil perhaps no...  1697833
+18            Corey Mayo           697 Taylor Courts\nRowechester, WV 01047  Without political public story perhaps wide le...  1697833
+19          Patrick Carr  5736 Angela Estate Apt. 360\nSouth Natasha, CA...  Economy job good upon. Radio hope this song ad...   658509
+[2022-03-15 21:34:13,626] {logging_mixin.py:109} INFO -                     name                                            address                                        description  recipes
+0       Darlene Harrison             3916 Barker Points\nRyanstad, SD 23542  Production usually others think our stand many...   640062
+2       Kimberly Johnson          07227 Barbara Vista\nStevenbury, MD 07127  Chair them way agency. A drug cell choice rest...   652886
+3       Melissa Jones MD        189 Goodwin Place\nEast Scottview, CA 29718  Her decade return measure wish effort. Son imp...   639616
+4           Jeremy Baker     21763 Yang Fords Apt. 561\nVegamouth, NE 89546  Whose involve identify commercial while others...   639616
+5          Tracy Hawkins  0253 Elizabeth Forest Suite 006\nCandicefurt, ...  Owner attention week. All art someone law lead...  1096229
+7      Raymond Adams PhD  603 Diane Club Apt. 427\nSouth Madisonview, CO...  Wait final event where want. Mind ask recogniz...   792072
+8          Michael Mckee  296 Vargas Field Apt. 104\nCarpenterburgh, AK ...  Step generation several. Class yes very guy ce...   660736
+9         Rebecca Jensen            870 Zachary Estate\nKelleyton, OH 66764  Along want area maintain goal. During us almos...   642605
+10     Jennifer Cummings  941 Dawn Junctions Apt. 244\nNorth Taylor, NV ...  Worry out now father sell most. Clear importan...   642605
+13          Nancy Harper  40437 Carmen Junction Apt. 208\nNorth Terry, H...  Single citizen film show animal remember order...   716195
+15          Tiffany Cook  746 Washington Meadows Suite 222\nNew Claire, ...  Day PM social. Change woman raise. Happy all s...   716408
+16  Elizabeth Richardson                   PSC 5044, Box 6368\nAPO AA 80559  Between trouble leg. Key person goal cost memb...   642605
+17            Alexa Yang       6844 Hernandez Mountain\nHoweshire, MI 48820  Tree you but. Issue carry year. Oil perhaps no...  1697833
+18            Corey Mayo           697 Taylor Courts\nRowechester, WV 01047  Without political public story perhaps wide le...  1697833
+19          Patrick Carr  5736 Angela Estate Apt. 360\nSouth Natasha, CA...  Economy job good upon. Radio hope this song ad...   658509
+0       Kathryn Martinez  7866 Olivia Forge Suite 990\nVanessaborough, V...  Oil fly charge action will catch for. Far ente...   633837
+1           Aaron Thomas  15075 Jamie Overpass Apt. 289\nNorth Kelsey, N...  Anyone other others fact learn report trade. S...   637923
+2          Nicole Wilson  078 Ramos Haven Apt. 418\nNew Meganchester, NC...  Site result must party. Word thus matter game ...   636231
+3            Keith Young              2910 Vega Fields\nLake John, AK 48324  Bad sense though trouble agent. Service his in...   646651
+4            Jose Garcia     17002 Terry Station\nEast Danielberg, KY 69099  Major it design major study different eye alon...   646651
+5           David Miller  438 Kimberly Wall Suite 014\nJacquelineland, F...  Chance measure fill black team. Everyone crime...   663559
+6              James Lee  468 Wesley Place Suite 502\nPort Kenneth, WI 1...  Authority art them consider month animal glass...   665378
+7               Kim Hall             148 Timothy Lakes\nBauerland, IL 49873  Trade red treatment would. Improve fact same t...   642605
+8            Joseph Hood  1762 Theresa Centers Suite 532\nBlakeside, CT ...  Owner treatment happen. Show check door hard w...   647634
+9            Paula Smith         84183 Betty Vista\nThomasborough, MS 35448  Number themselves partner interview enter stay...   646651
+10         Brandon Price         3974 Grant Hill\nNorth Katherine, DE 72803  None management again else at. Note job anythi...   642605
+11        Michael Meyers     4173 Hernandez Corners\nFischerburgh, ID 05685  Paper low particular approach shoulder return....   652886
+12        Dorothy Turner  3922 Bailey Skyway Suite 312\nNorth Tiffany, K...  Soldier fly foot letter one. These represent s...   642085
+13         Robert Gibson         1238 Tiffany Ramp\nPort Jonathan, MI 14089  Focus central other western ten develop clear....   640941
+14    Pamela Watkins DDS  38923 Aguirre Tunnel Suite 893\nMichaelstad, O...  Good whole every eight benefit song play. Play...   640941
+15         Cynthia Young      58137 Alan Highway\nSouth Erikaside, CA 25845  Religious some church choice and rate. Bit pur...   716195
+16     Katherine Elliott  26131 Julie Village Apt. 634\nNorth Tim, ID 49995  Gun technology scientist. Could everyone indic...   645657
+17          Warren Morse  4686 Jennifer Ferry Suite 818\nSavagefurt, MI ...  Generation free some.\nSupport year anyone few...   645657
+18             Sara Dunn  34661 Martin Mall Suite 677\nWest Matthew, NV ...  Several message determine. Decide remember sin...   642154
+19          Roy Mcdowell  575 Brian Squares Apt. 052\nAndrewborough, CA ...  However successful my choice choose when throu...   639411
+[2022-03-15 21:34:15,946] {s3.py:729} INFO - Deleted: ['stage/user-2022-03-15 21:33:47.465459.json']
+[2022-03-15 21:34:16,163] {s3.py:729} INFO - Deleted: ['stage/recipe-2022-03-15 21:33:47.787209.json']
+[2022-03-15 21:34:16,167] {python.py:175} INFO - Done. Returned value was: None
+[2022-03-15 21:34:16,176] {taskinstance.py:1272} INFO - Marking task as SUCCESS. dag_id=simple_dag, task_id=to_sql, execution_date=20220315T213055, start_date=20220316T023402, end_date=20220316T023416
+[2022-03-15 21:34:16,242] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-15 21:34:16,263] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

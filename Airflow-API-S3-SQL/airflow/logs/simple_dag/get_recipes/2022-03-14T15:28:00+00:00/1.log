@@ -1,0 +1,104 @@
+[2022-03-14 15:23:09,814] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.get_recipes scheduled__2022-03-14T15:28:00+00:00 [queued]>
+[2022-03-14 15:23:09,824] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.get_recipes scheduled__2022-03-14T15:28:00+00:00 [queued]>
+[2022-03-14 15:23:09,824] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 15:23:09,825] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-14 15:23:09,825] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 15:23:09,834] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): get_recipes> on 2022-03-14 15:28:00+00:00
+[2022-03-14 15:23:09,837] {standard_task_runner.py:52} INFO - Started process 89526 to run task
+[2022-03-14 15:23:09,843] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'simple_dag', 'get_recipes', 'scheduled__2022-03-14T15:28:00+00:00', '--job-id', '244', '--raw', '--subdir', 'DAGS_FOLDER/simple_dag.py', '--cfg-path', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpuikqubr8', '--error-file', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpe8cefweb']
+[2022-03-14 15:23:09,845] {standard_task_runner.py:77} INFO - Job 244: Subtask get_recipes
+[2022-03-14 15:23:09,896] {logging_mixin.py:109} INFO - Running <TaskInstance: simple_dag.get_recipes scheduled__2022-03-14T15:28:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-03-14 15:23:09,942] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=simple_dag
+AIRFLOW_CTX_TASK_ID=get_recipes
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-14T15:28:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-14T15:28:00+00:00
+[2022-03-14 15:23:09,949] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:23:09,950] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:23:10,341] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:23:10,343] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:23:10,864] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['potato'], 'includeIngredients': ['fish'], 'intolerances': 'soy'}, 'user': {'address': '0496 Page Mountains Apt. 722\nHernandezfort, IN 04526', 'description': 'Often focus air race affect. Statement go shoulder believe pretty activity turn. Four face arrive table.', 'name': 'Janet Clements'}}
+[2022-03-14 15:23:10,866] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:23:10,870] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:23:10,871] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:23:11,266] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['lime'], 'includeIngredients': ['brown rice'], 'intolerances': 'grain'}, 'user': {'address': '07227 Barbara Vista\nStevenbury, MD 07127', 'description': 'Chair them way agency. A drug cell choice rest trip. Inside recently face mind fish up north set.\nCulture arrive else imagine approach say just. Stand door up accept low.', 'name': 'Kimberly Johnson'}}
+[2022-03-14 15:23:11,267] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:23:11,272] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:23:11,274] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:23:11,692] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['stock', 'sweet potato'], 'includeIngredients': ['pepper', 'onion'], 'intolerances': 'peanut'}, 'user': {'address': '3916 Barker Points\nRyanstad, SD 23542', 'description': 'Production usually others think our stand many age. Kind many thus response thus office.\nInside know gun senior. Forget bit follow per author. Sure mean throw forget.', 'name': 'Darlene Harrison'}}
+[2022-03-14 15:23:11,693] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:23:11,698] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:23:11,700] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:23:12,072] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['cooking oil'], 'includeIngredients': ['fish', 'brown rice', 'potato'], 'intolerances': 'seafood'}, 'user': {'address': '510 Harris Plaza Suite 632\nLake Brittany, VT 17864', 'description': 'He evidence strategy everything low listen. Camera foot to recently final true reveal.\nProtect participant within forward election listen. Candidate once modern culture people large science forget.', 'name': 'Alexandra Taylor'}}
+[2022-03-14 15:23:12,074] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:23:12,078] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:23:12,079] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:23:12,459] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['cauliflower rice', 'stock'], 'includeIngredients': ['cooking oil', 'rice'], 'intolerances': 'dairy'}, 'user': {'address': '237 Cruz Crescent\nEast Brittney, WA 04269', 'description': 'And six woman together lose well close. Pressure house baby allow bar. Little husband how gas lead these almost. Themselves full water treatment center either.', 'name': 'Kimberly Coffey'}}
+[2022-03-14 15:23:12,460] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:23:12,465] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:23:12,466] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:23:12,963] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['brown rice', 'chickpeas'], 'includeIngredients': ['stock'], 'intolerances': 'peanut'}, 'user': {'address': '575 Brian Squares Apt. 052\nAndrewborough, CA 28848', 'description': 'However successful my choice choose when through. Agree military manager most remain drug character. Soldier within main American any deep.', 'name': 'Roy Mcdowell'}}
+[2022-03-14 15:23:12,964] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:23:12,968] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:23:12,969] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:23:13,352] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['soup'], 'includeIngredients': ['rice', 'water', 'cauliflower rice'], 'intolerances': 'grain'}, 'user': {'address': '5879 Collins Points\nDavisborough, AK 45910', 'description': 'Play material sense movement man final. Him here remember word small must.\nSenior ever wish perform. Sometimes bag some leader suddenly test represent.', 'name': 'Karen Taylor'}}
+[2022-03-14 15:23:13,354] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:23:13,358] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:23:13,359] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:23:13,730] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['salt'], 'includeIngredients': ['lime', 'chickpeas', 'onion', 'water'], 'intolerances': 'peanut'}, 'user': {'address': '550 Nichols Isle Suite 592\nCookmouth, DC 28172', 'description': 'Address charge right help exactly beat meet exist. Conference marriage sit eight concern responsibility forward main. Pass now cup war event seek include. Various treatment arm mouth tax check dream.', 'name': 'Jeremy Gallegos'}}
+[2022-03-14 15:23:13,735] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:23:13,742] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:23:13,748] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:23:14,163] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['onion', 'whole chicken'], 'includeIngredients': ['pepper', 'cauliflower florets', 'cauliflower', 'seasoning'], 'intolerances': 'peanut'}, 'user': {'address': '5736 Angela Estate Apt. 360\nSouth Natasha, CA 15714', 'description': 'Economy job good upon. Radio hope this song administration war. Agency floor star too. Nothing either like during together seven.', 'name': 'Patrick Carr'}}
+[2022-03-14 15:23:14,164] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:23:14,169] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:23:14,170] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:23:14,551] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['onion'], 'includeIngredients': ['seasoning', 'cooking oil'], 'intolerances': 'soy'}, 'user': {'address': '15075 Jamie Overpass Apt. 289\nNorth Kelsey, NC 13905', 'description': 'Anyone other others fact learn report trade. Store kind organization water election far interesting. Family decision safe one natural TV.', 'name': 'Aaron Thomas'}}
+[2022-03-14 15:23:14,552] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:23:14,557] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:23:14,558] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:23:15,366] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['cauliflower florets', 'soup'], 'includeIngredients': ['soup', 'lime', 'fish', 'kidney beans'], 'intolerances': 'peanut'}, 'user': {'address': 'PSC 6875, Box 7223\nAPO AP 53883', 'description': 'Few ever ever apply of especially. Seat space Republican girl. Threat tree media authority several later.', 'name': 'David Walker'}}
+[2022-03-14 15:23:15,368] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:23:15,373] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:23:15,374] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:23:15,765] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['garlic', 'ginger'], 'includeIngredients': ['cooking spray'], 'intolerances': 'soy'}, 'user': {'address': '6844 Hernandez Mountain\nHoweshire, MI 48820', 'description': 'Tree you but. Issue carry year. Oil perhaps now class road successful girl.\nTurn somebody those important. Should treat send theory majority skin.', 'name': 'Alexa Yang'}}
+[2022-03-14 15:23:15,766] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:23:15,771] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:23:15,772] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:23:16,159] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['lime'], 'includeIngredients': ['soup'], 'intolerances': 'soy'}, 'user': {'address': '7061 Jessica Drive\nPatriciaton, WI 41246', 'description': 'Student oil plan order though call. Former prepare past step produce different why. His during break day establish. Song guy that bag score have.', 'name': 'Sarah Rodriguez'}}
+[2022-03-14 15:23:16,161] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:23:16,165] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:23:16,166] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:23:16,557] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['kidney beans', 'cauliflower'], 'includeIngredients': ['sweet potato'], 'intolerances': 'grain'}, 'user': {'address': '88565 Walker Villages\nWest Erinland, DC 47710', 'description': 'Enjoy onto fire nothing however trial art evidence.\nMrs account source executive move. Student over goal stay pass.', 'name': 'Robert Dunn'}}
+[2022-03-14 15:23:16,558] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:23:16,563] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:23:16,564] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:23:16,959] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['stock'], 'includeIngredients': ['salt', 'cooking oil', 'water'], 'intolerances': 'wheat'}, 'user': {'address': '9024 Drew Squares\nDavisland, CA 13649', 'description': 'Forward father store sound world social consumer. Other because its interesting allow south. Pass hand community attorney provide technology like.', 'name': 'Douglas Hicks'}}
+[2022-03-14 15:23:16,961] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:23:16,965] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:23:16,966] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:23:17,372] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['potato'], 'includeIngredients': ['rice'], 'intolerances': 'seafood'}, 'user': {'address': '437 Joan Island Apt. 437\nPort Jasonberg, PA 65035', 'description': 'Measure yet law again happen recent.\nArt way parent shoulder message and apply consumer. Hold policy state alone wife government gas.', 'name': 'Kelly Cook'}}
+[2022-03-14 15:23:17,374] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:23:17,378] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:23:17,379] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:23:17,896] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['tomato'], 'includeIngredients': ['salt', 'soup'], 'intolerances': 'gluten'}, 'user': {'address': '58137 Alan Highway\nSouth Erikaside, CA 25845', 'description': 'Religious some church choice and rate. Bit purpose policy television increase expect.\nPast million how huge wrong wide daughter can. Help plant her. Change TV term nothing water good each.', 'name': 'Cynthia Young'}}
+[2022-03-14 15:23:17,897] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:23:17,902] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:23:17,903] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:23:18,326] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['rice'], 'includeIngredients': ['cauliflower florets'], 'intolerances': 'seafood'}, 'user': {'address': '1020 Hutchinson Crossing\nSouth Davidfurt, TN 78025', 'description': 'Nothing bill challenge authority ask international short prevent. Fine phone store later ability information. Prepare offer threat that figure wall.', 'name': 'Howard Paul'}}
+[2022-03-14 15:23:18,328] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:23:18,332] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:23:18,333] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:23:18,715] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['tomato'], 'includeIngredients': ['tomato', 'salt'], 'intolerances': 'peanut'}, 'user': {'address': '29627 John Estates Suite 324\nWest Benjamin, ME 63889', 'description': 'Market Congress make partner eat could four. Clear technology I they. Include time like matter.', 'name': 'Heather Kennedy'}}
+[2022-03-14 15:23:18,716] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:23:18,721] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:23:18,722] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:23:19,098] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['chickpeas', 'garlic'], 'includeIngredients': ['salt', 'chickpeas', 'cauliflower rice'], 'intolerances': 'tree nut'}, 'user': {'address': '148 Timothy Lakes\nBauerland, IL 49873', 'description': 'Trade red treatment would. Improve fact same trouble resource find country.\nDaughter put air during than. Hear life more. Common reflect common guess reach task compare.', 'name': 'Kim Hall'}}
+[2022-03-14 15:23:19,100] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:23:19,103] {python.py:175} INFO - Done. Returned value was: None
+[2022-03-14 15:23:19,111] {taskinstance.py:1272} INFO - Marking task as SUCCESS. dag_id=simple_dag, task_id=get_recipes, execution_date=20220314T152800, start_date=20220314T202309, end_date=20220314T202319
+[2022-03-14 15:23:19,166] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-14 15:23:19,184] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

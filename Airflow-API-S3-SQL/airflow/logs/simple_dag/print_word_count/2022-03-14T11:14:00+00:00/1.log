@@ -1,0 +1,23 @@
+[2022-03-14 11:14:46,518] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.print_word_count scheduled__2022-03-14T11:14:00+00:00 [queued]>
+[2022-03-14 11:14:46,526] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.print_word_count scheduled__2022-03-14T11:14:00+00:00 [queued]>
+[2022-03-14 11:14:46,526] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 11:14:46,527] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-14 11:14:46,527] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 11:14:46,538] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): print_word_count> on 2022-03-14 11:14:00+00:00
+[2022-03-14 11:14:46,542] {standard_task_runner.py:52} INFO - Started process 80016 to run task
+[2022-03-14 11:14:46,548] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'simple_dag', 'print_word_count', 'scheduled__2022-03-14T11:14:00+00:00', '--job-id', '107', '--raw', '--subdir', 'DAGS_FOLDER/simple_dag.py', '--cfg-path', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmp8ezhf8wb', '--error-file', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmp8_15pjo8']
+[2022-03-14 11:14:46,552] {standard_task_runner.py:77} INFO - Job 107: Subtask print_word_count
+[2022-03-14 11:14:46,613] {logging_mixin.py:109} INFO - Running <TaskInstance: simple_dag.print_word_count scheduled__2022-03-14T11:14:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-03-14 11:14:46,661] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=simple_dag
+AIRFLOW_CTX_TASK_ID=print_word_count
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-14T11:14:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-14T11:14:00+00:00
+[2022-03-14 11:14:46,787] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['onion', 'whole chicken'], 'includeIngredients': ['pepper', 'cauliflower florets', 'cauliflower', 'seasoning'], 'intolerances': 'peanut'}, 'user': {'address': '5736 Angela Estate Apt. 360\nSouth Natasha, CA 15714', 'description': 'Economy job good upon. Radio hope this song administration war. Agency floor star too. Nothing either like during together seven.', 'name': 'Patrick Carr'}}
+[2022-03-14 11:14:46,789] {python.py:175} INFO - Done. Returned value was: None
+[2022-03-14 11:14:46,798] {taskinstance.py:1272} INFO - Marking task as SUCCESS. dag_id=simple_dag, task_id=print_word_count, execution_date=20220314T111400, start_date=20220314T161446, end_date=20220314T161446
+[2022-03-14 11:14:46,825] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-14 11:14:46,846] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

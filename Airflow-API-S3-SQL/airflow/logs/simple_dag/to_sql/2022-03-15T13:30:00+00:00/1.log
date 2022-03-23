@@ -1,0 +1,174 @@
+[2022-03-15 13:31:27,359] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.to_sql scheduled__2022-03-15T13:30:00+00:00 [queued]>
+[2022-03-15 13:31:27,368] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.to_sql scheduled__2022-03-15T13:30:00+00:00 [queued]>
+[2022-03-15 13:31:27,368] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-15 13:31:27,368] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-15 13:31:27,369] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-15 13:31:27,378] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): to_sql> on 2022-03-15 13:30:00+00:00
+[2022-03-15 13:31:27,383] {standard_task_runner.py:52} INFO - Started process 24200 to run task
+[2022-03-15 13:31:27,390] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'simple_dag', 'to_sql', 'scheduled__2022-03-15T13:30:00+00:00', '--job-id', '311', '--raw', '--subdir', 'DAGS_FOLDER/simple_dag.py', '--cfg-path', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmplvjfvim8', '--error-file', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmphxn1fq12']
+[2022-03-15 13:31:27,393] {standard_task_runner.py:77} INFO - Job 311: Subtask to_sql
+[2022-03-15 13:31:27,451] {logging_mixin.py:109} INFO - Running <TaskInstance: simple_dag.to_sql scheduled__2022-03-15T13:30:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-03-15 13:31:27,498] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=simple_dag
+AIRFLOW_CTX_TASK_ID=to_sql
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-15T13:30:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-15T13:30:00+00:00
+[2022-03-15 13:31:27,514] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 13:31:27,516] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 13:31:28,115] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 13:31:28,116] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 13:31:28,635] {taskinstance.py:1718} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 188, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/Users/HomeFolder/airflow/dags/simple_dag.py", line 157, in to_sql
+    dfs.append(pd.DataFrame(data)) # append the data frame to the list
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/frame.py", line 614, in __init__
+    mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/internals/construction.py", line 464, in dict_to_mgr
+    return arrays_to_mgr(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/internals/construction.py", line 119, in arrays_to_mgr
+    index = _extract_index(arrays)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/internals/construction.py", line 635, in _extract_index
+    raise ValueError("All arrays must be of the same length")
+ValueError: All arrays must be of the same length
+[2022-03-15 13:31:28,708] {taskinstance.py:1272} INFO - Marking task as FAILED. dag_id=simple_dag, task_id=to_sql, execution_date=20220315T133000, start_date=20220315T183127, end_date=20220315T183128
+[2022-03-15 13:31:28,719] {standard_task_runner.py:89} ERROR - Failed to execute job 311 for task to_sql
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 180, in _run_raw_task
+    ti._run_raw_task(
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 188, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/Users/HomeFolder/airflow/dags/simple_dag.py", line 157, in to_sql
+    dfs.append(pd.DataFrame(data)) # append the data frame to the list
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/frame.py", line 614, in __init__
+    mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/internals/construction.py", line 464, in dict_to_mgr
+    return arrays_to_mgr(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/internals/construction.py", line 119, in arrays_to_mgr
+    index = _extract_index(arrays)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/internals/construction.py", line 635, in _extract_index
+    raise ValueError("All arrays must be of the same length")
+ValueError: All arrays must be of the same length
+[2022-03-15 13:31:28,777] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-03-15 13:31:28,798] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-03-15 13:34:38,017] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.to_sql scheduled__2022-03-15T13:30:00+00:00 [queued]>
+[2022-03-15 13:34:38,025] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.to_sql scheduled__2022-03-15T13:30:00+00:00 [queued]>
+[2022-03-15 13:34:38,026] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-15 13:34:38,026] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-15 13:34:38,026] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-15 13:34:38,036] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): to_sql> on 2022-03-15 13:30:00+00:00
+[2022-03-15 13:34:38,040] {standard_task_runner.py:52} INFO - Started process 24295 to run task
+[2022-03-15 13:34:38,046] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'simple_dag', 'to_sql', 'scheduled__2022-03-15T13:30:00+00:00', '--job-id', '312', '--raw', '--subdir', 'DAGS_FOLDER/simple_dag.py', '--cfg-path', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmp1lofw9jj', '--error-file', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpoh4vkezk']
+[2022-03-15 13:34:38,050] {standard_task_runner.py:77} INFO - Job 312: Subtask to_sql
+[2022-03-15 13:34:38,110] {logging_mixin.py:109} INFO - Running <TaskInstance: simple_dag.to_sql scheduled__2022-03-15T13:30:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-03-15 13:34:38,162] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=simple_dag
+AIRFLOW_CTX_TASK_ID=to_sql
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-15T13:30:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-15T13:30:00+00:00
+[2022-03-15 13:34:38,182] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 13:34:38,184] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 13:34:38,740] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 13:34:38,741] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 13:34:39,382] {taskinstance.py:1718} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 188, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/Users/HomeFolder/airflow/dags/simple_dag.py", line 157, in to_sql
+    dfs.append(pd.DataFrame.from_dict(data)) # append the data frame to the list
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/frame.py", line 1593, in from_dict
+    return cls(data, index=index, columns=columns, dtype=dtype)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/frame.py", line 614, in __init__
+    mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/internals/construction.py", line 464, in dict_to_mgr
+    return arrays_to_mgr(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/internals/construction.py", line 119, in arrays_to_mgr
+    index = _extract_index(arrays)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/internals/construction.py", line 635, in _extract_index
+    raise ValueError("All arrays must be of the same length")
+ValueError: All arrays must be of the same length
+[2022-03-15 13:34:39,406] {taskinstance.py:1272} INFO - Marking task as FAILED. dag_id=simple_dag, task_id=to_sql, execution_date=20220315T133000, start_date=20220315T183438, end_date=20220315T183439
+[2022-03-15 13:34:39,418] {standard_task_runner.py:89} ERROR - Failed to execute job 312 for task to_sql
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 180, in _run_raw_task
+    ti._run_raw_task(
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 188, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/Users/HomeFolder/airflow/dags/simple_dag.py", line 157, in to_sql
+    dfs.append(pd.DataFrame.from_dict(data)) # append the data frame to the list
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/frame.py", line 1593, in from_dict
+    return cls(data, index=index, columns=columns, dtype=dtype)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/frame.py", line 614, in __init__
+    mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/internals/construction.py", line 464, in dict_to_mgr
+    return arrays_to_mgr(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/internals/construction.py", line 119, in arrays_to_mgr
+    index = _extract_index(arrays)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/internals/construction.py", line 635, in _extract_index
+    raise ValueError("All arrays must be of the same length")
+ValueError: All arrays must be of the same length
+[2022-03-15 13:34:39,462] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-03-15 13:34:39,482] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

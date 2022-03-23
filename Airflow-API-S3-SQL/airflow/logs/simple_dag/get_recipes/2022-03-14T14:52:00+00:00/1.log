@@ -1,0 +1,252 @@
+[2022-03-14 14:48:22,454] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.get_recipes scheduled__2022-03-14T14:52:00+00:00 [queued]>
+[2022-03-14 14:48:22,461] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.get_recipes scheduled__2022-03-14T14:52:00+00:00 [queued]>
+[2022-03-14 14:48:22,461] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 14:48:22,461] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-14 14:48:22,461] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 14:48:22,472] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): get_recipes> on 2022-03-14 14:52:00+00:00
+[2022-03-14 14:48:22,477] {standard_task_runner.py:52} INFO - Started process 88327 to run task
+[2022-03-14 14:48:22,484] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'simple_dag', 'get_recipes', 'scheduled__2022-03-14T14:52:00+00:00', '--job-id', '203', '--raw', '--subdir', 'DAGS_FOLDER/simple_dag.py', '--cfg-path', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpfx78lpqr', '--error-file', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpwfjip6v8']
+[2022-03-14 14:48:22,487] {standard_task_runner.py:77} INFO - Job 203: Subtask get_recipes
+[2022-03-14 14:48:22,544] {logging_mixin.py:109} INFO - Running <TaskInstance: simple_dag.get_recipes scheduled__2022-03-14T14:52:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-03-14 14:48:22,604] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=simple_dag
+AIRFLOW_CTX_TASK_ID=get_recipes
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-14T14:52:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-14T14:52:00+00:00
+[2022-03-14 14:48:22,615] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:48:22,616] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:48:22,999] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:48:23,000] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:48:23,426] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 12:16:16.768057.json')
+[2022-03-14 14:48:23,430] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:48:23,432] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:48:23,747] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 12:16:24.788633.json')
+[2022-03-14 14:48:23,751] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:48:23,752] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:48:24,045] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 12:16:29.962475.json')
+[2022-03-14 14:48:24,050] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:48:24,051] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:48:24,527] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 12:16:44.008253.json')
+[2022-03-14 14:48:24,531] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:48:24,532] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:48:24,915] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 12:16:52.065604.json')
+[2022-03-14 14:48:24,920] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:48:24,921] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:48:25,680] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 13:40:51.952380.json')
+[2022-03-14 14:48:25,684] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:48:25,685] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:48:25,999] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 13:40:54.048138.json')
+[2022-03-14 14:48:26,002] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:48:26,003] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:48:26,424] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 13:40:56.140666.json')
+[2022-03-14 14:48:26,428] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:48:26,428] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:48:26,756] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 13:41:02.424720.json')
+[2022-03-14 14:48:26,760] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:48:26,761] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:48:27,094] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 13:41:04.521027.json')
+[2022-03-14 14:48:27,098] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:48:27,099] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:48:27,558] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 13:41:06.619964.json')
+[2022-03-14 14:48:27,562] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:48:27,563] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:48:27,858] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 13:41:08.717143.json')
+[2022-03-14 14:48:27,862] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:48:27,863] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:48:28,182] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 13:41:10.809943.json')
+[2022-03-14 14:48:28,187] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:48:28,188] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:48:28,506] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 13:41:12.902259.json')
+[2022-03-14 14:48:28,511] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:48:28,512] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:48:29,205] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 13:41:14.996433.json')
+[2022-03-14 14:48:29,209] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:48:29,211] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:48:29,548] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 13:41:19.188289.json')
+[2022-03-14 14:48:29,553] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:48:29,554] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:48:30,060] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 13:41:21.281386.json')
+[2022-03-14 14:48:30,065] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:48:30,066] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:48:30,450] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 13:41:23.377181.json')
+[2022-03-14 14:48:30,455] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:48:30,456] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:48:30,810] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 13:41:25.468979.json')
+[2022-03-14 14:48:30,815] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:48:30,816] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:48:31,140] {logging_mixin.py:109} INFO - s3.Object(bucket_name='airflowrs', key='raw/user-2022-03-14 13:41:27.559613.json')
+[2022-03-14 14:48:31,146] {python.py:175} INFO - Done. Returned value was: None
+[2022-03-14 14:48:31,154] {taskinstance.py:1272} INFO - Marking task as SUCCESS. dag_id=simple_dag, task_id=get_recipes, execution_date=20220314T145200, start_date=20220314T194822, end_date=20220314T194831
+[2022-03-14 14:48:31,197] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-14 14:48:31,216] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-03-14 14:52:28,648] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.get_recipes scheduled__2022-03-14T14:52:00+00:00 [queued]>
+[2022-03-14 14:52:28,655] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.get_recipes scheduled__2022-03-14T14:52:00+00:00 [queued]>
+[2022-03-14 14:52:28,655] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 14:52:28,655] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-14 14:52:28,655] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 14:52:28,666] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): get_recipes> on 2022-03-14 14:52:00+00:00
+[2022-03-14 14:52:28,670] {standard_task_runner.py:52} INFO - Started process 88468 to run task
+[2022-03-14 14:52:28,679] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'simple_dag', 'get_recipes', 'scheduled__2022-03-14T14:52:00+00:00', '--job-id', '199', '--raw', '--subdir', 'DAGS_FOLDER/simple_dag.py', '--cfg-path', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpua9d5691', '--error-file', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpoefizz0t']
+[2022-03-14 14:52:28,682] {standard_task_runner.py:77} INFO - Job 199: Subtask get_recipes
+[2022-03-14 14:52:28,741] {logging_mixin.py:109} INFO - Running <TaskInstance: simple_dag.get_recipes scheduled__2022-03-14T14:52:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-03-14 14:52:28,788] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=simple_dag
+AIRFLOW_CTX_TASK_ID=get_recipes
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-14T14:52:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-14T14:52:00+00:00
+[2022-03-14 14:52:28,796] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:52:28,797] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:52:29,184] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:52:29,185] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:52:29,661] {logging_mixin.py:109} INFO - {'ResponseMetadata': {'RequestId': 'AWGVDBF9S2M698BP', 'HostId': 'FXG4Jat4XVRrdDzyoQzGcvTp6CYxb6iWViTpwiFHoQpSk48XKTFylXfpasKXNL51tyYDwqxlYoo=', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amz-id-2': 'FXG4Jat4XVRrdDzyoQzGcvTp6CYxb6iWViTpwiFHoQpSk48XKTFylXfpasKXNL51tyYDwqxlYoo=', 'x-amz-request-id': 'AWGVDBF9S2M698BP', 'date': 'Mon, 14 Mar 2022 19:52:30 GMT', 'last-modified': 'Mon, 14 Mar 2022 19:13:52 GMT', 'etag': '"4a622525f443062406694c300043b81c"', 'accept-ranges': 'bytes', 'content-type': 'binary/octet-stream', 'server': 'AmazonS3', 'content-length': '328'}, 'RetryAttempts': 0}, 'AcceptRanges': 'bytes', 'LastModified': datetime.datetime(2022, 3, 14, 19, 13, 52, tzinfo=tzutc()), 'ContentLength': 328, 'ETag': '"4a622525f443062406694c300043b81c"', 'ContentType': 'binary/octet-stream', 'Metadata': {}, 'Body': <botocore.response.StreamingBody object at 0x7fc2f5c75400>}
+[2022-03-14 14:52:29,666] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:52:29,667] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:52:30,055] {logging_mixin.py:109} INFO - {'ResponseMetadata': {'RequestId': 'H1971VR3Y6BW5CRX', 'HostId': 'BXCfU1LVT1zz4cPEpzp21qgTny0V6EdP1CdG+vA/VQ8FqoXYI2UIHpKo+e0HF8p6mBp8zRiw9Nc=', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amz-id-2': 'BXCfU1LVT1zz4cPEpzp21qgTny0V6EdP1CdG+vA/VQ8FqoXYI2UIHpKo+e0HF8p6mBp8zRiw9Nc=', 'x-amz-request-id': 'H1971VR3Y6BW5CRX', 'date': 'Mon, 14 Mar 2022 19:52:31 GMT', 'last-modified': 'Mon, 14 Mar 2022 19:13:52 GMT', 'etag': '"7fc6a346ee299d4e1b4f42d1daac1af4"', 'accept-ranges': 'bytes', 'content-type': 'binary/octet-stream', 'server': 'AmazonS3', 'content-length': '391'}, 'RetryAttempts': 0}, 'AcceptRanges': 'bytes', 'LastModified': datetime.datetime(2022, 3, 14, 19, 13, 52, tzinfo=tzutc()), 'ContentLength': 391, 'ETag': '"7fc6a346ee299d4e1b4f42d1daac1af4"', 'ContentType': 'binary/octet-stream', 'Metadata': {}, 'Body': <botocore.response.StreamingBody object at 0x7fc2f6365790>}
+[2022-03-14 14:52:30,060] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:52:30,061] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:52:30,466] {logging_mixin.py:109} INFO - {'ResponseMetadata': {'RequestId': 'H19844Y41ABH2HB7', 'HostId': 'gZ7GUXDHwqSwCVo1IG1xYMaqbCq38oEwFXbciOnMpoF8hdSTMJNJs83zGAIKCFTQInnvOw16DMw=', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amz-id-2': 'gZ7GUXDHwqSwCVo1IG1xYMaqbCq38oEwFXbciOnMpoF8hdSTMJNJs83zGAIKCFTQInnvOw16DMw=', 'x-amz-request-id': 'H19844Y41ABH2HB7', 'date': 'Mon, 14 Mar 2022 19:52:31 GMT', 'last-modified': 'Mon, 14 Mar 2022 19:13:54 GMT', 'etag': '"7a65eb008503bb10e04182b9fca9c94d"', 'accept-ranges': 'bytes', 'content-type': 'binary/octet-stream', 'server': 'AmazonS3', 'content-length': '407'}, 'RetryAttempts': 0}, 'AcceptRanges': 'bytes', 'LastModified': datetime.datetime(2022, 3, 14, 19, 13, 54, tzinfo=tzutc()), 'ContentLength': 407, 'ETag': '"7a65eb008503bb10e04182b9fca9c94d"', 'ContentType': 'binary/octet-stream', 'Metadata': {}, 'Body': <botocore.response.StreamingBody object at 0x7fc2f693d850>}
+[2022-03-14 14:52:30,470] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:52:30,472] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:52:30,860] {logging_mixin.py:109} INFO - {'ResponseMetadata': {'RequestId': 'H19A098QTN8W2C2D', 'HostId': 'RcI/GjO2ziaC9Z866I/k7J/jg+gOKre4Gx3gRJ0CFvO/AA/I7ofPXVsyvu3UkcHPmqODh9JFC4c=', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amz-id-2': 'RcI/GjO2ziaC9Z866I/k7J/jg+gOKre4Gx3gRJ0CFvO/AA/I7ofPXVsyvu3UkcHPmqODh9JFC4c=', 'x-amz-request-id': 'H19A098QTN8W2C2D', 'date': 'Mon, 14 Mar 2022 19:52:31 GMT', 'last-modified': 'Mon, 14 Mar 2022 19:13:54 GMT', 'etag': '"49c905c9d15dd5f90201fc43630e29ca"', 'accept-ranges': 'bytes', 'content-type': 'binary/octet-stream', 'server': 'AmazonS3', 'content-length': '455'}, 'RetryAttempts': 0}, 'AcceptRanges': 'bytes', 'LastModified': datetime.datetime(2022, 3, 14, 19, 13, 54, tzinfo=tzutc()), 'ContentLength': 455, 'ETag': '"49c905c9d15dd5f90201fc43630e29ca"', 'ContentType': 'binary/octet-stream', 'Metadata': {}, 'Body': <botocore.response.StreamingBody object at 0x7fc2f6f128e0>}
+[2022-03-14 14:52:30,865] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:52:30,866] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:52:31,247] {logging_mixin.py:109} INFO - {'ResponseMetadata': {'RequestId': 'E8G6Q9MTMZE1NQEC', 'HostId': 'zyNdzR1I26SG3xjgTP5hV7XiG9TeEogQmN0lqk9/CbPFNT9FSrkX2CKB2L/XAgyj/lgEl4L9YqI=', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amz-id-2': 'zyNdzR1I26SG3xjgTP5hV7XiG9TeEogQmN0lqk9/CbPFNT9FSrkX2CKB2L/XAgyj/lgEl4L9YqI=', 'x-amz-request-id': 'E8G6Q9MTMZE1NQEC', 'date': 'Mon, 14 Mar 2022 19:52:32 GMT', 'last-modified': 'Mon, 14 Mar 2022 19:13:52 GMT', 'etag': '"3aabbc7f7f908773bbdc3df112f66aa5"', 'accept-ranges': 'bytes', 'content-type': 'binary/octet-stream', 'server': 'AmazonS3', 'content-length': '409'}, 'RetryAttempts': 0}, 'AcceptRanges': 'bytes', 'LastModified': datetime.datetime(2022, 3, 14, 19, 13, 52, tzinfo=tzutc()), 'ContentLength': 409, 'ETag': '"3aabbc7f7f908773bbdc3df112f66aa5"', 'ContentType': 'binary/octet-stream', 'Metadata': {}, 'Body': <botocore.response.StreamingBody object at 0x7fc2f75f5880>}
+[2022-03-14 14:52:31,251] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:52:31,253] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:52:31,998] {logging_mixin.py:109} INFO - {'ResponseMetadata': {'RequestId': 'VPARN50SDZ7NM17E', 'HostId': 'JkaKWuAU/Zn2beQDj1lFk23+NUG5js5Nurg0M/JwzoBxB+PzgN1b6zfOzUCOeHC2aXucqqv6mAs=', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amz-id-2': 'JkaKWuAU/Zn2beQDj1lFk23+NUG5js5Nurg0M/JwzoBxB+PzgN1b6zfOzUCOeHC2aXucqqv6mAs=', 'x-amz-request-id': 'VPARN50SDZ7NM17E', 'date': 'Mon, 14 Mar 2022 19:52:33 GMT', 'last-modified': 'Mon, 14 Mar 2022 19:13:55 GMT', 'etag': '"f8aa046a18da0ba080350cce82261234"', 'accept-ranges': 'bytes', 'content-type': 'binary/octet-stream', 'server': 'AmazonS3', 'content-length': '380'}, 'RetryAttempts': 0}, 'AcceptRanges': 'bytes', 'LastModified': datetime.datetime(2022, 3, 14, 19, 13, 55, tzinfo=tzutc()), 'ContentLength': 380, 'ETag': '"f8aa046a18da0ba080350cce82261234"', 'ContentType': 'binary/octet-stream', 'Metadata': {}, 'Body': <botocore.response.StreamingBody object at 0x7fc2f5c5a400>}
+[2022-03-14 14:52:32,003] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:52:32,004] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:52:33,585] {logging_mixin.py:109} INFO - {'ResponseMetadata': {'RequestId': 'Z71BARRFA51Z3KHQ', 'HostId': '+xpC4uTs9Q7O8ZdgBg7XJx+nDmI7bmlseHp2FHuyLyIt2Jpzs4yMpajWuP2VbWM8sQe9XpnWjXI=', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amz-id-2': '+xpC4uTs9Q7O8ZdgBg7XJx+nDmI7bmlseHp2FHuyLyIt2Jpzs4yMpajWuP2VbWM8sQe9XpnWjXI=', 'x-amz-request-id': 'Z71BARRFA51Z3KHQ', 'date': 'Mon, 14 Mar 2022 19:52:34 GMT', 'last-modified': 'Mon, 14 Mar 2022 19:13:53 GMT', 'etag': '"d0c09035859dc7fc1dcae1fbe72158ab"', 'accept-ranges': 'bytes', 'content-type': 'binary/octet-stream', 'server': 'AmazonS3', 'content-length': '393'}, 'RetryAttempts': 0}, 'AcceptRanges': 'bytes', 'LastModified': datetime.datetime(2022, 3, 14, 19, 13, 53, tzinfo=tzutc()), 'ContentLength': 393, 'ETag': '"d0c09035859dc7fc1dcae1fbe72158ab"', 'ContentType': 'binary/octet-stream', 'Metadata': {}, 'Body': <botocore.response.StreamingBody object at 0x7fc2f636ba00>}
+[2022-03-14 14:52:33,590] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:52:33,591] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:52:33,974] {logging_mixin.py:109} INFO - {'ResponseMetadata': {'RequestId': 'EN367KHPZ74B45NG', 'HostId': 'aJNfmeYjTJ2NsoevCtyPytq3g6xdgJaGQwVEyc5moU6zKKiBOMXl3lxMCeXt3/Tx7k44mpoILuU=', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amz-id-2': 'aJNfmeYjTJ2NsoevCtyPytq3g6xdgJaGQwVEyc5moU6zKKiBOMXl3lxMCeXt3/Tx7k44mpoILuU=', 'x-amz-request-id': 'EN367KHPZ74B45NG', 'date': 'Mon, 14 Mar 2022 19:52:35 GMT', 'last-modified': 'Mon, 14 Mar 2022 19:13:54 GMT', 'etag': '"1ec976b9d1d09bcbb4adb3062dcde33d"', 'accept-ranges': 'bytes', 'content-type': 'binary/octet-stream', 'server': 'AmazonS3', 'content-length': '450'}, 'RetryAttempts': 0}, 'AcceptRanges': 'bytes', 'LastModified': datetime.datetime(2022, 3, 14, 19, 13, 54, tzinfo=tzutc()), 'ContentLength': 450, 'ETag': '"1ec976b9d1d09bcbb4adb3062dcde33d"', 'ContentType': 'binary/octet-stream', 'Metadata': {}, 'Body': <botocore.response.StreamingBody object at 0x7fc2f5ebcc70>}
+[2022-03-14 14:52:33,978] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:52:33,979] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:52:34,398] {logging_mixin.py:109} INFO - {'ResponseMetadata': {'RequestId': 'EN39GEFBBY9GMPNW', 'HostId': 'hmxQBJ0DUoPY7SzEcGdX3G96y4Kr/DJjPhZEcvJFzLZNLDTBij/1IXBAw/7t4wfZYr+8t0VPQkk=', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amz-id-2': 'hmxQBJ0DUoPY7SzEcGdX3G96y4Kr/DJjPhZEcvJFzLZNLDTBij/1IXBAw/7t4wfZYr+8t0VPQkk=', 'x-amz-request-id': 'EN39GEFBBY9GMPNW', 'date': 'Mon, 14 Mar 2022 19:52:35 GMT', 'last-modified': 'Mon, 14 Mar 2022 19:13:53 GMT', 'etag': '"d26cb17191ad3884973dfffd2db5cbb7"', 'accept-ranges': 'bytes', 'content-type': 'binary/octet-stream', 'server': 'AmazonS3', 'content-length': '422'}, 'RetryAttempts': 0}, 'AcceptRanges': 'bytes', 'LastModified': datetime.datetime(2022, 3, 14, 19, 13, 53, tzinfo=tzutc()), 'ContentLength': 422, 'ETag': '"d26cb17191ad3884973dfffd2db5cbb7"', 'ContentType': 'binary/octet-stream', 'Metadata': {}, 'Body': <botocore.response.StreamingBody object at 0x7fc2f66e40a0>}
+[2022-03-14 14:52:34,402] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:52:34,403] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:52:34,793] {logging_mixin.py:109} INFO - {'ResponseMetadata': {'RequestId': 'EN36S1Z5TBKND08R', 'HostId': 'g+FmFLbvapSkMhISRDcLHgveF7th+XqWQqeDv4JX2M7tFx7c2BdLP09AIOeNAxl7VrzJzcjSH2Q=', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amz-id-2': 'g+FmFLbvapSkMhISRDcLHgveF7th+XqWQqeDv4JX2M7tFx7c2BdLP09AIOeNAxl7VrzJzcjSH2Q=', 'x-amz-request-id': 'EN36S1Z5TBKND08R', 'date': 'Mon, 14 Mar 2022 19:52:35 GMT', 'last-modified': 'Mon, 14 Mar 2022 19:13:52 GMT', 'etag': '"6354c2ac5ea790b1c552a8769e88a4a4"', 'accept-ranges': 'bytes', 'content-type': 'binary/octet-stream', 'server': 'AmazonS3', 'content-length': '378'}, 'RetryAttempts': 0}, 'AcceptRanges': 'bytes', 'LastModified': datetime.datetime(2022, 3, 14, 19, 13, 52, tzinfo=tzutc()), 'ContentLength': 378, 'ETag': '"6354c2ac5ea790b1c552a8769e88a4a4"', 'ContentType': 'binary/octet-stream', 'Metadata': {}, 'Body': <botocore.response.StreamingBody object at 0x7fc2f6e742b0>}
+[2022-03-14 14:52:34,798] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:52:34,799] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:52:35,300] {logging_mixin.py:109} INFO - {'ResponseMetadata': {'RequestId': 'ABKG5GWPZ34YRKBG', 'HostId': 'PFH95/tZac6PU6jk5ZyRQzG1WqIjBILb2/ZeW73Mw/+FBWFVjAqQS5QoeH5AGFO0KE0fAMlL9p4=', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amz-id-2': 'PFH95/tZac6PU6jk5ZyRQzG1WqIjBILb2/ZeW73Mw/+FBWFVjAqQS5QoeH5AGFO0KE0fAMlL9p4=', 'x-amz-request-id': 'ABKG5GWPZ34YRKBG', 'date': 'Mon, 14 Mar 2022 19:52:36 GMT', 'last-modified': 'Mon, 14 Mar 2022 19:13:54 GMT', 'etag': '"0cf20a06d0d61865079a1f37216f2337"', 'accept-ranges': 'bytes', 'content-type': 'binary/octet-stream', 'server': 'AmazonS3', 'content-length': '362'}, 'RetryAttempts': 0}, 'AcceptRanges': 'bytes', 'LastModified': datetime.datetime(2022, 3, 14, 19, 13, 54, tzinfo=tzutc()), 'ContentLength': 362, 'ETag': '"0cf20a06d0d61865079a1f37216f2337"', 'ContentType': 'binary/octet-stream', 'Metadata': {}, 'Body': <botocore.response.StreamingBody object at 0x7fc2f5ebc220>}
+[2022-03-14 14:52:35,304] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:52:35,305] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:52:35,691] {logging_mixin.py:109} INFO - {'ResponseMetadata': {'RequestId': 'ABKVENGQSG1DASZZ', 'HostId': 'MoCFK7xvJJ4MT17v9Sw65m4kxc7uYRShAFZJ/4MVXgiOknHR0/uhgcJnuNocs9h76xx7WvDyEfo=', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amz-id-2': 'MoCFK7xvJJ4MT17v9Sw65m4kxc7uYRShAFZJ/4MVXgiOknHR0/uhgcJnuNocs9h76xx7WvDyEfo=', 'x-amz-request-id': 'ABKVENGQSG1DASZZ', 'date': 'Mon, 14 Mar 2022 19:52:36 GMT', 'last-modified': 'Mon, 14 Mar 2022 19:13:55 GMT', 'etag': '"80a3cf15935c9047b2ed739e059c395b"', 'accept-ranges': 'bytes', 'content-type': 'binary/octet-stream', 'server': 'AmazonS3', 'content-length': '377'}, 'RetryAttempts': 0}, 'AcceptRanges': 'bytes', 'LastModified': datetime.datetime(2022, 3, 14, 19, 13, 55, tzinfo=tzutc()), 'ContentLength': 377, 'ETag': '"80a3cf15935c9047b2ed739e059c395b"', 'ContentType': 'binary/octet-stream', 'Metadata': {}, 'Body': <botocore.response.StreamingBody object at 0x7fc2f6d925e0>}
+[2022-03-14 14:52:35,696] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:52:35,697] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:52:36,099] {logging_mixin.py:109} INFO - {'ResponseMetadata': {'RequestId': 'HGXHSJ243B91BVVC', 'HostId': 'OZ2gIKvwVqOmQ7kjA9Ar3J3pkEw7LJZ3WcQQV1RevdFRWG5HNOaLNXOlzTiMk5VSSlJtH4WDEos=', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amz-id-2': 'OZ2gIKvwVqOmQ7kjA9Ar3J3pkEw7LJZ3WcQQV1RevdFRWG5HNOaLNXOlzTiMk5VSSlJtH4WDEos=', 'x-amz-request-id': 'HGXHSJ243B91BVVC', 'date': 'Mon, 14 Mar 2022 19:52:37 GMT', 'last-modified': 'Mon, 14 Mar 2022 19:13:53 GMT', 'etag': '"99e28d4ff337a62e6252eed7f7b21cef"', 'accept-ranges': 'bytes', 'content-type': 'binary/octet-stream', 'server': 'AmazonS3', 'content-length': '356'}, 'RetryAttempts': 0}, 'AcceptRanges': 'bytes', 'LastModified': datetime.datetime(2022, 3, 14, 19, 13, 53, tzinfo=tzutc()), 'ContentLength': 356, 'ETag': '"99e28d4ff337a62e6252eed7f7b21cef"', 'ContentType': 'binary/octet-stream', 'Metadata': {}, 'Body': <botocore.response.StreamingBody object at 0x7fc2f7434790>}
+[2022-03-14 14:52:36,103] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:52:36,104] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:52:36,493] {logging_mixin.py:109} INFO - {'ResponseMetadata': {'RequestId': 'HGXVJ05WH789QRMH', 'HostId': 'hkky7hLuqE1ZKfgjX1rFInRbJDqXSCsehg1XMOQjOPxJ76SUUi/cYZqojDdTD1MecJjNFKfu6Rk=', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amz-id-2': 'hkky7hLuqE1ZKfgjX1rFInRbJDqXSCsehg1XMOQjOPxJ76SUUi/cYZqojDdTD1MecJjNFKfu6Rk=', 'x-amz-request-id': 'HGXVJ05WH789QRMH', 'date': 'Mon, 14 Mar 2022 19:52:37 GMT', 'last-modified': 'Mon, 14 Mar 2022 19:13:53 GMT', 'etag': '"23550c3290266f43ecaec06d70e50313"', 'accept-ranges': 'bytes', 'content-type': 'binary/octet-stream', 'server': 'AmazonS3', 'content-length': '361'}, 'RetryAttempts': 0}, 'AcceptRanges': 'bytes', 'LastModified': datetime.datetime(2022, 3, 14, 19, 13, 53, tzinfo=tzutc()), 'ContentLength': 361, 'ETag': '"23550c3290266f43ecaec06d70e50313"', 'ContentType': 'binary/octet-stream', 'Metadata': {}, 'Body': <botocore.response.StreamingBody object at 0x7fc2f60937c0>}
+[2022-03-14 14:52:36,498] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:52:36,499] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:52:36,931] {logging_mixin.py:109} INFO - {'ResponseMetadata': {'RequestId': 'MHKBW9943AMPV5Y6', 'HostId': 'TzN7jvdsmZr2KN7m8VHIFwOSfiqQa0DxxMUqbQxpM4eUYzQo2YU3Yg0MtIJAa5sIOfBvH7h16Ps=', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amz-id-2': 'TzN7jvdsmZr2KN7m8VHIFwOSfiqQa0DxxMUqbQxpM4eUYzQo2YU3Yg0MtIJAa5sIOfBvH7h16Ps=', 'x-amz-request-id': 'MHKBW9943AMPV5Y6', 'date': 'Mon, 14 Mar 2022 19:52:38 GMT', 'last-modified': 'Mon, 14 Mar 2022 19:13:53 GMT', 'etag': '"a6df52fd21c5472092cd0f752aa6a2f1"', 'accept-ranges': 'bytes', 'content-type': 'binary/octet-stream', 'server': 'AmazonS3', 'content-length': '379'}, 'RetryAttempts': 0}, 'AcceptRanges': 'bytes', 'LastModified': datetime.datetime(2022, 3, 14, 19, 13, 53, tzinfo=tzutc()), 'ContentLength': 379, 'ETag': '"a6df52fd21c5472092cd0f752aa6a2f1"', 'ContentType': 'binary/octet-stream', 'Metadata': {}, 'Body': <botocore.response.StreamingBody object at 0x7fc2f69a88e0>}
+[2022-03-14 14:52:36,935] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:52:36,936] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:52:37,375] {logging_mixin.py:109} INFO - {'ResponseMetadata': {'RequestId': 'MHK1S0KT27K2NJPM', 'HostId': 'C6tl6whC8w/TpSjTarFQPO7H9R9nVF7IiQywmiRjLgbvr47a/NLS+ibaPBEJPZ9K6rqXV5yv1MI=', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amz-id-2': 'C6tl6whC8w/TpSjTarFQPO7H9R9nVF7IiQywmiRjLgbvr47a/NLS+ibaPBEJPZ9K6rqXV5yv1MI=', 'x-amz-request-id': 'MHK1S0KT27K2NJPM', 'date': 'Mon, 14 Mar 2022 19:52:38 GMT', 'last-modified': 'Mon, 14 Mar 2022 19:13:52 GMT', 'etag': '"b2164cbef2714cc2f3c851294cb89b7e"', 'accept-ranges': 'bytes', 'content-type': 'binary/octet-stream', 'server': 'AmazonS3', 'content-length': '355'}, 'RetryAttempts': 0}, 'AcceptRanges': 'bytes', 'LastModified': datetime.datetime(2022, 3, 14, 19, 13, 52, tzinfo=tzutc()), 'ContentLength': 355, 'ETag': '"b2164cbef2714cc2f3c851294cb89b7e"', 'ContentType': 'binary/octet-stream', 'Metadata': {}, 'Body': <botocore.response.StreamingBody object at 0x7fc2f7c80970>}
+[2022-03-14 14:52:37,380] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:52:37,382] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:52:37,913] {logging_mixin.py:109} INFO - {'ResponseMetadata': {'RequestId': 'Q3TM3V8QXRF0S0DN', 'HostId': 'VKrK63u3h4d8P6ew3Dh+/nlHBWqizuje5467qL+KLi3HTNo/vyMp9YT899pgzlEPNb/3r+7N/BE=', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amz-id-2': 'VKrK63u3h4d8P6ew3Dh+/nlHBWqizuje5467qL+KLi3HTNo/vyMp9YT899pgzlEPNb/3r+7N/BE=', 'x-amz-request-id': 'Q3TM3V8QXRF0S0DN', 'date': 'Mon, 14 Mar 2022 19:52:39 GMT', 'last-modified': 'Mon, 14 Mar 2022 19:13:55 GMT', 'etag': '"88617bc3bc569dcb54ebc9da8155d3c3"', 'accept-ranges': 'bytes', 'content-type': 'binary/octet-stream', 'server': 'AmazonS3', 'content-length': '415'}, 'RetryAttempts': 0}, 'AcceptRanges': 'bytes', 'LastModified': datetime.datetime(2022, 3, 14, 19, 13, 55, tzinfo=tzutc()), 'ContentLength': 415, 'ETag': '"88617bc3bc569dcb54ebc9da8155d3c3"', 'ContentType': 'binary/octet-stream', 'Metadata': {}, 'Body': <botocore.response.StreamingBody object at 0x7fc2f5c80520>}
+[2022-03-14 14:52:37,917] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:52:37,917] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:52:38,301] {logging_mixin.py:109} INFO - {'ResponseMetadata': {'RequestId': 'Q3TRVV705W126658', 'HostId': 'F2rU421fHOUwiHdyw5uGHp2fqBJ+rthA84gRLtkLRezQt9KizPXo4kVPLJ0MV494rSgq6i8HrlU=', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amz-id-2': 'F2rU421fHOUwiHdyw5uGHp2fqBJ+rthA84gRLtkLRezQt9KizPXo4kVPLJ0MV494rSgq6i8HrlU=', 'x-amz-request-id': 'Q3TRVV705W126658', 'date': 'Mon, 14 Mar 2022 19:52:39 GMT', 'last-modified': 'Mon, 14 Mar 2022 19:13:53 GMT', 'etag': '"f52cd37665ad190e306357df6aa99b2c"', 'accept-ranges': 'bytes', 'content-type': 'binary/octet-stream', 'server': 'AmazonS3', 'content-length': '384'}, 'RetryAttempts': 0}, 'AcceptRanges': 'bytes', 'LastModified': datetime.datetime(2022, 3, 14, 19, 13, 53, tzinfo=tzutc()), 'ContentLength': 384, 'ETag': '"f52cd37665ad190e306357df6aa99b2c"', 'ContentType': 'binary/octet-stream', 'Metadata': {}, 'Body': <botocore.response.StreamingBody object at 0x7fc2f6da7d30>}
+[2022-03-14 14:52:38,305] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:52:38,306] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:52:38,657] {logging_mixin.py:109} INFO - {'ResponseMetadata': {'RequestId': 'Q3TVVRS736H6PMRT', 'HostId': 'Q2IgkMGneXXk75YB1WZ1uGkPcfZv9AXSOMmLmLS8P4pe76wtJehgUnFthmI2lCCcDBaHqbNvkRs=', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amz-id-2': 'Q2IgkMGneXXk75YB1WZ1uGkPcfZv9AXSOMmLmLS8P4pe76wtJehgUnFthmI2lCCcDBaHqbNvkRs=', 'x-amz-request-id': 'Q3TVVRS736H6PMRT', 'date': 'Mon, 14 Mar 2022 19:52:39 GMT', 'last-modified': 'Mon, 14 Mar 2022 19:13:54 GMT', 'etag': '"1951bd3a8e62b360b8901ba3d35a68c1"', 'accept-ranges': 'bytes', 'content-type': 'binary/octet-stream', 'server': 'AmazonS3', 'content-length': '333'}, 'RetryAttempts': 0}, 'AcceptRanges': 'bytes', 'LastModified': datetime.datetime(2022, 3, 14, 19, 13, 54, tzinfo=tzutc()), 'ContentLength': 333, 'ETag': '"1951bd3a8e62b360b8901ba3d35a68c1"', 'ContentType': 'binary/octet-stream', 'Metadata': {}, 'Body': <botocore.response.StreamingBody object at 0x7fc2f5c5a3d0>}
+[2022-03-14 14:52:38,660] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:52:38,661] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:52:39,017] {logging_mixin.py:109} INFO - {'ResponseMetadata': {'RequestId': '09DH61RW3QM5WQ48', 'HostId': 'ZQk1SCfdc1iKNUATjOinAeUpI76jF21Y20sRIbwNmgrl9/voSfhoU9uTCCFo8WFBcNA8QVe/GT0=', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amz-id-2': 'ZQk1SCfdc1iKNUATjOinAeUpI76jF21Y20sRIbwNmgrl9/voSfhoU9uTCCFo8WFBcNA8QVe/GT0=', 'x-amz-request-id': '09DH61RW3QM5WQ48', 'date': 'Mon, 14 Mar 2022 19:52:40 GMT', 'last-modified': 'Mon, 14 Mar 2022 19:13:54 GMT', 'etag': '"c9a124d858fc6777de764ba7fb26e79f"', 'accept-ranges': 'bytes', 'content-type': 'binary/octet-stream', 'server': 'AmazonS3', 'content-length': '424'}, 'RetryAttempts': 0}, 'AcceptRanges': 'bytes', 'LastModified': datetime.datetime(2022, 3, 14, 19, 13, 54, tzinfo=tzutc()), 'ContentLength': 424, 'ETag': '"c9a124d858fc6777de764ba7fb26e79f"', 'ContentType': 'binary/octet-stream', 'Metadata': {}, 'Body': <botocore.response.StreamingBody object at 0x7fc2f61dcd60>}
+[2022-03-14 14:52:39,022] {python.py:175} INFO - Done. Returned value was: None
+[2022-03-14 14:52:39,028] {taskinstance.py:1272} INFO - Marking task as SUCCESS. dag_id=simple_dag, task_id=get_recipes, execution_date=20220314T145200, start_date=20220314T195228, end_date=20220314T195239
+[2022-03-14 14:52:39,081] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-14 14:52:39,098] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-03-14 14:56:58,301] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.get_recipes scheduled__2022-03-14T14:52:00+00:00 [queued]>
+[2022-03-14 14:56:58,310] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.get_recipes scheduled__2022-03-14T14:52:00+00:00 [queued]>
+[2022-03-14 14:56:58,310] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 14:56:58,310] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-14 14:56:58,310] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 14:56:58,319] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): get_recipes> on 2022-03-14 14:52:00+00:00
+[2022-03-14 14:56:58,322] {standard_task_runner.py:52} INFO - Started process 88605 to run task
+[2022-03-14 14:56:58,328] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'simple_dag', 'get_recipes', 'scheduled__2022-03-14T14:52:00+00:00', '--job-id', '211', '--raw', '--subdir', 'DAGS_FOLDER/simple_dag.py', '--cfg-path', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpl0j6jzqm', '--error-file', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmp2n07rpay']
+[2022-03-14 14:56:58,331] {standard_task_runner.py:77} INFO - Job 211: Subtask get_recipes
+[2022-03-14 14:56:58,389] {logging_mixin.py:109} INFO - Running <TaskInstance: simple_dag.get_recipes scheduled__2022-03-14T14:52:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-03-14 14:56:58,432] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=simple_dag
+AIRFLOW_CTX_TASK_ID=get_recipes
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-14T14:52:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-14T14:52:00+00:00
+[2022-03-14 14:56:58,440] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:56:58,441] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:56:58,831] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:56:58,832] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:56:59,318] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['potato'], 'includeIngredients': ['fish'], 'intolerances': 'soy'}, 'user': {'address': '0496 Page Mountains Apt. 722\nHernandezfort, IN 04526', 'description': 'Often focus air race affect. Statement go shoulder believe pretty activity turn. Four face arrive table.', 'name': 'Janet Clements'}}
+[2022-03-14 14:56:59,323] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:56:59,324] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:56:59,733] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['lime'], 'includeIngredients': ['brown rice'], 'intolerances': 'grain'}, 'user': {'address': '07227 Barbara Vista\nStevenbury, MD 07127', 'description': 'Chair them way agency. A drug cell choice rest trip. Inside recently face mind fish up north set.\nCulture arrive else imagine approach say just. Stand door up accept low.', 'name': 'Kimberly Johnson'}}
+[2022-03-14 14:56:59,738] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:56:59,740] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:57:00,304] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['stock', 'sweet potato'], 'includeIngredients': ['pepper', 'onion'], 'intolerances': 'peanut'}, 'user': {'address': '3916 Barker Points\nRyanstad, SD 23542', 'description': 'Production usually others think our stand many age. Kind many thus response thus office.\nInside know gun senior. Forget bit follow per author. Sure mean throw forget.', 'name': 'Darlene Harrison'}}
+[2022-03-14 14:57:00,309] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:57:00,310] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:57:00,709] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['cooking oil'], 'includeIngredients': ['fish', 'brown rice', 'potato'], 'intolerances': 'seafood'}, 'user': {'address': '510 Harris Plaza Suite 632\nLake Brittany, VT 17864', 'description': 'He evidence strategy everything low listen. Camera foot to recently final true reveal.\nProtect participant within forward election listen. Candidate once modern culture people large science forget.', 'name': 'Alexandra Taylor'}}
+[2022-03-14 14:57:00,713] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:57:00,715] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:57:01,326] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['cauliflower rice', 'stock'], 'includeIngredients': ['cooking oil', 'rice'], 'intolerances': 'dairy'}, 'user': {'address': '237 Cruz Crescent\nEast Brittney, WA 04269', 'description': 'And six woman together lose well close. Pressure house baby allow bar. Little husband how gas lead these almost. Themselves full water treatment center either.', 'name': 'Kimberly Coffey'}}
+[2022-03-14 14:57:01,331] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:57:01,332] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:57:01,800] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['brown rice', 'chickpeas'], 'includeIngredients': ['stock'], 'intolerances': 'peanut'}, 'user': {'address': '575 Brian Squares Apt. 052\nAndrewborough, CA 28848', 'description': 'However successful my choice choose when through. Agree military manager most remain drug character. Soldier within main American any deep.', 'name': 'Roy Mcdowell'}}
+[2022-03-14 14:57:01,805] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:57:01,806] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:57:02,202] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['soup'], 'includeIngredients': ['rice', 'water', 'cauliflower rice'], 'intolerances': 'grain'}, 'user': {'address': '5879 Collins Points\nDavisborough, AK 45910', 'description': 'Play material sense movement man final. Him here remember word small must.\nSenior ever wish perform. Sometimes bag some leader suddenly test represent.', 'name': 'Karen Taylor'}}
+[2022-03-14 14:57:02,206] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:57:02,207] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:57:02,747] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['salt'], 'includeIngredients': ['lime', 'chickpeas', 'onion', 'water'], 'intolerances': 'peanut'}, 'user': {'address': '550 Nichols Isle Suite 592\nCookmouth, DC 28172', 'description': 'Address charge right help exactly beat meet exist. Conference marriage sit eight concern responsibility forward main. Pass now cup war event seek include. Various treatment arm mouth tax check dream.', 'name': 'Jeremy Gallegos'}}
+[2022-03-14 14:57:02,751] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:57:02,752] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:57:03,150] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['onion', 'whole chicken'], 'includeIngredients': ['pepper', 'cauliflower florets', 'cauliflower', 'seasoning'], 'intolerances': 'peanut'}, 'user': {'address': '5736 Angela Estate Apt. 360\nSouth Natasha, CA 15714', 'description': 'Economy job good upon. Radio hope this song administration war. Agency floor star too. Nothing either like during together seven.', 'name': 'Patrick Carr'}}
+[2022-03-14 14:57:03,154] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:57:03,155] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:57:03,552] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['onion'], 'includeIngredients': ['seasoning', 'cooking oil'], 'intolerances': 'soy'}, 'user': {'address': '15075 Jamie Overpass Apt. 289\nNorth Kelsey, NC 13905', 'description': 'Anyone other others fact learn report trade. Store kind organization water election far interesting. Family decision safe one natural TV.', 'name': 'Aaron Thomas'}}
+[2022-03-14 14:57:03,556] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:57:03,557] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:57:04,047] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['cauliflower florets', 'soup'], 'includeIngredients': ['soup', 'lime', 'fish', 'kidney beans'], 'intolerances': 'peanut'}, 'user': {'address': 'PSC 6875, Box 7223\nAPO AP 53883', 'description': 'Few ever ever apply of especially. Seat space Republican girl. Threat tree media authority several later.', 'name': 'David Walker'}}
+[2022-03-14 14:57:04,052] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:57:04,053] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:57:04,415] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['garlic', 'ginger'], 'includeIngredients': ['cooking spray'], 'intolerances': 'soy'}, 'user': {'address': '6844 Hernandez Mountain\nHoweshire, MI 48820', 'description': 'Tree you but. Issue carry year. Oil perhaps now class road successful girl.\nTurn somebody those important. Should treat send theory majority skin.', 'name': 'Alexa Yang'}}
+[2022-03-14 14:57:04,419] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:57:04,420] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:57:05,049] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['lime'], 'includeIngredients': ['soup'], 'intolerances': 'soy'}, 'user': {'address': '7061 Jessica Drive\nPatriciaton, WI 41246', 'description': 'Student oil plan order though call. Former prepare past step produce different why. His during break day establish. Song guy that bag score have.', 'name': 'Sarah Rodriguez'}}
+[2022-03-14 14:57:05,053] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:57:05,054] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:57:05,576] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['kidney beans', 'cauliflower'], 'includeIngredients': ['sweet potato'], 'intolerances': 'grain'}, 'user': {'address': '88565 Walker Villages\nWest Erinland, DC 47710', 'description': 'Enjoy onto fire nothing however trial art evidence.\nMrs account source executive move. Student over goal stay pass.', 'name': 'Robert Dunn'}}
+[2022-03-14 14:57:05,581] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:57:05,582] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:57:06,172] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['stock'], 'includeIngredients': ['salt', 'cooking oil', 'water'], 'intolerances': 'wheat'}, 'user': {'address': '9024 Drew Squares\nDavisland, CA 13649', 'description': 'Forward father store sound world social consumer. Other because its interesting allow south. Pass hand community attorney provide technology like.', 'name': 'Douglas Hicks'}}
+[2022-03-14 14:57:06,177] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:57:06,178] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:57:06,610] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['potato'], 'includeIngredients': ['rice'], 'intolerances': 'seafood'}, 'user': {'address': '437 Joan Island Apt. 437\nPort Jasonberg, PA 65035', 'description': 'Measure yet law again happen recent.\nArt way parent shoulder message and apply consumer. Hold policy state alone wife government gas.', 'name': 'Kelly Cook'}}
+[2022-03-14 14:57:06,615] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:57:06,616] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:57:07,093] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['tomato'], 'includeIngredients': ['salt', 'soup'], 'intolerances': 'gluten'}, 'user': {'address': '58137 Alan Highway\nSouth Erikaside, CA 25845', 'description': 'Religious some church choice and rate. Bit purpose policy television increase expect.\nPast million how huge wrong wide daughter can. Help plant her. Change TV term nothing water good each.', 'name': 'Cynthia Young'}}
+[2022-03-14 14:57:07,097] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:57:07,098] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:57:07,867] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['rice'], 'includeIngredients': ['cauliflower florets'], 'intolerances': 'seafood'}, 'user': {'address': '1020 Hutchinson Crossing\nSouth Davidfurt, TN 78025', 'description': 'Nothing bill challenge authority ask international short prevent. Fine phone store later ability information. Prepare offer threat that figure wall.', 'name': 'Howard Paul'}}
+[2022-03-14 14:57:07,872] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:57:07,873] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:57:08,248] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['tomato'], 'includeIngredients': ['tomato', 'salt'], 'intolerances': 'peanut'}, 'user': {'address': '29627 John Estates Suite 324\nWest Benjamin, ME 63889', 'description': 'Market Congress make partner eat could four. Clear technology I they. Include time like matter.', 'name': 'Heather Kennedy'}}
+[2022-03-14 14:57:08,252] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 14:57:08,253] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 14:57:08,630] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['chickpeas', 'garlic'], 'includeIngredients': ['salt', 'chickpeas', 'cauliflower rice'], 'intolerances': 'tree nut'}, 'user': {'address': '148 Timothy Lakes\nBauerland, IL 49873', 'description': 'Trade red treatment would. Improve fact same trouble resource find country.\nDaughter put air during than. Hear life more. Common reflect common guess reach task compare.', 'name': 'Kim Hall'}}
+[2022-03-14 14:57:08,634] {python.py:175} INFO - Done. Returned value was: None
+[2022-03-14 14:57:08,643] {taskinstance.py:1272} INFO - Marking task as SUCCESS. dag_id=simple_dag, task_id=get_recipes, execution_date=20220314T145200, start_date=20220314T195658, end_date=20220314T195708
+[2022-03-14 14:57:08,709] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-14 14:57:08,726] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

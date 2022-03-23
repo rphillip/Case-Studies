@@ -1,0 +1,252 @@
+[2022-03-15 11:11:20,912] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.get_recipes scheduled__2022-03-15T11:08:00+00:00 [queued]>
+[2022-03-15 11:11:20,920] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.get_recipes scheduled__2022-03-15T11:08:00+00:00 [queued]>
+[2022-03-15 11:11:20,920] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-15 11:11:20,920] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-15 11:11:20,920] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-15 11:11:20,929] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): get_recipes> on 2022-03-15 11:08:00+00:00
+[2022-03-15 11:11:20,933] {standard_task_runner.py:52} INFO - Started process 20356 to run task
+[2022-03-15 11:11:20,939] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'simple_dag', 'get_recipes', 'scheduled__2022-03-15T11:08:00+00:00', '--job-id', '278', '--raw', '--subdir', 'DAGS_FOLDER/simple_dag.py', '--cfg-path', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpx9kaferf', '--error-file', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpbgt7hbu8']
+[2022-03-15 11:11:20,942] {standard_task_runner.py:77} INFO - Job 278: Subtask get_recipes
+[2022-03-15 11:11:20,998] {logging_mixin.py:109} INFO - Running <TaskInstance: simple_dag.get_recipes scheduled__2022-03-15T11:08:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-03-15 11:11:21,045] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=simple_dag
+AIRFLOW_CTX_TASK_ID=get_recipes
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-15T11:08:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-15T11:08:00+00:00
+[2022-03-15 11:11:21,060] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:11:21,062] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:11:21,459] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:11:21,460] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:11:21,866] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['potato'], 'includeIngredients': ['fish'], 'intolerances': 'soy'}, 'user': {'address': '0496 Page Mountains Apt. 722\nHernandezfort, IN 04526', 'description': 'Often focus air race affect. Statement go shoulder believe pretty activity turn. Four face arrive table.', 'name': 'Janet Clements'}}
+[2022-03-15 11:11:22,290] {logging_mixin.py:109} INFO -    vegetarian  vegan  glutenFree  dairyFree  ...                                              diets  occasions                               analyzedInstructions                               spoonacularSourceUrl
+0       False  False        True      False  ...                         [gluten free, pescatarian]         []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/greek-style-baked-fish...
+1       False  False        True      False  ...                 [gluten free, primal, pescatarian]         []  [{'name': '', 'steps': [{'number': 1, 'step': ...      https://spoonacular.com/plantain-salad-729366
+2       False  False        True       True  ...  [gluten free, dairy free, paleolithic, primal,...         []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/jade-buddha-salmon-tar...
+3       False  False        True       True  ...             [gluten free, dairy free, pescatarian]         []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/balsamic-honey-glazed-...
+4       False  False        True       True  ...  [gluten free, dairy free, paleolithic, primal,...         []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/salmon-watercress-fenn...
+5       False  False        True      False  ...                         [gluten free, pescatarian]         []                                                 []  https://spoonacular.com/filet-mignon-soft-taco...
+6       False  False        True       True  ...  [gluten free, dairy free, paleolithic, primal,...         []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/cilantro-lime-halibut-...
+7       False  False        True      False  ...                         [gluten free, pescatarian]         []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/corn-crusted-fish-taco...
+8       False  False        True       True  ...             [gluten free, dairy free, pescatarian]         []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/salmon-quinoa-risotto-...
+9       False  False        True       True  ...             [gluten free, dairy free, pescatarian]         []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/rice-and-peas-with-coc...
+
+[10 rows x 32 columns]
+[2022-03-15 11:11:23,612] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:11:23,613] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:11:23,982] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['lime'], 'includeIngredients': ['brown rice'], 'intolerances': 'grain'}, 'user': {'address': '07227 Barbara Vista\nStevenbury, MD 07127', 'description': 'Chair them way agency. A drug cell choice rest trip. Inside recently face mind fish up north set.\nCulture arrive else imagine approach say just. Stand door up accept low.', 'name': 'Kimberly Johnson'}}
+[2022-03-15 11:11:24,364] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:11:24,365] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:11:24,740] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['stock', 'sweet potato'], 'includeIngredients': ['pepper', 'onion'], 'intolerances': 'peanut'}, 'user': {'address': '3916 Barker Points\nRyanstad, SD 23542', 'description': 'Production usually others think our stand many age. Kind many thus response thus office.\nInside know gun senior. Forget bit follow per author. Sure mean throw forget.', 'name': 'Darlene Harrison'}}
+[2022-03-15 11:11:25,170] {logging_mixin.py:109} INFO -    vegetarian  vegan  glutenFree  ...       occasions                               analyzedInstructions                               spoonacularSourceUrl
+0       False  False        True  ...  [fall, winter]  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/nigerian-snail-stew-71...
+1        True   True        True  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/broccoli-and-chickpea-...
+2        True   True        True  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/easy-homemade-rice-and...
+3       False  False        True  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/greek-style-baked-fish...
+4       False  False        True  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/chicken-fajita-stuffed...
+5        True  False        True  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/crunchy-brussels-sprou...
+6        True   True        True  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/spicy-black-eyed-pea-c...
+7       False  False        True  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...      https://spoonacular.com/plantain-salad-729366
+8       False  False        True  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/butternut-squash-fritt...
+9        True   True        True  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/corn-avocado-salsa-640062
+
+[10 rows x 32 columns]
+[2022-03-15 11:11:27,193] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:11:27,194] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:11:27,618] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['cooking oil'], 'includeIngredients': ['fish', 'brown rice', 'potato'], 'intolerances': 'seafood'}, 'user': {'address': '510 Harris Plaza Suite 632\nLake Brittany, VT 17864', 'description': 'He evidence strategy everything low listen. Camera foot to recently final true reveal.\nProtect participant within forward election listen. Candidate once modern culture people large science forget.', 'name': 'Alexandra Taylor'}}
+[2022-03-15 11:11:28,009] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:11:28,010] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:11:28,394] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['cauliflower rice', 'stock'], 'includeIngredients': ['cooking oil', 'rice'], 'intolerances': 'dairy'}, 'user': {'address': '237 Cruz Crescent\nEast Brittney, WA 04269', 'description': 'And six woman together lose well close. Pressure house baby allow bar. Little husband how gas lead these almost. Themselves full water treatment center either.', 'name': 'Kimberly Coffey'}}
+[2022-03-15 11:11:28,886] {logging_mixin.py:109} INFO -    vegetarian  vegan  glutenFree  dairyFree  ...                               analyzedInstructions                               spoonacularSourceUrl  preparationMinutes  cookingMinutes
+0        True   True        True       True  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/cauliflower-brown-rice...                 NaN             NaN
+1        True   True       False       True  ...                                                 []  https://spoonacular.com/homemade-garlic-and-ba...                 NaN             NaN
+2        True   True        True       True  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...       https://spoonacular.com/garlicky-kale-644387                 NaN             NaN
+3       False  False        True       True  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/african-chicken-peanut...                 NaN             NaN
+4       False  False        True       True  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/nigerian-snail-stew-71...                 NaN             NaN
+5        True   True        True       True  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/red-kidney-bean-jambal...                 NaN             NaN
+6        True   True        True       True  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/broccoli-and-chickpea-...                 NaN             NaN
+7       False  False        True       True  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/red-lentil-soup-with-c...                10.0            45.0
+8        True   True        True       True  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...   https://spoonacular.com/hummus-and-zaatar-766453                 NaN             NaN
+9        True   True        True       True  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/easy-homemade-rice-and...                 NaN             NaN
+
+[10 rows x 34 columns]
+[2022-03-15 11:11:31,608] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:11:31,610] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:11:31,986] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['brown rice', 'chickpeas'], 'includeIngredients': ['stock'], 'intolerances': 'peanut'}, 'user': {'address': '575 Brian Squares Apt. 052\nAndrewborough, CA 28848', 'description': 'However successful my choice choose when through. Agree military manager most remain drug character. Soldier within main American any deep.', 'name': 'Roy Mcdowell'}}
+[2022-03-15 11:11:32,384] {logging_mixin.py:109} INFO -    vegetarian  vegan  glutenFree  dairyFree  ...       occasions                               analyzedInstructions                               spoonacularSourceUrl       license
+0       False  False        True       True  ...  [fall, winter]  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/red-lentil-soup-with-c...           NaN
+1        True   True        True       True  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/broccolini-quinoa-pila...     CC BY 3.0
+2        True  False       False       True  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/farro-with-mushrooms-a...     CC BY 3.0
+3        True   True       False       True  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/moroccan-couscous-and-...     CC BY 3.0
+4        True   True        True       True  ...  [fall, winter]  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/asparagus-and-pea-soup...  CC BY-SA 3.0
+5       False  False        True       True  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/balsamic-honey-glazed-...     CC BY 3.0
+6       False  False        True      False  ...  [fall, winter]                                                 []  https://spoonacular.com/split-pea-and-mushroom...  CC BY 2.5 CA
+7        True   True        True       True  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/instant-pot-quinoa-gra...           NaN
+8        True   True        True       True  ...  [fall, winter]  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/butternut-squash-soup-...     CC BY 3.0
+9       False  False        True       True  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/cilantro-lime-halibut-...     CC BY 3.0
+
+[10 rows x 34 columns]
+[2022-03-15 11:11:36,191] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:11:36,192] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:11:36,612] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['soup'], 'includeIngredients': ['rice', 'water', 'cauliflower rice'], 'intolerances': 'grain'}, 'user': {'address': '5879 Collins Points\nDavisborough, AK 45910', 'description': 'Play material sense movement man final. Him here remember word small must.\nSenior ever wish perform. Sometimes bag some leader suddenly test represent.', 'name': 'Karen Taylor'}}
+[2022-03-15 11:11:36,991] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:11:36,992] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:11:37,385] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['salt'], 'includeIngredients': ['lime', 'chickpeas', 'onion', 'water'], 'intolerances': 'peanut'}, 'user': {'address': '550 Nichols Isle Suite 592\nCookmouth, DC 28172', 'description': 'Address charge right help exactly beat meet exist. Conference marriage sit eight concern responsibility forward main. Pass now cup war event seek include. Various treatment arm mouth tax check dream.', 'name': 'Jeremy Gallegos'}}
+[2022-03-15 11:11:37,802] {logging_mixin.py:109} INFO -    vegetarian  vegan  glutenFree  dairyFree  ...  occasions                               analyzedInstructions                               spoonacularSourceUrl    license
+0        True   True        True       True  ...         []                                                 []  https://spoonacular.com/homemade-guacamole-715543        NaN
+1        True   True        True       True  ...         []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/carrot-and-cabbage-sal...  CC BY 3.0
+2       False  False        True      False  ...         []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/corn-crusted-fish-taco...  CC BY 3.0
+3       False  False        True       True  ...         []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/thai-street-vendor-sal...  CC BY 3.0
+4        True   True        True       True  ...         []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/broccoli-carrot-and-pe...  CC BY 3.0
+5        True   True        True       True  ...         []  [{'name': '', 'steps': [{'number': 1, 'step': ...         https://spoonacular.com/mango-salsa-716290  CC BY 4.0
+6        True   True        True       True  ...         []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/watercress-salad-with-...  CC BY 3.0
+7        True   True        True       True  ...         []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/splendid-texas-caviar-...  CC BY 3.0
+8       False  False        True       True  ...         []  [{'name': '', 'steps': [{'number': 1, 'step': ...         https://spoonacular.com/crab-stacks-640321  CC BY 3.0
+9       False  False        True       True  ...         []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/avocado-chicken-salad-...  CC BY 3.0
+
+[10 rows x 32 columns]
+[2022-03-15 11:11:42,399] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:11:42,400] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:11:42,791] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['onion', 'whole chicken'], 'includeIngredients': ['pepper', 'cauliflower florets', 'cauliflower', 'seasoning'], 'intolerances': 'peanut'}, 'user': {'address': '5736 Angela Estate Apt. 360\nSouth Natasha, CA 15714', 'description': 'Economy job good upon. Radio hope this song administration war. Agency floor star too. Nothing either like during together seven.', 'name': 'Patrick Carr'}}
+[2022-03-15 11:11:43,230] {logging_mixin.py:109} INFO -    vegetarian  vegan  glutenFree  dairyFree  ...       occasions                               analyzedInstructions                               spoonacularSourceUrl       license
+0       False  False        True      False  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/chicken-fajita-stuffed...           NaN
+1        True  False        True       True  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/crunchy-brussels-sprou...     CC BY 3.0
+2       False  False        True      False  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/butternut-squash-fritt...     CC BY 3.0
+3        True   True        True       True  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/corn-avocado-salsa-640062     CC BY 3.0
+4        True  False        True      False  ...              []                                                 []  https://spoonacular.com/finger-foods-frittata-...  CC BY-SA 3.0
+5        True   True       False       True  ...  [fall, winter]  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/moroccan-chickpea-and-...     CC BY 3.0
+6       False  False        True       True  ...              []                                                 []  https://spoonacular.com/shredded-roast-beef-st...           NaN
+7        True  False        True      False  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/strawberry-mango-quino...     CC BY 3.0
+8        True   True        True       True  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/spicy-indian-style-hum...  CC BY 2.5 CA
+9        True   True        True       True  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/roasted-broccoli-with-...     CC BY 3.0
+
+[10 rows x 32 columns]
+[2022-03-15 11:11:48,335] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:11:48,336] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:11:48,732] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['onion'], 'includeIngredients': ['seasoning', 'cooking oil'], 'intolerances': 'soy'}, 'user': {'address': '15075 Jamie Overpass Apt. 289\nNorth Kelsey, NC 13905', 'description': 'Anyone other others fact learn report trade. Store kind organization water election far interesting. Family decision safe one natural TV.', 'name': 'Aaron Thomas'}}
+[2022-03-15 11:11:49,201] {logging_mixin.py:109} INFO -    vegetarian  vegan  glutenFree  ...                        occasions                               analyzedInstructions                               spoonacularSourceUrl
+0        True   True        True  ...                               []  [{'name': '', 'steps': [{'number': 1, 'step': ...   https://spoonacular.com/hummus-and-zaatar-766453
+1       False  False        True  ...                               []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/balsamic-honey-glazed-...
+2       False  False        True  ...                               []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/chicken-and-mango-skew...
+3        True  False       False  ...                               []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/baked-stuffed-potatoes...
+4       False  False       False  ...                               []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/middle-eastern-stuffed...
+5       False  False       False  ...  [father's day, st patricks day]  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/guinness-braised-corne...
+6       False  False        True  ...                               []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/apple-roasted-pork-loi...
+7        True   True        True  ...                   [fall, winter]  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/lemon-vegetable-soup-6...
+8       False  False       False  ...                               []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/dr-pepper-pulled-pork-...
+9       False  False       False  ...                               []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/chicken-and-penne-past...
+
+[10 rows x 32 columns]
+[2022-03-15 11:11:55,492] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:11:55,493] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:11:56,034] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['cauliflower florets', 'soup'], 'includeIngredients': ['soup', 'lime', 'fish', 'kidney beans'], 'intolerances': 'peanut'}, 'user': {'address': 'PSC 6875, Box 7223\nAPO AP 53883', 'description': 'Few ever ever apply of especially. Seat space Republican girl. Threat tree media authority several later.', 'name': 'David Walker'}}
+[2022-03-15 11:11:56,396] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:11:56,397] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:11:56,780] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['garlic', 'ginger'], 'includeIngredients': ['cooking spray'], 'intolerances': 'soy'}, 'user': {'address': '6844 Hernandez Mountain\nHoweshire, MI 48820', 'description': 'Tree you but. Issue carry year. Oil perhaps now class road successful girl.\nTurn somebody those important. Should treat send theory majority skin.', 'name': 'Alexa Yang'}}
+[2022-03-15 11:11:57,508] {logging_mixin.py:109} INFO -    vegetarian  vegan  glutenFree  dairyFree  veryHealthy  cheap  ...  cuisines  dishTypes  diets occasions                               analyzedInstructions                               spoonacularSourceUrl
+0       False  False       False      False        False  False  ...        []  [dessert]     []        []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/chocolate-castella-cak...
+1       False  False       False      False        False  False  ...        []  [dessert]     []        []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/chocolate-orange-cake-...
+
+[2 rows x 34 columns]
+[2022-03-15 11:12:03,904] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:12:03,905] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:12:04,293] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['lime'], 'includeIngredients': ['soup'], 'intolerances': 'soy'}, 'user': {'address': '7061 Jessica Drive\nPatriciaton, WI 41246', 'description': 'Student oil plan order though call. Former prepare past step produce different why. His during break day establish. Song guy that bag score have.', 'name': 'Sarah Rodriguez'}}
+[2022-03-15 11:12:04,655] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:12:04,656] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:12:05,037] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['kidney beans', 'cauliflower'], 'includeIngredients': ['sweet potato'], 'intolerances': 'grain'}, 'user': {'address': '88565 Walker Villages\nWest Erinland, DC 47710', 'description': 'Enjoy onto fire nothing however trial art evidence.\nMrs account source executive move. Student over goal stay pass.', 'name': 'Robert Dunn'}}
+[2022-03-15 11:12:05,477] {logging_mixin.py:109} INFO -    vegetarian  vegan  glutenFree  dairyFree  ...                               analyzedInstructions                               spoonacularSourceUrl  preparationMinutes  cookingMinutes
+0       False  False        True       True  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/african-chicken-peanut...                 NaN             NaN
+1       False  False        True       True  ...                                                 []  https://spoonacular.com/shredded-roast-beef-st...                 NaN             NaN
+2        True  False        True       True  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/smoky-black-bean-soup-...                 NaN             NaN
+3       False  False        True      False  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/herb-chicken-with-swee...                 NaN             NaN
+4       False  False        True      False  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/brown-butter-twice-bak...                20.0            75.0
+5       False  False        True       True  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/how-to-make-the-perfec...                15.0            25.0
+6        True   True        True       True  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/lentil-sweet-potato-an...                 NaN             NaN
+7       False  False        True       True  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/baked-sweet-potato-fri...                 NaN             NaN
+8       False  False        True       True  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/kale-and-roasted-sweet...                 NaN             NaN
+9        True  False        True       True  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/sweet-potato-kale-whit...                 NaN             NaN
+
+[10 rows x 34 columns]
+[2022-03-15 11:12:12,917] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:12:12,918] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:12:13,308] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['stock'], 'includeIngredients': ['salt', 'cooking oil', 'water'], 'intolerances': 'wheat'}, 'user': {'address': '9024 Drew Squares\nDavisland, CA 13649', 'description': 'Forward father store sound world social consumer. Other because its interesting allow south. Pass hand community attorney provide technology like.', 'name': 'Douglas Hicks'}}
+[2022-03-15 11:12:13,835] {logging_mixin.py:109} INFO -    vegetarian  vegan  glutenFree  dairyFree  ...                               analyzedInstructions                               spoonacularSourceUrl  preparationMinutes  cookingMinutes
+0        True   True        True       True  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/cauliflower-brown-rice...                 NaN             NaN
+1       False  False        True       True  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/african-chicken-peanut...                 NaN             NaN
+2       False  False        True       True  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/nigerian-snail-stew-71...                 NaN             NaN
+3        True   True        True       True  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/broccoli-and-chickpea-...                 NaN             NaN
+4        True   True        True       True  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...   https://spoonacular.com/hummus-and-zaatar-766453                 NaN             NaN
+5       False  False        True      False  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/greek-style-baked-fish...                 NaN             NaN
+6       False  False        True      False  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/chicken-fajita-stuffed...                 NaN             NaN
+7        True   True        True       True  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/spicy-black-eyed-pea-c...                 NaN             NaN
+8       False  False        True      False  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/cheesy-chicken-enchila...                15.0            15.0
+9        True  False        True      False  ...                                                 []  https://spoonacular.com/finger-foods-frittata-...                 NaN             NaN
+
+[10 rows x 34 columns]
+[2022-03-15 11:12:21,388] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:12:21,389] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:12:21,799] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['potato'], 'includeIngredients': ['rice'], 'intolerances': 'seafood'}, 'user': {'address': '437 Joan Island Apt. 437\nPort Jasonberg, PA 65035', 'description': 'Measure yet law again happen recent.\nArt way parent shoulder message and apply consumer. Hold policy state alone wife government gas.', 'name': 'Kelly Cook'}}
+[2022-03-15 11:12:22,257] {logging_mixin.py:109} INFO -    vegetarian  vegan  glutenFree  ...       occasions                               analyzedInstructions                               spoonacularSourceUrl
+0        True   True        True  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/cauliflower-brown-rice...
+1        True   True        True  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/red-kidney-bean-jambal...
+2        True   True        True  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/broccoli-and-chickpea-...
+3        True   True        True  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/easy-homemade-rice-and...
+4        True   True       False  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/citrusy-pecan-garbanzo...
+5       False  False        True  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/stir-fried-quinoa-brow...
+6        True  False        True  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...    https://spoonacular.com/mango-fried-rice-716311
+7        True  False        True  ...    [super bowl]  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/vietnamese-pancakes-wi...
+8       False  False        True  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/ground-turkey-stuffed-...
+9        True   True        True  ...  [fall, winter]  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/spicy-lentil-and-black...
+
+[10 rows x 32 columns]
+[2022-03-15 11:12:30,285] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:12:30,287] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:12:30,678] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['tomato'], 'includeIngredients': ['salt', 'soup'], 'intolerances': 'gluten'}, 'user': {'address': '58137 Alan Highway\nSouth Erikaside, CA 25845', 'description': 'Religious some church choice and rate. Bit purpose policy television increase expect.\nPast million how huge wrong wide daughter can. Help plant her. Change TV term nothing water good each.', 'name': 'Cynthia Young'}}
+[2022-03-15 11:12:31,408] {logging_mixin.py:109} INFO -    vegetarian  vegan  glutenFree  ...       occasions                               analyzedInstructions                               spoonacularSourceUrl
+0        True   True        True  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/cauliflower-brown-rice...
+1        True   True        True  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...   https://spoonacular.com/hummus-and-zaatar-766453
+2       False  False        True  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/chicken-fajita-stuffed...
+3        True  False        True  ...  [fall, winter]                                                 []  https://spoonacular.com/chilled-cucumber-avoca...
+4       False  False        True  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/jade-buddha-salmon-tar...
+5       False  False        True  ...              []                                                 []  https://spoonacular.com/shredded-roast-beef-st...
+6        True  False        True  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/strawberry-mango-quino...
+7       False  False        True  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/slow-cooker-pork-and-g...
+8        True   True        True  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...   https://spoonacular.com/swiss-chard-wraps-662670
+9        True   True        True  ...              []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/spicy-indian-style-hum...
+
+[10 rows x 32 columns]
+[2022-03-15 11:12:39,615] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:12:39,616] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:12:40,298] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['rice'], 'includeIngredients': ['cauliflower florets'], 'intolerances': 'seafood'}, 'user': {'address': '1020 Hutchinson Crossing\nSouth Davidfurt, TN 78025', 'description': 'Nothing bill challenge authority ask international short prevent. Fine phone store later ability information. Prepare offer threat that figure wall.', 'name': 'Howard Paul'}}
+[2022-03-15 11:12:40,771] {logging_mixin.py:109} INFO -    vegetarian  vegan  glutenFree  dairyFree  ...                                              diets  occasions                               analyzedInstructions                               spoonacularSourceUrl
+0        True  False        True      False  ...                [gluten free, lacto ovo vegetarian]         []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/one-pot-veggie-quinoa-...
+1       False  False       False      False  ...                                                 []         []                                                 []  https://spoonacular.com/pasta-with-garlic-scal...
+2        True   True        True       True  ...  [gluten free, dairy free, lacto ovo vegetarian...         []  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/channa-chickpea-potato...
+3       False  False        True       True  ...                          [gluten free, dairy free]         []  [{'name': '', 'steps': [{'number': 1, 'step': ...     https://spoonacular.com/hot-giardiniera-647471
+
+[4 rows x 32 columns]
+[2022-03-15 11:12:50,237] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:12:50,238] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:12:50,701] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['tomato'], 'includeIngredients': ['tomato', 'salt'], 'intolerances': 'peanut'}, 'user': {'address': '29627 John Estates Suite 324\nWest Benjamin, ME 63889', 'description': 'Market Congress make partner eat could four. Clear technology I they. Include time like matter.', 'name': 'Heather Kennedy'}}
+[2022-03-15 11:12:51,072] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:12:51,074] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:12:51,581] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['chickpeas', 'garlic'], 'includeIngredients': ['salt', 'chickpeas', 'cauliflower rice'], 'intolerances': 'tree nut'}, 'user': {'address': '148 Timothy Lakes\nBauerland, IL 49873', 'description': 'Trade red treatment would. Improve fact same trouble resource find country.\nDaughter put air during than. Hear life more. Common reflect common guess reach task compare.', 'name': 'Kim Hall'}}
+[2022-03-15 11:12:52,080] {logging_mixin.py:109} INFO -    vegetarian  vegan  glutenFree  dairyFree  ...                               analyzedInstructions                               spoonacularSourceUrl  preparationMinutes  cookingMinutes
+0        True   True        True       True  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/cauliflower-brown-rice...                 NaN             NaN
+1        True   True       False       True  ...                                                 []  https://spoonacular.com/homemade-garlic-and-ba...                 NaN             NaN
+2       False  False        True       True  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/african-chicken-peanut...                 NaN             NaN
+3       False  False        True       True  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/nigerian-snail-stew-71...                 NaN             NaN
+4        True   True        True       True  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/red-kidney-bean-jambal...                 NaN             NaN
+5       False  False        True       True  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/red-lentil-soup-with-c...                10.0            45.0
+6       False  False        True      False  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/greek-style-baked-fish...                 NaN             NaN
+7       False  False        True      False  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/chicken-fajita-stuffed...                 NaN             NaN
+8        True   True        True       True  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/spicy-black-eyed-pea-c...                 NaN             NaN
+9        True  False       False       True  ...  [{'name': '', 'steps': [{'number': 1, 'step': ...  https://spoonacular.com/farro-with-mushrooms-a...                 NaN             NaN
+
+[10 rows x 34 columns]
+[2022-03-15 11:13:00,852] {python.py:175} INFO - Done. Returned value was: None
+[2022-03-15 11:13:00,860] {taskinstance.py:1272} INFO - Marking task as SUCCESS. dag_id=simple_dag, task_id=get_recipes, execution_date=20220315T110800, start_date=20220315T161120, end_date=20220315T161300
+[2022-03-15 11:13:00,909] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-15 11:13:00,928] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,84 @@
+[2022-03-14 15:27:26,060] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.get_recipes scheduled__2022-03-14T15:32:00+00:00 [queued]>
+[2022-03-14 15:27:26,071] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.get_recipes scheduled__2022-03-14T15:32:00+00:00 [queued]>
+[2022-03-14 15:27:26,071] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 15:27:26,072] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-14 15:27:26,072] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 15:27:26,081] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): get_recipes> on 2022-03-14 15:32:00+00:00
+[2022-03-14 15:27:26,084] {standard_task_runner.py:52} INFO - Started process 89754 to run task
+[2022-03-14 15:27:26,090] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'simple_dag', 'get_recipes', 'scheduled__2022-03-14T15:32:00+00:00', '--job-id', '250', '--raw', '--subdir', 'DAGS_FOLDER/simple_dag.py', '--cfg-path', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmp7uhelqgs', '--error-file', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmp7smas9tm']
+[2022-03-14 15:27:26,093] {standard_task_runner.py:77} INFO - Job 250: Subtask get_recipes
+[2022-03-14 15:27:26,154] {logging_mixin.py:109} INFO - Running <TaskInstance: simple_dag.get_recipes scheduled__2022-03-14T15:32:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-03-14 15:27:26,206] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=simple_dag
+AIRFLOW_CTX_TASK_ID=get_recipes
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-14T15:32:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-14T15:32:00+00:00
+[2022-03-14 15:27:26,214] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:27:26,216] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:27:26,595] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:27:26,596] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:27:27,064] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True, 'includeIngredients': ['fish'], 'excludeIngredients': ['potato'], 'intolerances': 'soy'}
+[2022-03-14 15:27:27,069] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:27:27,070] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:27:27,457] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True, 'includeIngredients': ['brown rice'], 'excludeIngredients': ['lime'], 'intolerances': 'grain'}
+[2022-03-14 15:27:27,461] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:27:27,463] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:27:27,838] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True, 'includeIngredients': ['pepper', 'onion'], 'excludeIngredients': ['stock', 'sweet potato'], 'intolerances': 'peanut'}
+[2022-03-14 15:27:27,842] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:27:27,843] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:27:28,227] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True, 'includeIngredients': ['fish', 'brown rice', 'potato'], 'excludeIngredients': ['cooking oil'], 'intolerances': 'seafood'}
+[2022-03-14 15:27:28,232] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:27:28,233] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:27:28,618] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True, 'includeIngredients': ['cooking oil', 'rice'], 'excludeIngredients': ['cauliflower rice', 'stock'], 'intolerances': 'dairy'}
+[2022-03-14 15:27:28,623] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:27:28,624] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:27:29,130] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True, 'includeIngredients': ['stock'], 'excludeIngredients': ['brown rice', 'chickpeas'], 'intolerances': 'peanut'}
+[2022-03-14 15:27:29,135] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:27:29,136] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:27:29,533] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True, 'includeIngredients': ['rice', 'water', 'cauliflower rice'], 'excludeIngredients': ['soup'], 'intolerances': 'grain'}
+[2022-03-14 15:27:29,537] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:27:29,539] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:27:29,948] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True, 'includeIngredients': ['lime', 'chickpeas', 'onion', 'water'], 'excludeIngredients': ['salt'], 'intolerances': 'peanut'}
+[2022-03-14 15:27:29,951] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:27:29,952] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:27:30,484] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True, 'includeIngredients': ['pepper', 'cauliflower florets', 'cauliflower', 'seasoning'], 'excludeIngredients': ['onion', 'whole chicken'], 'intolerances': 'peanut'}
+[2022-03-14 15:27:30,488] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:27:30,489] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:27:30,940] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True, 'includeIngredients': ['seasoning', 'cooking oil'], 'excludeIngredients': ['onion'], 'intolerances': 'soy'}
+[2022-03-14 15:27:30,948] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:27:30,949] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:27:31,506] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True, 'includeIngredients': ['soup', 'lime', 'fish', 'kidney beans'], 'excludeIngredients': ['cauliflower florets', 'soup'], 'intolerances': 'peanut'}
+[2022-03-14 15:27:31,510] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:27:31,511] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:27:31,881] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True, 'includeIngredients': ['cooking spray'], 'excludeIngredients': ['garlic', 'ginger'], 'intolerances': 'soy'}
+[2022-03-14 15:27:31,886] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:27:31,887] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:27:32,279] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True, 'includeIngredients': ['soup'], 'excludeIngredients': ['lime'], 'intolerances': 'soy'}
+[2022-03-14 15:27:32,283] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:27:32,284] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:27:32,653] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True, 'includeIngredients': ['sweet potato'], 'excludeIngredients': ['kidney beans', 'cauliflower'], 'intolerances': 'grain'}
+[2022-03-14 15:27:32,659] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:27:32,661] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:27:33,255] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True, 'includeIngredients': ['salt', 'cooking oil', 'water'], 'excludeIngredients': ['stock'], 'intolerances': 'wheat'}
+[2022-03-14 15:27:33,260] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:27:33,261] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:27:33,676] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True, 'includeIngredients': ['rice'], 'excludeIngredients': ['potato'], 'intolerances': 'seafood'}
+[2022-03-14 15:27:33,681] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:27:33,683] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:27:34,204] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True, 'includeIngredients': ['salt', 'soup'], 'excludeIngredients': ['tomato'], 'intolerances': 'gluten'}
+[2022-03-14 15:27:34,208] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:27:34,210] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:27:34,615] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True, 'includeIngredients': ['cauliflower florets'], 'excludeIngredients': ['rice'], 'intolerances': 'seafood'}
+[2022-03-14 15:27:34,621] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:27:34,622] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:27:35,039] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True, 'includeIngredients': ['tomato', 'salt'], 'excludeIngredients': ['tomato'], 'intolerances': 'peanut'}
+[2022-03-14 15:27:35,044] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:27:35,045] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:27:35,428] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True, 'includeIngredients': ['salt', 'chickpeas', 'cauliflower rice'], 'excludeIngredients': ['chickpeas', 'garlic'], 'intolerances': 'tree nut'}
+[2022-03-14 15:27:35,432] {python.py:175} INFO - Done. Returned value was: None
+[2022-03-14 15:27:35,441] {taskinstance.py:1272} INFO - Marking task as SUCCESS. dag_id=simple_dag, task_id=get_recipes, execution_date=20220314T153200, start_date=20220314T202726, end_date=20220314T202735
+[2022-03-14 15:27:35,483] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-14 15:27:35,500] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

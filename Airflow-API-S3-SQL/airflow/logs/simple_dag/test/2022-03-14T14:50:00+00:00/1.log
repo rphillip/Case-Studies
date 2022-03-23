@@ -1,0 +1,54 @@
+[2022-03-14 14:48:01,616] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.test scheduled__2022-03-14T14:50:00+00:00 [queued]>
+[2022-03-14 14:48:01,622] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.test scheduled__2022-03-14T14:50:00+00:00 [queued]>
+[2022-03-14 14:48:01,622] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 14:48:01,622] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-14 14:48:01,622] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 14:48:01,634] {taskinstance.py:1264} INFO - Executing <Task(BashOperator): test> on 2022-03-14 14:50:00+00:00
+[2022-03-14 14:48:01,639] {standard_task_runner.py:52} INFO - Started process 88302 to run task
+[2022-03-14 14:48:01,648] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'simple_dag', 'test', 'scheduled__2022-03-14T14:50:00+00:00', '--job-id', '200', '--raw', '--subdir', 'DAGS_FOLDER/simple_dag.py', '--cfg-path', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpmi8xg23a', '--error-file', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpcl9j1bs3']
+[2022-03-14 14:48:01,651] {standard_task_runner.py:77} INFO - Job 200: Subtask test
+[2022-03-14 14:48:01,711] {logging_mixin.py:109} INFO - Running <TaskInstance: simple_dag.test scheduled__2022-03-14T14:50:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-03-14 14:48:01,767] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=simple_dag
+AIRFLOW_CTX_TASK_ID=test
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-14T14:50:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-14T14:50:00+00:00
+[2022-03-14 14:48:01,768] {subprocess.py:62} INFO - Tmp dir root location: 
+ /var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T
+[2022-03-14 14:48:01,770] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echo "The DAG has ran!"']
+[2022-03-14 14:48:01,782] {subprocess.py:85} INFO - Output:
+[2022-03-14 14:48:01,788] {subprocess.py:89} INFO - The DAG has ran!
+[2022-03-14 14:48:01,789] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-03-14 14:48:01,813] {taskinstance.py:1272} INFO - Marking task as SUCCESS. dag_id=simple_dag, task_id=test, execution_date=20220314T145000, start_date=20220314T194801, end_date=20220314T194801
+[2022-03-14 14:48:01,871] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-14 14:48:01,897] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-03-14 14:51:52,207] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.test scheduled__2022-03-14T14:50:00+00:00 [queued]>
+[2022-03-14 14:51:52,214] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.test scheduled__2022-03-14T14:50:00+00:00 [queued]>
+[2022-03-14 14:51:52,214] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 14:51:52,214] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-14 14:51:52,214] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 14:51:52,223] {taskinstance.py:1264} INFO - Executing <Task(BashOperator): test> on 2022-03-14 14:50:00+00:00
+[2022-03-14 14:51:52,227] {standard_task_runner.py:52} INFO - Started process 88451 to run task
+[2022-03-14 14:51:52,233] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'simple_dag', 'test', 'scheduled__2022-03-14T14:50:00+00:00', '--job-id', '194', '--raw', '--subdir', 'DAGS_FOLDER/simple_dag.py', '--cfg-path', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpwdi1wwrl', '--error-file', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpvvr4at4r']
+[2022-03-14 14:51:52,236] {standard_task_runner.py:77} INFO - Job 194: Subtask test
+[2022-03-14 14:51:52,287] {logging_mixin.py:109} INFO - Running <TaskInstance: simple_dag.test scheduled__2022-03-14T14:50:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-03-14 14:51:52,333] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=simple_dag
+AIRFLOW_CTX_TASK_ID=test
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-14T14:50:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-14T14:50:00+00:00
+[2022-03-14 14:51:52,335] {subprocess.py:62} INFO - Tmp dir root location: 
+ /var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T
+[2022-03-14 14:51:52,336] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echo "The DAG has ran!"']
+[2022-03-14 14:51:52,345] {subprocess.py:85} INFO - Output:
+[2022-03-14 14:51:52,350] {subprocess.py:89} INFO - The DAG has ran!
+[2022-03-14 14:51:52,352] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-03-14 14:51:52,374] {taskinstance.py:1272} INFO - Marking task as SUCCESS. dag_id=simple_dag, task_id=test, execution_date=20220314T145000, start_date=20220314T195152, end_date=20220314T195152
+[2022-03-14 14:51:52,416] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-14 14:51:52,443] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

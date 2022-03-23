@@ -1,0 +1,86 @@
+[2022-03-14 15:11:44,608] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.get_recipes scheduled__2022-03-14T15:12:00+00:00 [queued]>
+[2022-03-14 15:11:44,619] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.get_recipes scheduled__2022-03-14T15:12:00+00:00 [queued]>
+[2022-03-14 15:11:44,620] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 15:11:44,620] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-14 15:11:44,620] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 15:11:44,630] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): get_recipes> on 2022-03-14 15:12:00+00:00
+[2022-03-14 15:11:44,633] {standard_task_runner.py:52} INFO - Started process 89146 to run task
+[2022-03-14 15:11:44,638] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'simple_dag', 'get_recipes', 'scheduled__2022-03-14T15:12:00+00:00', '--job-id', '235', '--raw', '--subdir', 'DAGS_FOLDER/simple_dag.py', '--cfg-path', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmp_t5jaqhk', '--error-file', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpg_egix45']
+[2022-03-14 15:11:44,642] {standard_task_runner.py:77} INFO - Job 235: Subtask get_recipes
+[2022-03-14 15:11:44,704] {logging_mixin.py:109} INFO - Running <TaskInstance: simple_dag.get_recipes scheduled__2022-03-14T15:12:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-03-14 15:11:44,753] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=simple_dag
+AIRFLOW_CTX_TASK_ID=get_recipes
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-14T15:12:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-14T15:12:00+00:00
+[2022-03-14 15:11:44,761] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:11:44,762] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:11:45,142] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:11:45,143] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:11:45,642] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:11:45,647] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:11:45,648] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:11:46,036] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:11:46,040] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:11:46,042] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:11:46,480] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:11:46,485] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:11:46,486] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:11:46,931] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:11:46,936] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:11:46,937] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:11:47,502] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:11:47,506] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:11:47,507] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:11:49,231] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:11:49,259] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:11:49,262] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:11:49,730] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:11:49,734] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:11:49,735] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:11:50,129] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:11:50,133] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:11:50,134] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:11:50,529] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:11:50,534] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:11:50,535] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:11:50,919] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:11:50,932] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:11:50,934] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:11:51,609] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:11:51,616] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:11:51,617] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:11:52,007] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:11:52,012] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:11:52,013] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:11:52,434] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:11:52,438] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:11:52,439] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:11:52,819] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:11:52,823] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:11:52,824] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:11:53,209] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:11:53,215] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:11:53,216] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:11:53,622] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:11:53,626] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:11:53,627] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:11:54,179] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:11:54,185] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:11:54,186] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:11:54,699] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:11:54,704] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:11:54,705] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:11:55,100] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:11:55,105] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-14 15:11:55,106] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-14 15:11:55,486] {logging_mixin.py:109} INFO - {'apiKey': '6980d1ba951a438982534beaedb41e6f', 'addRecipeInformation': True}
+[2022-03-14 15:11:55,489] {python.py:175} INFO - Done. Returned value was: None
+[2022-03-14 15:11:55,499] {taskinstance.py:1272} INFO - Marking task as SUCCESS. dag_id=simple_dag, task_id=get_recipes, execution_date=20220314T151200, start_date=20220314T201144, end_date=20220314T201155
+[2022-03-14 15:11:55,531] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-14 15:11:55,550] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-03-14 15:11:55,559] {dagrun.py:545} INFO - Marking run <DagRun simple_dag @ 2022-03-14 15:12:00+00:00: scheduled__2022-03-14T15:12:00+00:00, externally triggered: False> successful
+[2022-03-14 15:11:55,559] {dagrun.py:590} INFO - DagRun Finished: dag_id=simple_dag, execution_date=2022-03-14 15:12:00+00:00, run_id=scheduled__2022-03-14T15:12:00+00:00, run_start_date=2022-03-14 20:11:24.850764+00:00, run_end_date=2022-03-14 20:11:55.559461+00:00, run_duration=30.708697, state=success, external_trigger=False, run_type=scheduled, data_interval_start=2022-03-14 15:12:00+00:00, data_interval_end=2022-03-14 15:14:00+00:00, dag_hash=be57252eac058023616303b71660cfa5

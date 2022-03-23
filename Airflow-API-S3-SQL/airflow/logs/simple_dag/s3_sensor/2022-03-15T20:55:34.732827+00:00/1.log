@@ -1,0 +1,25 @@
+[2022-03-15 20:57:02,331] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.s3_sensor scheduled__2022-03-15T20:55:34.732827+00:00 [queued]>
+[2022-03-15 20:57:02,347] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.s3_sensor scheduled__2022-03-15T20:55:34.732827+00:00 [queued]>
+[2022-03-15 20:57:02,348] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-15 20:57:02,348] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-15 20:57:02,348] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-15 20:57:02,368] {taskinstance.py:1264} INFO - Executing <Task(S3PrefixSensor): s3_sensor> on 2022-03-15 20:55:34.732827+00:00
+[2022-03-15 20:57:02,374] {standard_task_runner.py:52} INFO - Started process 38468 to run task
+[2022-03-15 20:57:02,382] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'simple_dag', 's3_sensor', 'scheduled__2022-03-15T20:55:34.732827+00:00', '--job-id', '403', '--raw', '--subdir', 'DAGS_FOLDER/simple_dag.py', '--cfg-path', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpk1jxpe80', '--error-file', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpcn7t5sao']
+[2022-03-15 20:57:02,393] {standard_task_runner.py:77} INFO - Job 403: Subtask s3_sensor
+[2022-03-15 20:57:02,463] {logging_mixin.py:109} INFO - Running <TaskInstance: simple_dag.s3_sensor scheduled__2022-03-15T20:55:34.732827+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-03-15 20:57:02,534] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=simple_dag
+AIRFLOW_CTX_TASK_ID=s3_sensor
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-15T20:55:34.732827+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-15T20:55:34.732827+00:00
+[2022-03-15 20:57:02,535] {s3.py:390} INFO - Poking for prefix : ['raw/'] in bucket s3://airflowrs
+[2022-03-15 20:57:02,545] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 20:57:02,546] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 20:57:02,913] {base.py:251} INFO - Success criteria met. Exiting.
+[2022-03-15 20:57:02,925] {taskinstance.py:1272} INFO - Marking task as SUCCESS. dag_id=simple_dag, task_id=s3_sensor, execution_date=20220315T205534, start_date=20220316T015702, end_date=20220316T015702
+[2022-03-15 20:57:02,964] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-15 20:57:03,015] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

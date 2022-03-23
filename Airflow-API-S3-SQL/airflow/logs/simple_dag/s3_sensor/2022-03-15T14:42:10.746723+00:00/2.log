@@ -1,0 +1,2 @@
+[2022-03-15 14:45:02,770] {taskinstance.py:1027} INFO - Dependencies not met for <TaskInstance: simple_dag.s3_sensor scheduled__2022-03-15T14:42:10.746723+00:00 [failed]>, dependency 'Task Instance State' FAILED: Task is in the 'failed' state.
+[2022-03-15 14:45:02,771] {local_task_job.py:99} INFO - Task is not able to be run

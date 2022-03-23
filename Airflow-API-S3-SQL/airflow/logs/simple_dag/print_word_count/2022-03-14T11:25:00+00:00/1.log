@@ -1,0 +1,25 @@
+[2022-03-14 11:20:54,129] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.print_word_count scheduled__2022-03-14T11:25:00+00:00 [queued]>
+[2022-03-14 11:20:54,135] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.print_word_count scheduled__2022-03-14T11:25:00+00:00 [queued]>
+[2022-03-14 11:20:54,135] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 11:20:54,135] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-14 11:20:54,135] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 11:20:54,145] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): print_word_count> on 2022-03-14 11:25:00+00:00
+[2022-03-14 11:20:54,148] {standard_task_runner.py:52} INFO - Started process 80349 to run task
+[2022-03-14 11:20:54,154] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'simple_dag', 'print_word_count', 'scheduled__2022-03-14T11:25:00+00:00', '--job-id', '128', '--raw', '--subdir', 'DAGS_FOLDER/simple_dag.py', '--cfg-path', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpfipstlt7', '--error-file', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmp5f625xte']
+[2022-03-14 11:20:54,158] {standard_task_runner.py:77} INFO - Job 128: Subtask print_word_count
+[2022-03-14 11:20:54,219] {logging_mixin.py:109} INFO - Running <TaskInstance: simple_dag.print_word_count scheduled__2022-03-14T11:25:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-03-14 11:20:54,267] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=simple_dag
+AIRFLOW_CTX_TASK_ID=print_word_count
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-14T11:25:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-14T11:25:00+00:00
+[2022-03-14 11:20:54,395] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['soup'], 'includeIngredients': ['potato', 'cooking oil', 'fish', 'kidney beans'], 'intolerances': 'gluten'}, 'user': {'address': '3922 Bailey Skyway Suite 312\nNorth Tiffany, KY 94502', 'description': 'Soldier fly foot letter one. These represent state.\nPresident visit sort try yourself book. Group between Mr fly fund huge sense. Remember reality art speech paper study. Herself art drive voice.', 'name': 'Dorothy Turner'}}
+[2022-03-14 11:20:54,396] {python.py:175} INFO - Done. Returned value was: None
+[2022-03-14 11:20:54,404] {taskinstance.py:1272} INFO - Marking task as SUCCESS. dag_id=simple_dag, task_id=print_word_count, execution_date=20220314T112500, start_date=20220314T162054, end_date=20220314T162054
+[2022-03-14 11:20:54,428] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-14 11:20:54,450] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-03-14 11:20:54,458] {dagrun.py:545} INFO - Marking run <DagRun simple_dag @ 2022-03-14 11:25:00+00:00: scheduled__2022-03-14T11:25:00+00:00, externally triggered: False> successful
+[2022-03-14 11:20:54,458] {dagrun.py:590} INFO - DagRun Finished: dag_id=simple_dag, execution_date=2022-03-14 11:25:00+00:00, run_id=scheduled__2022-03-14T11:25:00+00:00, run_start_date=2022-03-14 16:20:46.425834+00:00, run_end_date=2022-03-14 16:20:54.458756+00:00, run_duration=8.032922, state=success, external_trigger=False, run_type=scheduled, data_interval_start=2022-03-14 11:25:00+00:00, data_interval_end=2022-03-14 11:26:00+00:00, dag_hash=6a46deea24b1146173d4c29c22c1397b

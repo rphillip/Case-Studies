@@ -1,0 +1,107 @@
+[2022-03-15 20:14:45,697] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.get_recipes scheduled__2022-03-15T20:13:18.368780+00:00 [queued]>
+[2022-03-15 20:14:45,706] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.get_recipes scheduled__2022-03-15T20:13:18.368780+00:00 [queued]>
+[2022-03-15 20:14:45,706] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-15 20:14:45,707] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-15 20:14:45,707] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-15 20:14:45,716] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): get_recipes> on 2022-03-15 20:13:18.368780+00:00
+[2022-03-15 20:14:45,720] {standard_task_runner.py:52} INFO - Started process 37110 to run task
+[2022-03-15 20:14:45,727] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'simple_dag', 'get_recipes', 'scheduled__2022-03-15T20:13:18.368780+00:00', '--job-id', '379', '--raw', '--subdir', 'DAGS_FOLDER/simple_dag.py', '--cfg-path', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpqhnx4vqx', '--error-file', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpf7pi_ek7']
+[2022-03-15 20:14:45,731] {standard_task_runner.py:77} INFO - Job 379: Subtask get_recipes
+[2022-03-15 20:14:45,782] {logging_mixin.py:109} INFO - Running <TaskInstance: simple_dag.get_recipes scheduled__2022-03-15T20:13:18.368780+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-03-15 20:14:45,824] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=simple_dag
+AIRFLOW_CTX_TASK_ID=get_recipes
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-15T20:13:18.368780+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-15T20:13:18.368780+00:00
+[2022-03-15 20:14:45,838] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 20:14:45,839] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 20:14:46,221] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 20:14:46,223] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 20:14:47,215] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 20:14:47,216] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 20:14:47,977] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 20:14:47,978] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 20:14:49,468] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 20:14:49,469] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 20:14:50,480] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 20:14:50,481] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 20:14:51,436] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 20:14:51,438] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 20:14:52,541] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 20:14:52,542] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 20:14:53,669] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 20:14:53,670] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 20:14:54,630] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 20:14:54,631] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 20:14:55,400] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 20:14:55,401] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 20:14:56,280] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 20:14:56,281] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 20:14:57,627] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 20:14:57,628] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 20:14:58,367] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 20:14:58,368] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 20:14:59,195] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 20:14:59,196] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 20:15:00,228] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 20:15:00,229] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 20:15:01,018] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 20:15:01,020] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 20:15:02,005] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 20:15:02,006] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 20:15:02,917] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 20:15:02,918] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 20:15:03,678] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 20:15:03,679] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 20:15:04,582] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 20:15:04,583] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 20:15:05,291] {taskinstance.py:1718} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 188, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/Users/HomeFolder/airflow/dags/simple_dag.py", line 134, in get_recipes
+    userdata = bytes(json.dumps(dfuser.to_json(orient="records")).encode('UTF-8'))
+NameError: name 'dfuser' is not defined
+[2022-03-15 20:15:05,303] {taskinstance.py:1272} INFO - Marking task as FAILED. dag_id=simple_dag, task_id=get_recipes, execution_date=20220315T201318, start_date=20220316T011445, end_date=20220316T011505
+[2022-03-15 20:15:05,313] {standard_task_runner.py:89} ERROR - Failed to execute job 379 for task get_recipes
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 180, in _run_raw_task
+    ti._run_raw_task(
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 188, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/Users/HomeFolder/airflow/dags/simple_dag.py", line 134, in get_recipes
+    userdata = bytes(json.dumps(dfuser.to_json(orient="records")).encode('UTF-8'))
+NameError: name 'dfuser' is not defined
+[2022-03-15 20:15:05,364] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-03-15 20:15:05,406] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

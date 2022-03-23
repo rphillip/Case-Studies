@@ -1,0 +1,65 @@
+[2022-03-15 20:57:41,927] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.to_sql scheduled__2022-03-15T20:55:34.732827+00:00 [queued]>
+[2022-03-15 20:57:41,940] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.to_sql scheduled__2022-03-15T20:55:34.732827+00:00 [queued]>
+[2022-03-15 20:57:41,940] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-15 20:57:41,940] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-15 20:57:41,940] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-15 20:57:41,950] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): to_sql> on 2022-03-15 20:55:34.732827+00:00
+[2022-03-15 20:57:41,955] {standard_task_runner.py:52} INFO - Started process 38492 to run task
+[2022-03-15 20:57:41,963] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'simple_dag', 'to_sql', 'scheduled__2022-03-15T20:55:34.732827+00:00', '--job-id', '406', '--raw', '--subdir', 'DAGS_FOLDER/simple_dag.py', '--cfg-path', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmp4ztr0tzv', '--error-file', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmp5inq0gqb']
+[2022-03-15 20:57:41,968] {standard_task_runner.py:77} INFO - Job 406: Subtask to_sql
+[2022-03-15 20:57:42,030] {logging_mixin.py:109} INFO - Running <TaskInstance: simple_dag.to_sql scheduled__2022-03-15T20:55:34.732827+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-03-15 20:57:42,093] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=simple_dag
+AIRFLOW_CTX_TASK_ID=to_sql
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-15T20:55:34.732827+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-15T20:55:34.732827+00:00
+[2022-03-15 20:57:42,797] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 20:57:42,798] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 20:57:43,175] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 20:57:43,176] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 20:57:43,872] {logging_mixin.py:109} INFO -         id                                              title  ...                                          equipment                                        ingredients
+0   729366                                     Plantain Salad  ...                                 [frying pan, bowl]  [vegetable oil, shrimp, vegetable, plantain, p...
+1   661074                                  Spicy Cauliflower  ...                                 [frying pan, oven]  [parsley, curry powder, paprika, shallot, lemo...
+2   642468                             Ethiopian Lentil Curry  ...                                              [pot]  [curry powder, minced garlic, water, onion, pl...
+3   664501  Vegan Taco bowls with Cilantro Lime Cauliflowe...  ...  [food processor, bowl, aluminum foil, oven, ba...  [lime, meat, nuts, tomato, avocado, garlic pow...
+4   641057            Curried Butternut Squash and Apple Soup  ...                                                NaN  [apple, soup, spices, squash, vegetable, srira...
+..     ...                                                ...  ...                                                ...                                                ...
+75  652417                  Moroccan chickpea and lentil stew  ...                            [frying pan, sauce pan]  [seasoning, water, onion, lemon juice, couscou...
+76  769774  Shredded Roast Beef Stuffed Sweet Potatoes (Wh...  ...                                                NaN                                                NaN
+77  661925                      Strawberry-Mango Quinoa Salad  ...             [whisk, sauce pan, baking sheet, bowl]  [mint, pepper, cooked quinoa, quinoa, spread, ...
+78  716195                          Spicy Indian-Style Hummus  ...                        [food processor, sauce pan]  [lemon juice, beans, chickpeas, olive oil, yog...
+79  658509             Roasted Broccoli with Lemon and Garlic  ...                         [oven, baking sheet, bowl]  [pepper, garlic, lemon juice, broccoli, olive ...
+
+[80 rows x 7 columns]
+[2022-03-15 20:57:47,643] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 20:57:48,543] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 20:57:49,393] {logging_mixin.py:109} INFO -                     name                                            address                                        description  recipes
+0       Darlene Harrison             3916 Barker Points\nRyanstad, SD 23542  Production usually others think our stand many...   640062
+1         Michael Meyers     4173 Hernandez Corners\nFischerburgh, ID 05685  Paper low particular approach shoulder return....   652886
+2       Kimberly Johnson          07227 Barbara Vista\nStevenbury, MD 07127  Chair them way agency. A drug cell choice rest...   652886
+3       Melissa Jones MD        189 Goodwin Place\nEast Scottview, CA 29718  Her decade return measure wish effort. Son imp...   639616
+4           Jeremy Baker     21763 Yang Fords Apt. 561\nVegamouth, NE 89546  Whose involve identify commercial while others...   639616
+5          Tracy Hawkins  0253 Elizabeth Forest Suite 006\nCandicefurt, ...  Owner attention week. All art someone law lead...  1096229
+6            Jose Garcia     17002 Terry Station\nEast Danielberg, KY 69099  Major it design major study different eye alon...  1096229
+7      Raymond Adams PhD  603 Diane Club Apt. 427\nSouth Madisonview, CO...  Wait final event where want. Mind ask recogniz...   792072
+8          Michael Mckee  296 Vargas Field Apt. 104\nCarpenterburgh, AK ...  Step generation several. Class yes very guy ce...   660736
+9         Rebecca Jensen            870 Zachary Estate\nKelleyton, OH 66764  Along want area maintain goal. During us almos...   642605
+10     Jennifer Cummings  941 Dawn Junctions Apt. 244\nNorth Taylor, NV ...  Worry out now father sell most. Clear importan...   642605
+11      Kathryn Martinez  7866 Olivia Forge Suite 990\nVanessaborough, V...  Oil fly charge action will catch for. Far ente...   633837
+12         Brandon Price         3974 Grant Hill\nNorth Katherine, DE 72803  None management again else at. Note job anythi...   642605
+13          Nancy Harper  40437 Carmen Junction Apt. 208\nNorth Terry, H...  Single citizen film show animal remember order...   716195
+14             James Lee  468 Wesley Place Suite 502\nPort Kenneth, WI 1...  Authority art them consider month animal glass...   665378
+15          Tiffany Cook  746 Washington Meadows Suite 222\nNew Claire, ...  Day PM social. Change woman raise. Happy all s...   716408
+16  Elizabeth Richardson                   PSC 5044, Box 6368\nAPO AA 80559  Between trouble leg. Key person goal cost memb...   642605
+17            Alexa Yang       6844 Hernandez Mountain\nHoweshire, MI 48820  Tree you but. Issue carry year. Oil perhaps no...  1697833
+18            Corey Mayo           697 Taylor Courts\nRowechester, WV 01047  Without political public story perhaps wide le...  1697833
+19          Patrick Carr  5736 Angela Estate Apt. 360\nSouth Natasha, CA...  Economy job good upon. Radio hope this song ad...   658509
+[2022-03-15 20:57:50,727] {s3.py:729} INFO - Deleted: ['stage/user-2022-03-15 20:57:27.765689.json']
+[2022-03-15 20:57:50,933] {s3.py:729} INFO - Deleted: ['stage/recipe-2022-03-15 20:57:28.057469.json']
+[2022-03-15 20:57:50,939] {python.py:175} INFO - Done. Returned value was: None
+[2022-03-15 20:57:50,964] {taskinstance.py:1272} INFO - Marking task as SUCCESS. dag_id=simple_dag, task_id=to_sql, execution_date=20220315T205534, start_date=20220316T015741, end_date=20220316T015750
+[2022-03-15 20:57:51,044] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-15 20:57:51,067] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,86 @@
+[2022-03-15 11:37:39,551] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.get_recipes scheduled__2022-03-15T11:40:00+00:00 [queued]>
+[2022-03-15 11:37:39,562] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.get_recipes scheduled__2022-03-15T11:40:00+00:00 [queued]>
+[2022-03-15 11:37:39,562] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-15 11:37:39,562] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-15 11:37:39,562] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-15 11:37:39,572] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): get_recipes> on 2022-03-15 11:40:00+00:00
+[2022-03-15 11:37:39,576] {standard_task_runner.py:52} INFO - Started process 21040 to run task
+[2022-03-15 11:37:39,582] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'simple_dag', 'get_recipes', 'scheduled__2022-03-15T11:40:00+00:00', '--job-id', '290', '--raw', '--subdir', 'DAGS_FOLDER/simple_dag.py', '--cfg-path', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmp3tvg3d9a', '--error-file', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpi004jj49']
+[2022-03-15 11:37:39,585] {standard_task_runner.py:77} INFO - Job 290: Subtask get_recipes
+[2022-03-15 11:37:39,646] {logging_mixin.py:109} INFO - Running <TaskInstance: simple_dag.get_recipes scheduled__2022-03-15T11:40:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-03-15 11:37:39,695] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=simple_dag
+AIRFLOW_CTX_TASK_ID=get_recipes
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-15T11:40:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-15T11:40:00+00:00
+[2022-03-15 11:37:39,709] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:37:39,710] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:37:40,137] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:37:40,138] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:37:42,255] {logging_mixin.py:109} INFO - raw/user-2022-03-14 12:16:16.768057.json
+[2022-03-15 11:37:42,260] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:37:42,261] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:37:43,012] {logging_mixin.py:109} INFO - raw/user-2022-03-14 12:16:24.788633.json
+[2022-03-15 11:37:43,017] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:37:43,018] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:37:45,929] {logging_mixin.py:109} INFO - raw/user-2022-03-14 12:16:29.962475.json
+[2022-03-15 11:37:45,934] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:37:45,935] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:37:46,715] {logging_mixin.py:109} INFO - raw/user-2022-03-14 12:16:44.008253.json
+[2022-03-15 11:37:46,720] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:37:46,721] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:37:50,710] {logging_mixin.py:109} INFO - raw/user-2022-03-14 12:16:52.065604.json
+[2022-03-15 11:37:50,715] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:37:50,716] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:37:56,043] {logging_mixin.py:109} INFO - raw/user-2022-03-14 13:40:51.952380.json
+[2022-03-15 11:37:56,048] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:37:56,049] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:37:56,867] {logging_mixin.py:109} INFO - raw/user-2022-03-14 13:40:54.048138.json
+[2022-03-15 11:37:56,872] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:37:56,874] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:38:02,915] {logging_mixin.py:109} INFO - raw/user-2022-03-14 13:40:56.140666.json
+[2022-03-15 11:38:02,919] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:38:02,920] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:38:09,262] {logging_mixin.py:109} INFO - raw/user-2022-03-14 13:41:02.424720.json
+[2022-03-15 11:38:09,266] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:38:09,267] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:38:16,430] {logging_mixin.py:109} INFO - raw/user-2022-03-14 13:41:04.521027.json
+[2022-03-15 11:38:16,439] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:38:16,441] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:38:17,281] {logging_mixin.py:109} INFO - raw/user-2022-03-14 13:41:06.619964.json
+[2022-03-15 11:38:17,286] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:38:17,287] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:38:24,444] {logging_mixin.py:109} INFO - raw/user-2022-03-14 13:41:08.717143.json
+[2022-03-15 11:38:24,451] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:38:24,452] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:38:25,160] {logging_mixin.py:109} INFO - raw/user-2022-03-14 13:41:10.809943.json
+[2022-03-15 11:38:25,165] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:38:25,166] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:38:32,997] {logging_mixin.py:109} INFO - raw/user-2022-03-14 13:41:12.902259.json
+[2022-03-15 11:38:33,003] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:38:33,005] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:38:41,647] {logging_mixin.py:109} INFO - raw/user-2022-03-14 13:41:14.996433.json
+[2022-03-15 11:38:41,652] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:38:41,653] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:38:51,848] {logging_mixin.py:109} INFO - raw/user-2022-03-14 13:41:19.188289.json
+[2022-03-15 11:38:51,853] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:38:51,854] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:39:00,854] {logging_mixin.py:109} INFO - raw/user-2022-03-14 13:41:21.281386.json
+[2022-03-15 11:39:00,869] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:39:00,870] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:39:10,285] {logging_mixin.py:109} INFO - raw/user-2022-03-14 13:41:23.377181.json
+[2022-03-15 11:39:10,290] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:39:10,293] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:39:11,104] {logging_mixin.py:109} INFO - raw/user-2022-03-14 13:41:25.468979.json
+[2022-03-15 11:39:11,110] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-15 11:39:11,111] {base_aws.py:90} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-03-15 11:39:21,487] {logging_mixin.py:109} INFO - raw/user-2022-03-14 13:41:27.559613.json
+[2022-03-15 11:39:21,491] {python.py:175} INFO - Done. Returned value was: None
+[2022-03-15 11:39:21,501] {taskinstance.py:1272} INFO - Marking task as SUCCESS. dag_id=simple_dag, task_id=get_recipes, execution_date=20220315T114000, start_date=20220315T163739, end_date=20220315T163921
+[2022-03-15 11:39:21,541] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-15 11:39:21,559] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-03-15 11:39:21,569] {dagrun.py:545} INFO - Marking run <DagRun simple_dag @ 2022-03-15 11:40:00+00:00: scheduled__2022-03-15T11:40:00+00:00, externally triggered: False> successful
+[2022-03-15 11:39:21,569] {dagrun.py:590} INFO - DagRun Finished: dag_id=simple_dag, execution_date=2022-03-15 11:40:00+00:00, run_id=scheduled__2022-03-15T11:40:00+00:00, run_start_date=2022-03-15 16:35:34.583236+00:00, run_end_date=2022-03-15 16:39:21.569589+00:00, run_duration=226.986353, state=success, external_trigger=False, run_type=scheduled, data_interval_start=2022-03-15 11:40:00+00:00, data_interval_end=2022-03-15 11:45:00+00:00, dag_hash=8239623b275c7320bc7b7c0979cae43b

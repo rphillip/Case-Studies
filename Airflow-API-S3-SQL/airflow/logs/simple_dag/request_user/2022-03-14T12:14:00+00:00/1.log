@@ -1,0 +1,111 @@
+[2022-03-14 12:11:03,239] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.request_user scheduled__2022-03-14T12:14:00+00:00 [queued]>
+[2022-03-14 12:11:03,248] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.request_user scheduled__2022-03-14T12:14:00+00:00 [queued]>
+[2022-03-14 12:11:03,248] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 12:11:03,248] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-14 12:11:03,248] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 12:11:03,258] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): request_user> on 2022-03-14 12:14:00+00:00
+[2022-03-14 12:11:03,261] {standard_task_runner.py:52} INFO - Started process 82777 to run task
+[2022-03-14 12:11:03,268] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'simple_dag', 'request_user', 'scheduled__2022-03-14T12:14:00+00:00', '--job-id', '142', '--raw', '--subdir', 'DAGS_FOLDER/simple_dag.py', '--cfg-path', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmphbcawczq', '--error-file', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpmdtaff_n']
+[2022-03-14 12:11:03,271] {standard_task_runner.py:77} INFO - Job 142: Subtask request_user
+[2022-03-14 12:11:03,334] {logging_mixin.py:109} INFO - Running <TaskInstance: simple_dag.request_user scheduled__2022-03-14T12:14:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-03-14 12:11:03,387] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=simple_dag
+AIRFLOW_CTX_TASK_ID=request_user
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-14T12:14:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-14T12:14:00+00:00
+[2022-03-14 12:11:03,511] {logging_mixin.py:109} INFO - {'pantry': {'excludeIngredients': ['chickpeas', 'garlic'], 'includeIngredients': ['salt', 'chickpeas', 'cauliflower rice'], 'intolerances': 'tree nut'}, 'user': {'address': '148 Timothy Lakes\nBauerland, IL 49873', 'description': 'Trade red treatment would. Improve fact same trouble resource find country.\nDaughter put air during than. Hear life more. Common reflect common guess reach task compare.', 'name': 'Kim Hall'}}
+[2022-03-14 12:11:03,512] {logging_mixin.py:109} INFO - /Users/HomeFolder/mydatasets/datacourse_data-workflows-and-architectures/miniprojects/airflow
+[2022-03-14 12:11:05,515] {python.py:175} INFO - Done. Returned value was: None
+[2022-03-14 12:11:05,525] {taskinstance.py:1272} INFO - Marking task as SUCCESS. dag_id=simple_dag, task_id=request_user, execution_date=20220314T121400, start_date=20220314T171103, end_date=20220314T171105
+[2022-03-14 12:11:05,550] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-14 12:11:05,570] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-03-14 12:14:48,901] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.request_user scheduled__2022-03-14T12:14:00+00:00 [queued]>
+[2022-03-14 12:14:48,910] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.request_user scheduled__2022-03-14T12:14:00+00:00 [queued]>
+[2022-03-14 12:14:48,910] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 12:14:48,910] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-14 12:14:48,910] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 12:14:48,920] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): request_user> on 2022-03-14 12:14:00+00:00
+[2022-03-14 12:14:48,923] {standard_task_runner.py:52} INFO - Started process 82903 to run task
+[2022-03-14 12:14:48,931] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'simple_dag', 'request_user', 'scheduled__2022-03-14T12:14:00+00:00', '--job-id', '153', '--raw', '--subdir', 'DAGS_FOLDER/simple_dag.py', '--cfg-path', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmp6jmlli5t', '--error-file', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmp4r3qubl4']
+[2022-03-14 12:14:48,934] {standard_task_runner.py:77} INFO - Job 153: Subtask request_user
+[2022-03-14 12:14:48,991] {logging_mixin.py:109} INFO - Running <TaskInstance: simple_dag.request_user scheduled__2022-03-14T12:14:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-03-14 12:14:49,038] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=simple_dag
+AIRFLOW_CTX_TASK_ID=request_user
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-14T12:14:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-14T12:14:00+00:00
+[2022-03-14 12:14:49,147] {taskinstance.py:1718} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 188, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/Users/HomeFolder/airflow/dags/simple_dag.py", line 19, in request_user
+    json.dump(json_data, json_file)
+NameError: name 'json' is not defined
+[2022-03-14 12:14:49,158] {taskinstance.py:1272} INFO - Marking task as FAILED. dag_id=simple_dag, task_id=request_user, execution_date=20220314T121400, start_date=20220314T171448, end_date=20220314T171449
+[2022-03-14 12:14:49,169] {standard_task_runner.py:89} ERROR - Failed to execute job 153 for task request_user
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 180, in _run_raw_task
+    ti._run_raw_task(
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 188, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/Users/HomeFolder/airflow/dags/simple_dag.py", line 19, in request_user
+    json.dump(json_data, json_file)
+NameError: name 'json' is not defined
+[2022-03-14 12:14:49,196] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-03-14 12:14:49,217] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-03-14 12:16:24,522] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.request_user scheduled__2022-03-14T12:14:00+00:00 [queued]>
+[2022-03-14 12:16:24,529] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: simple_dag.request_user scheduled__2022-03-14T12:14:00+00:00 [queued]>
+[2022-03-14 12:16:24,529] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 12:16:24,529] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-14 12:16:24,530] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-14 12:16:24,539] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): request_user> on 2022-03-14 12:14:00+00:00
+[2022-03-14 12:16:24,543] {standard_task_runner.py:52} INFO - Started process 82993 to run task
+[2022-03-14 12:16:24,549] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'simple_dag', 'request_user', 'scheduled__2022-03-14T12:14:00+00:00', '--job-id', '153', '--raw', '--subdir', 'DAGS_FOLDER/simple_dag.py', '--cfg-path', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmpncbdvjlx', '--error-file', '/var/folders/tl/ljh9dpdd2fnbgmc62qc2b49h0000gn/T/tmp4dztkl7v']
+[2022-03-14 12:16:24,553] {standard_task_runner.py:77} INFO - Job 153: Subtask request_user
+[2022-03-14 12:16:24,622] {logging_mixin.py:109} INFO - Running <TaskInstance: simple_dag.request_user scheduled__2022-03-14T12:14:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-03-14 12:16:24,678] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=simple_dag
+AIRFLOW_CTX_TASK_ID=request_user
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-14T12:14:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-14T12:14:00+00:00
+[2022-03-14 12:16:26,790] {python.py:175} INFO - Done. Returned value was: None
+[2022-03-14 12:16:26,801] {taskinstance.py:1272} INFO - Marking task as SUCCESS. dag_id=simple_dag, task_id=request_user, execution_date=20220314T121400, start_date=20220314T171624, end_date=20220314T171626
+[2022-03-14 12:16:26,828] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-14 12:16:26,851] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
